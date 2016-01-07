@@ -1,0 +1,83 @@
+
+Jan 7 2016
+
+Music as motion over time.
+
+THX Deep Note
+  - Setup stage
+  - Initial stage (TENSION)
+  - Converging stage 
+  - Hold stage    (ORDER)
+
+Stop perceiving pitch above 5000Hz
+  - If we played "Mary Had a Little Lamb" above 5000Hz, we wouldn't be able to
+    perceive the melody.
+
+Design complexity as the sum of simple elements (local independence with global
+coordiantion).
+
+Math.srandom(); //seed the random function
+Math.random2f(floor, ceiling) => float m;
+Math.random2(floor, ceiling) => int n;
+
+All shreds share the same pseudorandom number generator.
+
+/****************/
+
+fun float uniform()
+{
+    return Math.random2f(0,1);
+}
+
+fun float guss()
+{
+  float sum;
+  repeat(12) uniform +=> sum;
+  return sum / 12;
+
+}
+
+// patch
+Rhodey foo => JCRev r => dac;
+//reverb
+.1 => r.mix;
+
+while (true)
+{
+  20 + uniform() * 100 => Std.mtof => foo.freq;
+  //note on
+  1 => foo.noteOn;
+  120::ms => now;
+}
+
+/******************/
+
+Poisson
+
+fun float unifor()
+{
+    return Math.random2f(0,1);
+}
+
+
+fun float expo(float alpha) 
+{
+  return -Math.log(1-uniform()) / alpha); 
+}
+
+// expected number of occurences per second
+1 => float N;
+now + 10::second => time later;
+
+int counter;
+
+while (now < later)
+{
+  <<< "donut!", now / second >>>;
+
+  //models time of event from one event to another one
+  count++;
+  expo(N)::second => now; //give expo the expected number of occurences
+}
+
+<<< "count:", count >>>;
