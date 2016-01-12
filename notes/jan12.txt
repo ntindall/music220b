@@ -1,0 +1,58 @@
+Homebrew
+
+Experimenting with the tools that are available. 
+
+==============================================
+
+Comb Filters
+
+adc => Delay delay => dac;
+
+200000::samp => delay.max => delay.delay;
+
+while (true) 1::second => now;
+
+
+==============================================
+
+//feedforward
+adc => Delay delay => dac;
+//feedback
+delay => Gain g => delay;
+
+0.98 => g.gain;
+
+500::samp => delay.max => delay.delay;
+
+while (true) 1::second => now;
+
+//question? What happens if we keep reducing the
+//amount of delay?
+//answer: comb filter
+
+//the pitch that we are hearing is really a function of the delay length
+//input has to have enough energy to excite filter
+
+==============================================
+
+//feedforward
+Impulse i => Delay d => dac;
+delay => Gain g => delay;
+
+//5::ms => delay.max => delay.delay
+//set attenuation
+.98 => g.gain
+
+while (true) {
+  
+  //fire!
+  1 => i.next;
+
+  .5::second => now;
+}
+
+//every frequency has same amount of energy (impulse)
+//to imbue pitch where there was none!
+
+//listen and isolate
+//question... how to tune this?
