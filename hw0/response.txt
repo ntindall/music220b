@@ -1,0 +1,15 @@
+Nathan James Tindall
+Music 220B - Winter 2016
+
+The notion of cellular automaton seems directly related to music and music
+composition -- a set of deterministic rules that can lead to chaotic and complex
+behavior. This idea, in tandem with the "restricted" set of universes that the
+second paper discusses, seems directly parallel to traditional music, where one
+set of worlds is explored (through evolution of classical harmonies, etc.). It
+seems feasible that computers can do more than is implementable in the real
+world, and can bring to life sounds that cannot be created there. I really like
+how cellular automaton seem to evolve over time based upon the starting state.
+This seems just like music -- where there is a natural progression over time.
+The key difference, I think, is that while cellular automaton have deterministic
+rules, the "rules" of music seem to change at each step (and identifying or even
+beginning to enumerate them may be impossible).
