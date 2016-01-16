@@ -1,0 +1,149 @@
+Sounds that are not essentially musical.
+
+         _____
+in ---> | z^L | ----> out
+    |   |_____|   |
+    |             |
+    |__<___G____<_|
+
+L sample delay (notation).
+
+What if gain is 1? No decay in amplitude (additive).
+Delay should be less than 1 in order to be "musically meaningful."
+
+Inverse with the teeth pointing upwards.
+Depending on the delay length, our comb teeth will be more or less concentrated.
+
+As gain approaches 1, sustain increases. Subsequent copies lose energy more and
+more slowly.
+
+Subtractive synthesis, taking away some frequencies and leaving things that we
+really want. 
+
+========================================
+
+//feedforward
+Impulse i => Delay d => dac;
+delay => Gain g => delay;
+
+//5::ms => delay.max => delay.delay
+//set attenuation
+.98 => g.gain
+
+while (true) {
+  
+  //fire!
+  1 => i.next;
+
+  .5::second => now;
+}
+
+========================================
+
+         _____
+in ---> | z^L | ----> out
+    |   |_____|   |
+    |             |
+    |__<_F_<__G_<_|
+
+F = filter
+G = gain
+
+Over time, the higher frequency components become less and less prominent.
+
+//feedforward
+Impulse i => Delay d => dac;
+delay => Gain g => OneZero lowpass => delay;
+
+//delay length
+500 => int L;
+//set the delay
+L::samp => delay.max => delay.delay;
+//set attenuation
+0.99 > g.gain;
+//set the lowpass
+-1 => lowpass.zero;
+
+while (true) {
+  //fire!
+  1 => i.next;
+
+  //time
+  1::second => now;
+
+}
+
+// pluck string filter
+//what does this do to the sound?
+//high frequency energy is there at the beginning but decays more quickly than
+//low frequency energy. (like a string!)
+
+=======================================
+
+
+SndBuf buddy => Delay delay => JCRev r => dac;
+
+delay => OneZero lowpass => delay;
+
+//read
+me.dir() + "ohno.aiff" => buffy.read;
+
+0.25 => buffy.gain;
+
+//set erverb mox
+0.1 => r.mix;
+
+Std.rand2f(.1, 1.5) => buffy.rate;
+
+
+//set delay
+500::samp => delay.delay;
+
+//set lowpass zero position
+-1 => lowpass.zero
+
+//set feedback gain 
+.99 => lowpass.gain;
+
+//advance time
+15::second => now;
+
+
+//idea.. multiple delay lines?
+
+//delay.max preallocates maximum delay, if you try to set beyond the max it
+//gets clamped to the max. set the delay to the maximum delay you are likely
+//going to need ( can change delay.delay dynamically)
+
+==========================================
+
+
+// what's the sample rate?
+<<< second / samp >>>; 
+
+second / samp => float sample_rate;
+60 => Std.mtof => float f;
+<<< f >>>;
+
+sample_rate / f => float L;
+//L is the number for sample delay.
+
+//just add the letter L and get lineraly interpolated delay line!
+//just add the letter A and get allpass interpolated delay line!
+
+//DelayL and DelayA ... now we get fractional delay length!
+
+==========================================
+
+KS
+
+Impulse i => KS ks => dac;
+ks.tune(60);
+ks.feedback(0.98);
+
+10 => i.next;
+5::second => now;
+
+========================================
+
+KS Chord, multiple pitches
