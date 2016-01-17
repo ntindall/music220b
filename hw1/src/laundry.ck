@@ -138,6 +138,38 @@ fun int coinFlip() {
   }
 }
 
+fun float uniform1() {
+  return Math.random2f(-1,1);
+}
+
+//cool
+fun void gliss(float s_note, float e_note, float gain, dur hold) {
+  SndBuf buffy => Gain g => KSChord object => JCRev r;
+  "../audio/laundry.wav" => buffy.read;
+  (e_note - s_note) / 100 => float delta;
+  g.gain(gain);
+  buffy.rate(.1);
+  object.feedback(0.98);
+  r.mix(1);
+  r => HPF h => dac;
+  h.freq(400);
+  <<< s_note, e_note >>>;
+  
+  0 => buffy.pos;
+  0 => float shift;
+  object.tune(s_note + shift, s_note + shift, s_note+12 + shift, s_note+12 + shift);
+  0.1::second => now;
+  for (int i; i < 100; i++) {
+
+    object.tune(s_note + shift, s_note + shift, s_note+12 + shift, s_note+12 + shift);
+    shift + delta => shift;
+    10::ms => now;
+  }
+  hold => now;
+  0 => g.gain;
+  2::second => now;
+}
+
 fun void oneChord(int x, 
                   int pos,
                   float rate,
@@ -147,9 +179,13 @@ fun void oneChord(int x,
                   int note1,
                   int note2,
                   int note3,
-                  int note4) {
+                  int note4,
+                  float pan,
+                  float gain) {
   // sound to chord to dac
-  SndBuf buffy => Gain g => KSChord object => JCRev r => dac;
+  SndBuf buffy => Gain g => KSChord object => JCRev r => Pan2 p => dac;
+  p.pan(pan);
+  g.gain(gain);
   // load a sound
   "../audio/laundry.wav" => buffy.read;
   // set feedback
@@ -170,33 +206,52 @@ fun void oneChord(int x,
   1::second => now;
 }
 
+/* Intro */
+
+for (int i; i < 2; i++) {
+  oneChord(0, 
+           Math.random2(100, 100000), 
+           1,
+           1,
+           10::second,
+           0.5,
+           57, 69, 72, 79,
+           uniform1(),
+           0.05); //A A C G
+  1::second => now;
+  spork ~gliss(43,45, 0.05, 14::second);
+}
+
 
 //Slowly ramp up harmonicity
-/* CONTROL FLOW */
-now + 20::second => time end;
+now + 10::second => time end;
 0.5 => float feedback;
 0.95 => float feedback_goal;
-(feedback_goal - feedback) / 20 => float delta;
+(feedback_goal - feedback) / 10 => float delta;
 while (now < end) {
 
   Math.random2(-1,2) => int octave;
 
   if (Math.random2f(0,1) < 0.5) {
     spork ~oneChord(12 * octave, 
-                   Math.random2(100, 100000), 
+                   Math.random2(50000, 100000), 
                    Math.random2f(0.25,0.75),
                    coinFlip(),
                    1::second,
                    feedback,
-                   57, 69, 72, 79); //A A C G
+                   57, 69, 72, 79,
+                   uniform1(),
+                   feedback / 2); //A A C G
   } else {
     spork ~oneChord(24 * octave,
-                    Math.random2(100, 100000),
+                    Math.random2(50000, 100000),
                     Math.random2f(0.25,0.75),
                     coinFlip(),
                     1::second,
                     feedback,
-                    57, 71, 72, 76); //A B C E
+                    57, 71, 72, 76,
+                    uniform1(),
+                    feedback / 2); //A B C E
   }
 
   1::second => now;
@@ -204,37 +259,134 @@ while (now < end) {
   <<< feedback >>>;
 }
 
-//Let the chords be heard!!
-now + 20::second => end;
-0.95 => feedback;
-0.95 => feedback_goal;
-(feedback_goal - feedback) / 20 => delta;
-while (now < end) {
+for (int i; i < 2; i++) {
+  spork ~gliss(43,45, 0.1, 10::second);
+  spork ~gliss(55,57, 0.1, 10::second);
 
-  Math.random2(-1,2) => int octave;
+  //Let the chords be heard!!
+  now + 10::second => end;
+  0.95 => feedback;
+  0.95 => feedback_goal;
+  (feedback_goal - feedback) / 10 => delta;
+  while (now < end) {
 
-  if (Math.random2f(0,1) < 0.5) {
-    spork ~oneChord(12 * octave, 
-                   Math.random2(100, 100000), 
-                   Math.random2f(0.25,0.75),
-                   coinFlip(),
-                   1::second,
-                   feedback,
-                   60, 57, 64, 74);
-  } else {
-    spork ~oneChord(24 * octave,
-                    Math.random2(100, 100000),
-                    Math.random2f(0.25,0.75),
-                    coinFlip(),
-                    1::second,
-                    feedback,
-                    60, 57, 64, 74);
+    Math.random2(-1,2) => int octave;
+
+    if (i >= 1) {
+      if (Math.random2f(0,1) > 0.5) {
+        spork ~gliss(57,59,0.2, 1::second);
+        spork ~gliss(59,61,0.2, 1::second);
+      }
+    }
+
+    if (Math.random2f(0,1) < 0.5) {
+      spork ~oneChord(12 * octave, 
+                     Math.random2(50000, 100000), 
+                     Math.random2f(0.25,0.75),
+                     coinFlip(),
+                     1::second,
+                     feedback,
+                     60, 57, 64, 74,
+                     uniform1(),
+                     feedback / 4);
+    } else {
+      spork ~oneChord(24 * octave,
+                      Math.random2(50000, 100000),
+                      Math.random2f(0.25,0.75),
+                      coinFlip(),
+                      1::second,
+                      feedback,
+                      60, 57, 64, 74,
+                      uniform1(),
+                      feedback / 4);
+    }
+
+    1::second => now;
+    feedback + delta => feedback;
+    <<< feedback >>>;
+  }
+}
+
+spork ~gliss(43,45, 0.2, 10::second);
+spork ~gliss(55,57, 0.2, 10::second);
+
+for (int i; i< 4; i++) {
+  spork ~gliss(50,62,0.2, 4::second);
+  spork ~gliss(59,61,0.2, 4::second);
+  4::second => now;
+}
+
+
+//move to G
+spork ~gliss(45,43, 0.15, 16::second);
+spork ~gliss(57,55, 0.15, 16::second);
+for (int i; i < 16; i++) {
+  Math.random2(-1,1) => int octave;
+
+  if ((i % 4) - 1 == 0) {
+    spork ~gliss(81, 79, 0.4, 4::second);
+    <<<"sporking !!!">>>;
+  }
+
+  spork ~oneChord(12 * octave,
+                Math.random2(50000, 100000),
+                Math.random2f(0.25,0.75),
+                1,
+                1::second,
+                0.95,
+                55, 62, 71, 69,
+                uniform1(),
+                0.4);
+  1::second => now;
+}
+
+//F C E B
+//move to F
+spork ~gliss(43,41, 0.05, 16::second);
+spork ~gliss(55,53, 0.05, 16::second);
+
+for (int i; i < 16; i++) {
+  Math.random2(-1,1) => int octave;
+
+  if ((i % 2) - 1 == 0) {
+    if ((i % 4) - 1 == 0) {
+        spork ~gliss(76, 77, 0.4, 2::second);
+      } else {
+        spork ~gliss(83, 84, 0.4, 2::second);
+
+      }
+    <<<"sporking !!!">>>;
+  }
+
+  spork ~oneChord(12 * octave,
+                Math.random2(50000, 100000),
+                Math.random2f(0.25,0.75),
+                1,
+                1::second,
+                0.95,
+                53, 60, 64, 71,
+                uniform1(),
+                0.2);
+
+  if (i == 15) {
+    spork ~gliss(53,57, 0.05, 10::second);
+    spork ~gliss(41,45, 0.05, 10::second);
+
   }
 
   1::second => now;
-  feedback + delta => feedback;
-  <<< feedback >>>;
+  if (i == 15) {}
 }
-
+1::second => now;
+spork ~gliss(71, 72, 0.2, 10::second);
+4::second => now;
+spork ~gliss(72, 76, 0.2, 10::second);
+4::second => now;
+spork ~gliss(76, 79, 0.2, 10::second);
+4::second => now;
+spork ~gliss(79, 81, 0.4, 10::second);
+4::second => now;
+spork ~gliss(55,57, 0.1, 10::second);
+spork ~gliss(43,45, 0.1, 10::second);
 
 1::day => now;
