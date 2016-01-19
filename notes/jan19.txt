@@ -1,0 +1,35 @@
+Milestone presentation
+
+Dynamics
+Time Varying
+Pitch Harmony / Timbre
+Balance
+Textures
+
+Source Material
+
+Tension
+
+-------------------------------------------------------------------------------
+
+TODO: ramp reverb slowly
+
+      Varying playback rate
+
+      To change -- reverb
+
+      Clipping?
+        - reduce gain
+        - embrace the clip?
+
+      Pre/post processing in audacity?
+
+- rec-auto-2.ck
+- miniAudicle record to file
+- eq. power pan
+- Pan2
+- .rate sndbuf
+- DC blocker
+- gain happiness/ compression
+
+Excitation -> KSChord -> rec-auto-2.ck -> wav - paulstretch / edit /fat -> wav
