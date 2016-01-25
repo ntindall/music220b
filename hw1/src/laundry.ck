@@ -147,7 +147,7 @@ fun float uniform1() {
 //cool
 fun void gliss(float s_note, float e_note, float gain, dur hold) {
   SndBuf buffy => Gain g => KSChord object => JCRev r;
-  "../audio/laundry.wav" => buffy.read;
+  "/Users/ntindall/Winter2016/MUSIC220B/hw1/audio/laundry.wav" => buffy.read;
   (e_note - s_note) / 100 => float delta;
   g.gain(gain);
   buffy.rate(.1);
@@ -175,11 +175,11 @@ fun void gliss(float s_note, float e_note, float gain, dur hold) {
 //oh woe is me
 SndBuf master1;
 0 => int lock1;
-"../audio/laundry.wav" => master1.read;
+"/Users/ntindall/Winter2016/MUSIC220B/hw1/audio/laundry.wav" => master1.read;
 
 SndBuf master2;
 0 => int lock2;
-"../audio/laundry.wav" => master2.read;
+"/Users/ntindall/Winter2016/MUSIC220B/hw1/audio/laundry.wav" => master2.read;
 
 fun void oneChord(int x, 
                   int pos,
@@ -226,7 +226,7 @@ fun void oneChord(int x,
     rate * multiplier => master2.rate;
   } else {
     SndBuf buffy => g;
-    "../audio/laundry.wav" => buffy.read;
+    "/Users/ntindall/Winter2016/MUSIC220B/hw1/audio/laundry.wav" => buffy.read;
 
     // set playhead to beginning
     pos => buffy.pos;
@@ -289,13 +289,14 @@ for (int i; i < 50; i++) {
            0.5,
            57, 69, 72, 79,
            uniform1(),
-           0.01 + (i/400.0),
+           0.01 + (i/200.0),
            0.0001,
            1::second,
-           20000); //A A C G
+           20000 - 320 * i); //A A C G
     100::ms => now;
 }
 
+spork ~gliss(45,45, 0.02, 10::second);
 for (int i; i < 50; i++) {
     <<< 0.25 + (i/400.0) >>>;
     spork ~oneChord(0, 
@@ -307,9 +308,9 @@ for (int i; i < 50; i++) {
            57, 69, 72, 79,
            uniform1(),
            0.25 + (i/400.0),
-           0.0001,
+           0.00001,
            1::second,
-           8000); //A A C G
+           4000); //A A C G
     100::ms => now;
 }
 
@@ -324,7 +325,7 @@ spork ~oneChord(0,
        0.3725,
        0.0001,
        8::second,
-       8000); //A A C G //light LPF
+       5000); //A A C G //light LPF
 
 5::second => now;
 //spork ~gliss(69   , 69, 0.2, 4::second);
@@ -474,24 +475,29 @@ for (int i; i < 16; i++) {
   Math.random2(-1,1) => int octave;
 
   if ((i == 1) || (i == 9)) {
-    spork ~gliss(60, 62, 0.2, 4::second);
-    spork ~gliss(69, 71, 0.3, 2::second);
+    spork ~gliss(67, 65, 0.1, 8::second);
+    spork ~gliss(60, 62, 0.1, 4::second);
+    spork ~gliss(69, 71, 0.1, 2::second);
   }
 
   if ((i == 3) || (i == 13)) {
-    spork ~gliss(71, 72, 0.3, 2::second);
+    spork ~gliss(71, 72, 0.1, 2::second);
+  }
+
+  if ((i == 4) || (i == 12)) {
+    spork ~gliss(65, 67, 0.1, 4::second);
   }
 
   if ((i == 5) || (i == 11)) {
-    spork ~gliss(62, 60, 0.2, 4::second);
-    spork ~gliss(74, 72, 0.3, 2::second);
+    spork ~gliss(62, 60, 0.1, 4::second);
+    spork ~gliss(74, 72, 0.1, 2::second);
   }
 
   if (i == 7) {
-    spork ~gliss(67, 65, 0.3, 2::second);
+    spork ~gliss(67, 65, 0.1, 2::second);
   }
   if ((i == 8) || (i == 14)) {
-    spork ~gliss(62, 60, 0.2, 4::second);
+    spork ~gliss(62, 60, 0.1, 4::second);
   }
 
   spork ~oneChord(12 * octave,
