@@ -1,0 +1,146 @@
+DC blocker
+feedback-echo
+rec-auto-2 / non-realtime
+panning
+multi chuck files
+
+Some useful ChucK
+
+to record to file:
+
+chuck otf* basic/rec-auto.ck
+--writes to file 
+
+dac => Gain g => WvOut => blackhole
+
+chuck -80 band-o-matic.ck
+-n = spork 80 chuck files
+
+chuck --silent -80 band-o-matic. ../basic-rec-auto-stereo.ck
+
+raindrops lab
+
+Why is it not a UGen? -- no reason (it should be)
+
+--------------------------------------------------------------------------------
+
+multi-chuck files
+  the one thing that can be shared among different files are class definitions
+  
+
+public class TheThing
+{
+  int i;
+  fun void say() 
+  {
+    <<< "hai, my number is:", i >>>; 
+  }
+
+}
+
+Now run the file (makes class definition).
+
+TheThing thing;
+5 => thing.i;
+thing.say();
+
+/* Class for sharing data*/
+public class Hub
+{
+  static TheThing @ ourThing; //@ means its a reference to that type
+}
+
+new TheThing @=> X.ourThing;
+
+one file:
+4 => X.ourThing.i;
+
+another file: 
+X.ourThing.say();
+
+---------------------------------------------------------------
+
+--can add to VM manually
+Machine.add("TheThing.ck");
+Machine.add("X.ck");
+
+--never have to worry about synchronization
+--everything is green threaded (no race conditions) -- phew
+
+--can put ugens into globals
+
+
+--------------------------------
+
+SinOSc control => blackhole;
+
+1 => control.freq;
+
+StifKarp fish => dac;
+
+while (true) {
+  // every UGen in ChucK has a .last() parameter.
+  <<< control.last() >>>;
+  (control.last() + 1) / 2) * 12 + 36 => Std.mtof => fish.freq;
+  1=>fish.noteOn;
+  200::ms => now;
+}
+
+//using SinOSC to control fish
+
+------------------------------------
+
+SinOsc lfo => Gain control => blackhole;
+Step step => control;
+66.step.next;
+
+//lfo
+1 => lfo.freq;
+6 => lfo.gain;
+
+1 => control.freq;
+
+StifKarp fish => dac;
+
+while (true) {
+  // every UGen in ChucK has a .last() parameter.
+  <<< control.last() >>>;
+  control.last() => Std.mtof => fish.freq;
+  1=>fish.noteOn;
+  200::ms => now;
+}
+
+//using SinOSC to control fish
+
+---------------------------------------------------------
+
+loud noise tracker
+
+//patch
+adc => Gain g => OnePole p => blackhole;
+//square the input
+adc => g;
+//multiply
+3 => g.op
+
+0.99 => p.pole;
+
+//loop on
+while (true)
+{
+  if (p.last() > 0.05)
+  {
+      <<< "BANG!!" >>>;
+      80:: ms => now;
+  }
+  20::ms => now;
+}
+
+
+------------------------------
+
+Two Zero -- band reject
+ResonZ -- resonator at a particular frequency
+Pole Zero -- DC blocker, also useful as an allpass filter
+
+Envelope ADSR
