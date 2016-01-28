@@ -1,0 +1,54 @@
+Assignment 3
+
+component 1:
+  generative drum machine (some class)
+
+component 2:
+  generative soundscape (integrating algorithms to gnerate/modify the
+  strucutres of sounds)
+  interactive control (integrating devices such as game controller, wii remote,
+  microphone, keyboard, mouse, etc)
+  note elements in category 2 should be used to control patterns and structures
+  of music, not simply pitch or timbre
+
+See writeup on website..
+
+Check examples for some of the UGens you have not used too much.
+
+Look into chuck standard in reading stuff
+
+smelt
+
+OnePole: Lowpass recursive
+Leaky integrator
+Envelope tracker
+
+check out crystals-go.ck
+http://smelt.cs.princeton.edu/pieces/Crystalis/crystalis.ck
+
+Noise   =>  ResonZ => ADSR =>\ _
+                                |x|--(multiply) --> DAC
+Impulse => OnePole         =>/ -
+
+trackpad => deltas => impulses
+keys select the resonZ (what pitch to tune resonZ at)
+
+otf_01.ck
+
+.5::second => dur T;
+T - (now % T) => now; //wait until the next period
+
+synchronize across files
+
+ADSR
+e.set(10:ms, 10:;ms, .5, 10::ms );
+
+   /\
+ A/ D\_______
+ /       S   \R
+/             \
+
+
+while (maybe && maybe)
+
+
