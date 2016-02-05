@@ -60,6 +60,21 @@ while( true )
         // check for action type
         if( msg.isButtonDown() )
         {
+            //up arrow
+            if (msg.which == 82) {
+                Globals.increaseDensity();
+            }
+
+            //down arrow
+            if (msg.which == 81) {
+                Globals.decreaseDensity();
+            }
+
+            if (msg.which == 12) {
+                <<< "intro" >>>;
+                (Globals.isIntro() ^ 1) => Globals.intro;
+            }
+
             if (msg.which == 5) {
                 <<< "bass toggled" >>>;
                 (Globals.getBass() ^ 1) => Globals.bass;
@@ -75,7 +90,13 @@ while( true )
                 (Globals.getKick() ^ 1) => Globals.kick;
             }
 
+
             if (msg.which == 22) {
+                <<< "snare" >>>;
+                (Globals.getSnare() ^ 1) => Globals.snare;
+            }
+
+            if (msg.which == 29) {
                 <<< "sizzle" >>>;
                 (Globals.getSizzle() ^ 1) => Globals.sizzle;
             }
