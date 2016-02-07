@@ -53,7 +53,6 @@ while( true )
 {
     // wait on event
     hi => now;
-
     // get one or more messages
     while( hi.recv( msg ) )
     {
@@ -70,16 +69,16 @@ while( true )
                 Globals.decreaseDensity();
             }
 
+            // 'b'
+            if (msg.which == 5) {
+                (Globals.getBass() ^ 1) => Globals.bass;
+            }
+
             if (msg.which == 12) {
                 <<< "intro" >>>;
                 (Globals.isIntro() ^ 1) => Globals.intro;
             }
-
-            if (msg.which == 5) {
-                <<< "bass toggled" >>>;
-                (Globals.getBass() ^ 1) => Globals.bass;
-            }
-
+            
             if (msg.which == 11) {
                 <<< "hihat toggled" >>>;
                 (Globals.getHihat() ^ 1) => Globals.hihat;

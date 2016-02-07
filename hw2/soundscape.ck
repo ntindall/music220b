@@ -12,8 +12,9 @@ fun void bloom() {
   <<< "blooming" >>>;
   SinOsc f => ADSR e => NRev r => Echo a => Echo b => Echo c;
 
-  <<< Globals.globalGain.gain() >>>;
-  c => Globals.globalGain;
+  c => Gain g => Pan2 p => Globals.globalGain;
+  p.pan(Math.random2f(-0.5,0.5));
+  g.gain(Math.random2f(0.1,0.2));
 
   e.set(10::ms, 5::ms, 0.8, 10::ms);
 
@@ -49,13 +50,38 @@ fun void longPhrase() {
   T * Globals.meter => now;
 }
 
+[47, 47, 43, 43] @=> int bassPhrase[];
+fun void bass() {
+  SinOsc f => ADSR e => NRev r => Echo a => Echo b => Echo c;
+  c => Globals.globalGain;
+  e.set(100::ms,100::ms, 0.5, 5::second);
+
+  f.freq(Std.mtof(bassPhrase[phraseCount % 4]));
+  e.keyOn(1);
+  100::ms => now;
+  e.keyOff();
+  f.gain(0);
+  5::second => now;
+}
+
 fun void loop() {
   while (true) {
+    if (pheaseCount % 8 == 0) {
+      //mutate
+    }
+
     if (Globals.eighth % 15 == 0) {
+      if (Globals.density > 0.1 && Globals.getBass()) {
+                spork ~ bass();
+      }
+
+
+
       if (Math.random2f(0, Globals.density) > 0.3) {
         spork ~ longPhrase();
-        phraseCount + 1 => phraseCount; //keep track so we can change tonality
       }
+
+      phraseCount + 1 => phraseCount; //keep track so we can change tonality
     }
 
     if (Globals.density > 0.5) {

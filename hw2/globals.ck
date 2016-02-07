@@ -67,8 +67,8 @@ public class Globals
   }
 
   fun static void mutateFilters(int dX, int dY) {
-    Math.max(globalLPF.freq() + dX, 1) => globalLPF.freq;
-    Math.max(globalHPF.freq() + dY, 1) => globalHPF.freq;
+    Math.min(Math.max(globalLPF.freq() + dX, 50), 2000) => globalLPF.freq;
+    Math.max(globalHPF.freq() - dY, 50) => globalHPF.freq;
 
     <<< globalLPF.freq(), globalHPF.freq() >>>;
   }
