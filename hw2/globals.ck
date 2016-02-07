@@ -14,9 +14,13 @@ public class Globals
 
   static int intro;
 
+  static LPF @ globalLPF;
+  static HPF @ globalHPF;
+  static Gain @ globalGain;
+
   //initialize class variables if desired non-zero
   fun static void init() {
-    0.5 => density;
+    0.0 => density;
     15 => meter; //number of eighths in phrases
   }
 
@@ -62,6 +66,13 @@ public class Globals
     <<< "density: " + density >>>;
   }
 
+  fun static void mutateFilters(int dX, int dY) {
+    Math.max(globalLPF.freq() + dX, 1) => globalLPF.freq;
+    Math.max(globalHPF.freq() + dY, 1) => globalHPF.freq;
+
+    <<< globalLPF.freq(), globalHPF.freq() >>>;
+  }
+
   fun static void advanceTime() {
     (eighth + 1) % meter => eighth;
     <<< eighth >>>;
@@ -69,3 +80,16 @@ public class Globals
 }
 
 Globals.init();
+new LPF @=> Globals.globalLPF;
+new HPF @=> Globals.globalHPF;
+new Gain @=> Globals.globalGain;
+
+<<< "--------- [GENERATIVE SOUNDSCAPE] INITIALIZING GLOBALS --------- " >>>;
+
+Globals.globalLPF.freq(1000);
+Globals.globalHPF.freq(0);
+Globals.globalGain.gain(1);
+
+Globals.globalGain => Globals.globalHPF => Globals.globalLPF => dac;
+
+1::day => now;

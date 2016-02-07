@@ -1,6 +1,7 @@
 //chuck globals.ck drum-machine.ck soundscape.ck
 
 Machine.add("kb-alt.ck");
+Machine.add("tp-alt.ck");
 
 .2::second => dur T;
 T - (now % T) => now; //wait until the next period
@@ -67,10 +68,10 @@ class kjzSnare101 {
 kjzSnare101 s;
 s.setAttack(10000);
 s.setFilter(2000, 1);
-s.output => dac;
+s.output => Globals.globalGain;
 
 Kick k;
-k.output => dac;
+k.output => Globals.globalGain;
 
 [
  1.0, 0.0,
@@ -100,7 +101,7 @@ fun void hihat() {
 
   if (hat * Globals.density > 0.25) {
 
-    Noise n => JCRev j => HPF h => ADSR a => Pan2 p => dac;
+    Noise n => JCRev j => HPF h => ADSR a => Pan2 p => Globals.globalGain;
     j.mix(1);
     a.set (1::ms, 5::ms, .5, 10::ms);
 
@@ -135,7 +136,7 @@ fun void hihat() {
 
 
 fun void sizzle() {
-  Impulse i => JCRev j => Chorus c => HPF z => Gain g => dac;
+  Impulse i => JCRev j => Chorus c => HPF z => Gain g => Globals.globalGain;
   g.gain(0.5);
   j.mix(0.1);
   c.modDepth(0.99999);
