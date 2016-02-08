@@ -6,7 +6,9 @@ public class Globals
   static int meter;
 
   static int bass;
+  static int arp;
   static int kick;
+  static int smear;
 
   static int hihat;
   static int snare;
@@ -34,6 +36,14 @@ public class Globals
 
   fun static int getBass() {
     return bass;
+  }
+
+  fun static int getArp() {
+    return arp;
+  }
+
+  fun static int getSmear() {
+    return smear;
   }
 
   fun static int getHihat() {

@@ -58,7 +58,9 @@ while( true )
     {
         // check for action type
         if( msg.isButtonDown() )
-        {
+        {   
+
+
             //up arrow
             if (msg.which == 82) {
                 Globals.increaseDensity();
@@ -69,35 +71,48 @@ while( true )
                 Globals.decreaseDensity();
             }
 
+            //'a'
+            if (msg.which == 4) {
+                (Globals.getArp() ^ 1) => Globals.arp;
+                <<< "arp toggled " + Globals.getArp() >>>;
+            }
+
             // 'b'
             if (msg.which == 5) {
                 (Globals.getBass() ^ 1) => Globals.bass;
+                <<< "bass toggled " + Globals.getBass() >>>;
+            }
+
+            // 'm'
+            if (msg.which == 16) {
+                (Globals.getSmear() ^ 1) => Globals.smear;
+                <<< "smear toggled " + Globals.getSmear() >>>;
             }
 
             if (msg.which == 12) {
-                <<< "intro" >>>;
                 (Globals.isIntro() ^ 1) => Globals.intro;
+                <<< "intro " + Globals.isIntro() >>>;
             }
-            
+
             if (msg.which == 11) {
-                <<< "hihat toggled" >>>;
                 (Globals.getHihat() ^ 1) => Globals.hihat;
+                 <<< "hihat toggled " + Globals.getHihat() >>>;
             }
 
             if (msg.which == 14) {
-                <<< "kick toggled" >>>;
                 (Globals.getKick() ^ 1) => Globals.kick;
+                <<< "kick toggled " + Globals.getKick() >>>;
             }
 
 
             if (msg.which == 22) {
-                <<< "snare" >>>;
                 (Globals.getSnare() ^ 1) => Globals.snare;
+                <<< "snare toggled " + Globals.getSnare() >>>;
             }
 
             if (msg.which == 29) {
-                <<< "sizzle" >>>;
                 (Globals.getSizzle() ^ 1) => Globals.sizzle;
+                 <<< "sizzle " + Globals.getSizzle() >>>;
             }
 
             // print

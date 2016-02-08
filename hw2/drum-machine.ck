@@ -23,11 +23,11 @@ class Kick
   // set default 
   80.0 => BDFreq.gain; // BD initial pitch: 80 hz 
   1.0 - 1.0 / 2000 => g1_fb.gain; // BD pitch decay 
-  g1_f.set(100, 1); // set BD pitch attack 
+  g1_f.set(60, 1); // set BD pitch attack 
   1.0 - 1.0 / 4000 => g2_fb.gain; // BD amp decay 
-  g2_f.set(50, 1); // set BD amp attack 
+  g2_f.set(1000, 10); // set BD amp attack 
   .75 => ampenv.gain; // overdrive gain 
-  s_f.set(600, 1); // set BD lowpass filter 
+  s_f.set(100, 1); // set BD lowpass filter 
 
   fun void hit(float v) 
   { 
@@ -74,15 +74,15 @@ Kick k;
 k.output => Globals.globalGain;
 
 [
- 1.0, 0.0,
- 1.0, 0.0, 
- 1.0, 1.0, 0.5,
- 1.0, 0.5, 1.0, 0.5,
- 1.0, 0.0, 0.0, 0.5,
+ 1.0, 0.2,
+ 0.9, 0.2, 
+ 0.8, 0.8, 0.5,
+ 1.0, 0.5, 0.9, 0.5,
+ 1.0, 0.2, 0.2, 0.5,
  1.0, 1.0, 1.0] @=> float kickDist[];
 fun void kick() {
   if (kickDist[Globals.eighth] * Globals.density > Math.random2f(0.2,0.7)) {
-    k.hit(kickDist[Globals.eighth]);
+    k.hit(kickDist[Globals.eighth] / 2);
   }
 
   T => now;
@@ -163,19 +163,19 @@ fun void sizzle() {
 }
 
 [
- 0.0, 0.5,
- 1.0, 0.0, 
- 0.0, 0.5, 1.0,
- 0.0, 0.0, 0.0, 0.0,
- 1.0, 0.0, 1.0, 0.5,
+ 0.4, 0.5,
+ 1.0, 0.3, 
+ 0.3, 0.5, 1.0,
+ 0.3, 0.2, 0.1, 0.2,
+ 1.0, 0.2, 1.0, 0.5,
  1.0, 1.0, 1.0] @=> float snareDist[];
 fun void snare() {
   if (snareDist[Globals.eighth] * Globals.density > Math.random2f(0.2,0.7)) {
-    s.hit(kickDist[Globals.eighth]);
+    s.hit(snareDist[Globals.eighth] / 8);
   } else {
     if (Math.random2f(0,1) > 0.9) {
       for (int i; i < 2; i++) {
-        s.hit(Math.random2f(0.5,0.8));
+        s.hit(Math.random2f(0.1,0.2));
         T/2 => now;
       }
     }
@@ -214,10 +214,6 @@ fun void loop() {
 
     if (Globals.getSnare()) {
       spork ~ snare();
-    }
-
-    if (Globals.getBass()) {
-
     }
 
     if (Globals.getKick()) {
