@@ -82,7 +82,7 @@ k.output => Globals.globalGain;
  1.0, 1.0, 1.0] @=> float kickDist[];
 fun void kick() {
   if (kickDist[Globals.eighth] * Globals.density > Math.random2f(0.1,0.7)) {
-    k.hit(kickDist[Globals.eighth] / 2);
+    k.hit(kickDist[Globals.eighth] / 3);
   }
 
   T => now;
@@ -113,14 +113,14 @@ fun void hihat() {
     for (int i; i < hits; i++) {
       if (i % 2 == 0) {
         p.pan(0.3);
-        Math.random2f(0.4,0.6) => n.gain;
+        Math.random2f(0.2,0.3) => n.gain;
       } else {
         p.pan(-0.3);
-        Math.random2f(0.2, 0.4) => n.gain;
+        Math.random2f(0.1, 0.2) => n.gain;
       } 
 
       if (Math.random2f(0,1) >= 0.6) {
-        1.6 => n.gain;
+        0.3 => n.gain;
       }
 
       a.keyOn();
@@ -154,6 +154,7 @@ fun void sizzle() {
   800::ms => b.delay => c.delay;
   0.3 => a.mix => b.mix => c.mix;
 
+  n.gain(0.05);
   0.5::second => dur sweepDuration;
   now => time start;
   f.pfreq(1000);

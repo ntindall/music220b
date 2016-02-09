@@ -14,7 +14,7 @@ fun void bloom() {
 
   c => Gain g => Pan2 p => Globals.globalGain;
   p.pan(Math.random2f(-0.5,0.5));
-  g.gain(Math.random2f(0.1,0.2));
+  g.gain(Math.random2f(0.005,0.01));
 
   e.set(10::ms, 5::ms, 0.8, 10::ms);
 

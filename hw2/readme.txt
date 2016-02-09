@@ -64,4 +64,20 @@ texture becomes more apparent.
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
-Within each 
+Within both the drum-machine and soundscape modules, each instrument is
+affected by a notion of global density. The general trend is that with
+increasing global density, the more complex the sound. In general, this a good
+method for exercising control, but it made controlling the density of 
+indivdual elements rather difficult. (For example, I was interested in creating
+a dense smear texture but without a dense rhythmic texture... which was
+accomplished by removing rhythmic elements rather than scaling them down).
+
+The final version of the piece was edited slightly in audacity (PaulStretch)
+at end, seems to bring piece into its essential elements. The sound is 
+uncannily choral.
+
+Many of the sounds are controlled by mutable arrays of MIDI pitches, which
+are occasionally reversed.
+
+Additionally, the piece randomly shifts between 15/8, 16/8, and 17/8 bar
+phrases (phrases is equal to four bars of one of these meter).
