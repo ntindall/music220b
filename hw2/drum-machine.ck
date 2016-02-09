@@ -81,7 +81,7 @@ k.output => Globals.globalGain;
  1.0, 0.2, 0.2, 0.5,
  1.0, 1.0, 1.0] @=> float kickDist[];
 fun void kick() {
-  if (kickDist[Globals.eighth] * Globals.density > Math.random2f(0.2,0.7)) {
+  if (kickDist[Globals.eighth] * Globals.density > Math.random2f(0.1,0.7)) {
     k.hit(kickDist[Globals.eighth] / 2);
   }
 
@@ -113,10 +113,10 @@ fun void hihat() {
     for (int i; i < hits; i++) {
       if (i % 2 == 0) {
         p.pan(0.3);
-        Math.random2f(0.6,0.8) => n.gain;
+        Math.random2f(0.4,0.6) => n.gain;
       } else {
         p.pan(-0.3);
-        Math.random2f(0.4, 0.6) => n.gain;
+        Math.random2f(0.2, 0.4) => n.gain;
       } 
 
       if (Math.random2f(0,1) >= 0.6) {
@@ -135,31 +135,38 @@ fun void hihat() {
 }
 
 
+//adapted from
+//http://chuck.cs.princeton.edu/doc/examples/basic/wind.ck
 fun void sizzle() {
-  Impulse i => JCRev j => Chorus c => HPF z => Gain g => Globals.globalGain;
-  g.gain(0.5);
-  j.mix(0.1);
-  c.modDepth(0.99999);
-  c.mix(0);
-  z.freq(1000);
+  // noise generator, biquad filter, dac (audio output) 
+  Noise n => BiQuad f => Echo a => Echo b => Echo c => NRev r => Globals.globalGain;
+  // set biquad pole radius
+  .98 => f.prad;
+  // set biquad gain
+  .05 => f.gain;
+  // set equal zeros 
+  1 => f.eqzs;
+  // our float
+  0.0 => float t;
 
-  Math.random2(4,8) => int reps;
-  for
-   (int j; j < reps; j++) {
-    1::ms => dur last;
-    0.9 => float delta;
+  1000::ms => a.max => b.max => c.max;
+  800::ms => a.delay;
+  800::ms => b.delay => c.delay;
+  0.3 => a.mix => b.mix => c.mix;
 
-    while (last > 0.00001::samp) {
-      <<< last >>>;
-      1 => i.next;
-      last => now;
-      last * delta => last;
-      if (Math.random2f(0,1) > 0.5) 3::samp => now;
-    }
+  0.5::second => dur sweepDuration;
+  now => time start;
+  f.pfreq(1000);
 
-    20::ms => now;
+  while (now < start + sweepDuration)
+  {
+      // sweep the filter resonant frequency
+      f.pfreq() + Math.random2f(20,40) => f.pfreq;
+      // advance time
+      5::ms => now;
   }
-
+  n.gain(0);
+  T * Globals.meter * 2=> now;
 }
 
 [
@@ -173,7 +180,7 @@ fun void snare() {
   if (snareDist[Globals.eighth] * Globals.density > Math.random2f(0.2,0.7)) {
     s.hit(snareDist[Globals.eighth] / 8);
   } else {
-    if (Math.random2f(0,1) > 0.9) {
+    if (Math.random2f(0,1) > 0.95) {
       for (int i; i < 2; i++) {
         s.hit(Math.random2f(0.1,0.2));
         T/2 => now;
@@ -224,8 +231,10 @@ fun void loop() {
       spork ~ hihat();
     }
 
-    if (Globals.getSizzle() && Math.random2f(0,1) > 0.8) {
-      spork ~ sizzle();
+    if (Globals.eighth % Globals.meter == 0 ) {
+      if (Globals.getSizzle() && Math.random2f(0,1) > 0.8) {
+        spork ~ sizzle();
+      }
     }
 
     T => now;

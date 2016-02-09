@@ -83,33 +83,43 @@ while( true )
                 <<< "bass toggled " + Globals.getBass() >>>;
             }
 
+            // 'l'
+            if (msg.which == 15) {
+                (Globals.getBloom() ^ 1) => Globals.bloom;
+                <<< "bloom toggled " + Globals.getBloom() >>>;
+            }
+
             // 'm'
             if (msg.which == 16) {
                 (Globals.getSmear() ^ 1) => Globals.smear;
                 <<< "smear toggled " + Globals.getSmear() >>>;
             }
 
-            if (msg.which == 12) {
-                (Globals.isIntro() ^ 1) => Globals.intro;
-                <<< "intro " + Globals.isIntro() >>>;
-            }
+            //if (msg.which == 12) {
+            //    (Globals.isIntro() ^ 1) => Globals.intro;
+            //    <<< "intro " + Globals.isIntro() >>>;
+            //}
 
+            //'h'
             if (msg.which == 11) {
                 (Globals.getHihat() ^ 1) => Globals.hihat;
                  <<< "hihat toggled " + Globals.getHihat() >>>;
             }
 
+            //'k'
             if (msg.which == 14) {
                 (Globals.getKick() ^ 1) => Globals.kick;
                 <<< "kick toggled " + Globals.getKick() >>>;
             }
 
 
+            //'s'
             if (msg.which == 22) {
                 (Globals.getSnare() ^ 1) => Globals.snare;
                 <<< "snare toggled " + Globals.getSnare() >>>;
             }
 
+            //'z'
             if (msg.which == 29) {
                 (Globals.getSizzle() ^ 1) => Globals.sizzle;
                  <<< "sizzle " + Globals.getSizzle() >>>;

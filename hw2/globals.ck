@@ -9,6 +9,7 @@ public class Globals
   static int arp;
   static int kick;
   static int smear;
+  static int bloom;
 
   static int hihat;
   static int snare;
@@ -52,6 +53,10 @@ public class Globals
 
   fun static int getSnare() {
     return snare;
+  }
+
+  fun static int getBloom() {
+    return bloom;
   }
 
   fun static int getSizzle() {

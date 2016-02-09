@@ -77,13 +77,13 @@ while( true )
         // mouse button down
         else if( msg.isButtonDown() )
         {
-            <<< "mouse button", msg.which, "down" >>>;
+        //    <<< "mouse button", msg.which, "down" >>>;
         }
         
         // mouse button up
         else if( msg.isButtonUp() )
         {
-            <<< "mouse button", msg.which, "up" >>>;
+         //   <<< "mouse button", msg.which, "up" >>>;
         }
 
         // mouse wheel motion (requires chuck 1.2.0.8 or higher)
@@ -92,11 +92,11 @@ while( true )
             // axis of motion
             if( msg.deltaX )
             {
-                <<< "mouse wheel:", msg.deltaX, "on x-axis" >>>;
+          //      <<< "mouse wheel:", msg.deltaX, "on x-axis" >>>;
             }            
             else if( msg.deltaY )
             {
-                <<< "mouse wheel:", msg.deltaY, "on y-axis" >>>;
+          //      <<< "mouse wheel:", msg.deltaY, "on y-axis" >>>;
             }
         }
     }

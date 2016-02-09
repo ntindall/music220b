@@ -40,14 +40,14 @@ fun void bloom() {
     e.keyOff(1);
   }
 
-  T * Globals.meter => now;
+  T * Globals.meter * 2=> now;
 }
 
 fun void longPhrase() {
   if (Globals.density > 0.1) {
     spork ~bloom();
   }
-  T * Globals.meter => now;
+  T * Globals.meter * 2=> now;
 }
 
 [47, 47, 43, 43] @=> int bassPhrase[];
@@ -81,6 +81,12 @@ fun void bass() {
  47, 54, 61,
  59, 54, 51] @=> int arpPhrase[];
 fun void arp() {
+  if (Globals.getDensity() > 0.3) {
+    spork ~ twiddle();
+  }
+  if (Globals.getDensity() > 0.8) {
+    spork ~ arp2();
+  }
 
   SawOsc o => ADSR e => Gain g => Globals.globalGain;
   e.set (20::ms, 20::ms, 0.8, 5::ms);
@@ -100,29 +106,147 @@ fun void arp() {
   }
 }
 
+[[78, 81, 78],
+ [78, 81, 78],
+ [76, 78, 76],
+ [76, 78, 76],
+ [76, 78, 76],
+ [76, 78, 76],
+ [76, 78, 74],
+ [74, 78, 74]] @=> int twiddlePhrases[][];
+fun void twiddle() {
+  SawOsc o => ADSR e => Gain g => Globals.globalGain;
+  e.set (20::ms, 20::ms, 0.8, 5::ms);
 
-fun void smear() {
+  Math.random2(0, twiddlePhrases.cap() - 1) => int phraseNum;
 
-  now => time start;
-  (T * Globals.meter) => dur smearTime;
-  TriOsc t => ADSR e => Gain g => Chorus j => JCRev r => Globals.globalGain;
-  e.set(5::second, 1::second, 0.9, 1::second);
-  g.gain(.01);
+  g.gain(0.005);
 
-  j.mix(0.5);
-  j.modFreq(0.001);
-  j.modDepth(2);
+  T/2 => now;
 
+  (Globals.meter / 3) + 8 => int reps;
 
-  t.freq(Std.mtof(90));
+  for (int i; i < reps; i++) {
+    for (int i; i < 3; i++) {
+      o.freq(Std.mtof(twiddlePhrases[phraseNum][i] - 12));
+      e.keyOn(1);
 
-  e.keyOn();
-  while (now < start + smearTime) {
-    10::ms => now;
+      T/2 - e.releaseTime() => now;
+      e.keyOff(1);
+      e.releaseTime() => now;
+    }
   }
-  e.keyOff();
+}
 
-  smearTime => now;
+
+[71, 90, 76, 73, 76, 74,
+ 83, 71, 83, 78, 76, 73,
+ 71, 95, 90, 78, 61, 73,
+ 73, 76, 71, 90, 83, 62,
+ 83, 71, 83, 71, 74, 78,
+ 83, 73, 83, 95] @=> int arpPhrase2[];
+fun void arp2() {
+  reverse(arpPhrase2) @=> arpPhrase2;
+  SawOsc o => ADSR e => Gain g => Globals.globalGain;
+  e.set (20::ms, 20::ms, 0.8, 5::ms);
+
+  g.gain(0.005);
+
+  int i;
+  now => time start;
+  while (now < start + Globals.meter * T) {
+    o.freq(Std.mtof(arpPhrase2[i % arpPhrase2.cap() ]));
+    e.keyOn(1);
+
+    T/2 - e.releaseTime() => now;
+    e.keyOff(1);
+    e.releaseTime() => now;
+    i++;
+  }
+
+}
+
+int smearCount;
+[90, 88, 91, 93, 85, 71, 65, 79, 81, 83] @=> int smearNotes[];
+fun void smear() {
+    smearCount++;
+    <<< "[!][!][!] smear sporked!!! " + smearCount >>>;
+    now => time start;
+    (T * Globals.meter) => dur smearTime;
+    TriOsc t => ADSR e => Gain g => Chorus j => JCRev r => Pan2 p => Globals.globalGain;
+    e.set(5::second, 1::second, 0.9, 1::second);
+    g.gain(.01);
+    p.pan(Math.random2f(-0.5,0.5));
+
+    j.mix(0.5);
+    j.modFreq(0.001);
+    j.modDepth(2);
+
+
+    t.freq(Std.mtof(smearNotes[Math.random2(0, smearNotes.cap() - 1)]));
+
+    e.keyOn();
+    while (now < start + smearTime) {
+      10::ms => now;
+    }
+    e.keyOff();
+
+    if (Math.random2(0, 1) > 0.5) {
+      spork ~smear();
+      smearTime * 4 => now; 
+    } else {
+      smearTime => now;
+    }
+
+    <<< "[!][!][!] smear dying!!! " + smearCount >>>;
+    smearCount--;
+}
+
+int spawnCount;
+fun void smearDriver() {
+  spawnCount++;
+  <<< "Smeardriver spawned: " + spawnCount >>>;
+  int reps;
+
+  if (Globals.getDensity() >= 0) 2 => reps;
+  if (Globals.getDensity() >= 0.4) 3 => reps;
+  if (Globals.getDensity() >= 0.7) 4 => reps;
+  if (Globals.getDensity() >= 0.9) 6 => reps;
+  if (Globals.getDensity() >= 1.0) 8 => reps;
+
+  for (int i; i < reps; i++) {
+    spork ~smear();
+    T * 8 => now;
+  }
+  T * Globals.meter * (reps / 2)  => now;
+  <<< "Smeardriver dying: " + spawnCount >>>;
+  spawnCount--;
+}
+
+fun void mutateArrays() {
+  <<< "[!][!][!] REVERSING ARRAYS [!][!][!]" >>>;
+  reverse(arpPhrase) @=> arpPhrase;
+  //reverse(bassPhrase) @=> bassPhrase;
+  reverse(bloomVals) @=> bloomVals;
+}
+
+//fun void print( int bar[] )
+//{
+//  // print it
+//  for( 0 => int i; i < bar.cap(); i++ )
+//    <<< bar[i] >>>;
+//}
+
+fun int[] reverse(int r[]) {
+  int toReturn[r.cap()];
+  r.cap() - 1 => int ptr;
+
+  for (int i; i < r.cap(); i++) {
+    r[ptr] => toReturn[i];
+    ptr--;
+  }
+
+  return toReturn;
 
 }
 
@@ -136,10 +260,12 @@ fun void loop() {
           <<< "[New: " + newMeter + "]" >>>; 
           newMeter => Globals.meter;
 
-          
+
           if (Globals.getSmear()) {
-            spork ~ smear();
+            spork ~ smearDriver();
           }
+
+          mutateArrays();
         }
 
       if (Globals.getBass()) {
@@ -150,7 +276,8 @@ fun void loop() {
         spork ~ arp();
       }
 
-      if (Math.random2f(0, Globals.density) > 0.3) {
+      if (Math.random2f(0, Globals.density) > 0.3 &&
+          Globals.getBloom()) { //put smear with bloom
         spork ~ longPhrase();
       }
 
@@ -158,15 +285,11 @@ fun void loop() {
     }
 
     if (Globals.density > 0.5) {
-      if ((Globals.eighth % Globals.meter) == 8) {
+      if ((Globals.eighth % Globals.meter) == 8  &&
+          Globals.getBloom()) { //put smear with bloom) {
         spork ~longPhrase();
       } 
     }
-
-
-
-
-
 
     T => now;
   }
