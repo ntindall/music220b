@@ -1,0 +1,24 @@
+Granular Synthesis
+  - Take a sound, chop it up into lots of little pieces called grains and throw
+    them together and make a granular cloud.
+  - Similar to a mosaic?
+  - Impressionism
+  - Monet
+  - Patches of color that form the impression of something.
+  - The idea of clouds made of particles or grains is the overarching idea.
+  - One of the lowest molecules of sound that still makes sense is around
+    50-100ms.
+  - Working with sound at that^ level
+
+Vocal synthesis can be done using granular synthesis
+  - Repetition of the grains becomes a constraint
+  - creak-3.aiff
+  - Envelope is important, when we stack grains we want it to be a smooth
+    transition
+    _____
+    |   |            /\
+    |   |        vs /  \         overlapping the triangles will be smooth(er).
+
+Tongues of Fire
+  - Masterful exploration for exploration's sake?
+
