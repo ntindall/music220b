@@ -10,7 +10,7 @@
 
 
 // default filename (can be overwritten via input argument)
-"piano.wav" => string FILENAME;
+"twilight-source.aiff" => string FILENAME;
 // get file name, if one specified as input x0argument
 if( me.args() > 0 ) me.arg(0) => FILENAME;
 
@@ -19,31 +19,14 @@ if( me.args() > 0 ) me.arg(0) => FILENAME;
 // max lisa voices
 30 => int LISA_MAX_VOICES;
 // load file into a LiSa (use one LiSa per sound)
-load( FILENAME ) @=> LiSa @ lisaLEFT;
-load( FILENAME ) @=> LiSa @ lisaRIGHT;
-
+load( FILENAME ) @=> LiSa @ lisa;
 
 // patch it
-PoleZero blockerL => NRev reverbL => Gain lG => dac.left;
-PoleZero blockerR => NRev reverbR => Gain rG => dac.right; 
-.99 => blockerL.blockZero;
-.99 => blockerR.blockZero;
-
+PoleZero blocker => NRev reverb => dac;
 // connect
-lisaLEFT.chan(0) => blockerL;
-lisaRIGHT.chan(0) => blockerR;
+lisa.chan(0) => blocker;
 
 //------------------------- LISA HELPERS -------------------------------------
-
-  fun void stereopan(float panvalue)
-  {  //panvalue can be between [-1,1]
-     panvalue/2.0+.5 => float left;
-     1.0-left => float right;
-     Math.sqrt(left*left + right*right) => float power;
-     right/power => lG.gain;
-     left/power => rG.gain;
-  }
-
 
 // grain sporkee
 fun void grain( LiSa @ lisa, dur pos, dur grainLen, dur rampUp, dur rampDown, float rate )
@@ -67,7 +50,6 @@ fun void grain( LiSa @ lisa, dur pos, dur grainLen, dur rampUp, dur rampDown, fl
         // wait
         rampDown => now;
     }
-    500::ms => now; //decay
 }
 
 // load file into a LiSa
@@ -103,24 +85,14 @@ fun LiSa load( string filename )
 
 fun void main() {
   0 => float pos;
-  while (pos < 1) {
-    //spork ~ stereopan(Math.random2f(-0.2, 0.2));
-
-    spork ~ grain(lisaLEFT,
-            pos * lisaLEFT.duration(),
-            500::ms, 
-            GRAIN_RAMP_FACTOR * 500::ms,
-            GRAIN_RAMP_FACTOR * 500::ms,
-            1);
-    spork ~ grain(lisaRIGHT,
-            pos * lisaRIGHT.duration(),
-            1000::ms, 
-            GRAIN_RAMP_FACTOR * 1000::ms,
-            GRAIN_RAMP_FACTOR * 1000::ms,
-            1);
-    500::ms => now;
-    .001 +=> pos;
-    <<< "[!][!] pos: " + pos >>>;
+  while (true) {
+    grain(lisa,
+          pos * lisa.duration(), 
+          50::ms, 
+          GRAIN_RAMP_FACTOR * 50::ms,
+          GRAIN_RAMP_FACTOR * 50::ms,
+          1);
+    .0002 +=> pos;
   }
 }
 
