@@ -1,4 +1,4 @@
-//--------------------------------------------------------------------
+//------------------------------------------------------------------------------
 // name: budding.ck
 // author: nathan james tindall
 // date: winter 2016
@@ -6,11 +6,10 @@
 // usage: chuck budding.ck
 //
 // control elements:
-//--------------------------------------------------------------------
-
-
+//------------------------------------------------------------------------------
+//-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 // default filename (can be overwritten via input argument)
-"piano.wav" => string FILENAME;
+"audio/piano.wav" => string FILENAME;
 // get file name, if one specified as input x0argument
 if( me.args() > 0 ) me.arg(0) => FILENAME;
 
@@ -31,18 +30,25 @@ PoleZero blockerR => LPF lpfR => NRev reverbR => Gain gR => dac.right;
 .99 => blockerL.blockZero => blockerR.blockZero;
 4000 => lpfL.freq => lpfR.freq; //to block hissing a bit
 
-
-
 // connect
 lisaLEFT.chan(0) => blockerL;
 lisaLEFT2.chan(0) => blockerL;
 lisaRIGHT.chan(0) => blockerR;
 lisaRIGHT2.chan(0) => blockerR;
 
-//------------------------- LISA HELPERS -------------------------------------
+//-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+//-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+//------------------------- LISA HELPERS ---------------------------------------
+//-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+//-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
 // grain sporkee
-fun void grain( LiSa lisa, dur pos, dur grainLen, dur rampUp, dur rampDown, float rate )
+fun void grain(LiSa @ lisa,    //UGen       
+               dur pos,        //position in buffer
+               dur grainLen,   //length of grain
+               dur rampUp,     //triangle envelope rampUp
+               dur rampDown,   //triangle envelope rampDown
+               float rate )    //sample playback rate
 {
     // get a voice to use
     lisa.getVoice() => int voice;
@@ -95,7 +101,12 @@ fun LiSa load( string filename )
     return lisa;
 }
 
-//------------------------- LISA HELPERS -------------------------------------
+//-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+//-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+//-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+//-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+//-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+//-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
 fun void partOne() {
   0 => float pos;
@@ -221,7 +232,7 @@ fun void partFour() {
               GRAIN_RAMP_FACTOR * 500::ms,
               GRAIN_RAMP_FACTOR * 500::ms,
               1);
-      10::ms => now;
+      10::ms => now; //plus some increasing amount of randomness
     }
     .002 +=> pos;
     <<< "[!][!] pos: " + pos >>>;
@@ -233,7 +244,7 @@ fun void partFive() {
   0.558 => float pos;
 
   while (pos < .58) {
-    for (int i; i < 100; i++) {
+    for (int i; i < 100; i++) { //experiment with this section
       spork ~ grain(lisaRIGHT2,
               pos * lisaRIGHT2.duration(),
               500::ms, 
@@ -377,11 +388,17 @@ fun void end() {
 
 
 fun void main() {
+  <<< "-----[!][!][!] PART 1 [!][!][!]-----" >>>;
   partOne();
+  <<< "-----[!][!][!] PART 2 [!][!][!]-----" >>>;
   partTwo();
+  <<< "-----[!][!][!] PART 3 [!][!][!]-----" >>>;  
   partThree();
+  <<< "-----[!][!][!] PART 4 [!][!][!]-----" >>>;  
   partFour();
+  <<< "-----[!][!][!] PART 5 [!][!][!]-----" >>>;  
   partFive();
+  <<< "-----[!][!][!] PART 6 [!][!][!]-----" >>>;  
   end();
 
 }
