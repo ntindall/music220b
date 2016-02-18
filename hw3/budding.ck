@@ -16,12 +16,29 @@ if( me.args() > 0 ) me.arg(0) => FILENAME;
 .5 => float GRAIN_RAMP_FACTOR;
 
 // max lisa voices
+
+
+
+//check notes from fFEB 16
+
+
+//TODO::: EXPERIMENT WITH THIS VALUE!!!!
 30 => int LISA_MAX_VOICES;
+
+
+
+
+
+
+
 // load file into a LiSa (use one LiSa per sound)
 load( FILENAME ) @=> LiSa @ lisaLEFT;
 load( FILENAME ) @=> LiSa @ lisaRIGHT;
 load( FILENAME ) @=> LiSa @ lisaLEFT2;
 load( FILENAME ) @=> LiSa @ lisaRIGHT2;
+load( FILENAME ) @=> LiSa @ lisaLEFT3;
+load( FILENAME ) @=> LiSa @ lisaRIGHT3;
+
 
 
 // patch it
@@ -31,10 +48,15 @@ PoleZero blockerR => LPF lpfR => NRev reverbR => Gain gR => dac.right;
 4000 => lpfL.freq => lpfR.freq; //to block hissing a bit
 
 // connect
-lisaLEFT.chan(0) => blockerL;
-lisaLEFT2.chan(0) => blockerL;
-lisaRIGHT.chan(0) => blockerR;
-lisaRIGHT2.chan(0) => blockerR;
+lisaLEFT.chan(0)   => Gain leftG1  => blockerL;
+lisaLEFT2.chan(0)  => Gain leftG2  => blockerL;
+lisaLEFT3.chan(0)  => Gain leftG3  => blockerL;
+
+lisaRIGHT.chan(0)  => Gain rightG1 => blockerR;
+lisaRIGHT2.chan(0) => Gain rightG2 => blockerR;
+lisaRIGHT3.chan(0) => Gain rightG3 => blockerR;
+
+1 => leftG1.gain => leftG2.gain => leftG3.gain => rightG1.gain => rightG2.gain => rightG3.gain;
 
 //-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 //-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -202,38 +224,45 @@ fun void partThree() {
   }
 }
 
+//TODO ADJUST GAIN TO PREVENT CLIPPING!!!!
+
 fun void partFour() {
   0.50 => float pos;
+  0.1 => leftG1.gain => leftG2.gain => rightG1.gain => rightG2.gain;
+
+  //0 => reverbR.mix => reverbL.mix;
+
 
   while (pos < .558) {
     for (int i; i < 100; i++) {
       spork ~ grain(lisaRIGHT2,
               pos * lisaRIGHT2.duration(),
-              500::ms, 
+              250::ms, 
               GRAIN_RAMP_FACTOR * 500::ms,
               GRAIN_RAMP_FACTOR * 500::ms,
               0.5);
       spork ~ grain(lisaLEFT2,
               pos * lisaRIGHT2.duration(),
-              1000::ms, 
-              GRAIN_RAMP_FACTOR * 1000::ms,
-              GRAIN_RAMP_FACTOR * 1000::ms,
+              500::ms, 
+              GRAIN_RAMP_FACTOR * 500::ms,
+              GRAIN_RAMP_FACTOR * 500::ms,
               0.25);
 
       spork ~ grain(lisaLEFT,
               pos * lisaLEFT.duration(),
               500::ms, 
-              GRAIN_RAMP_FACTOR * 250::ms,
-              GRAIN_RAMP_FACTOR * 250::ms,
+              GRAIN_RAMP_FACTOR * 500::ms,
+              GRAIN_RAMP_FACTOR * 500::ms,
               2);
       spork ~ grain(lisaRIGHT,
               pos * lisaRIGHT.duration(),
-              500::ms, 
+              1000::ms, 
               GRAIN_RAMP_FACTOR * 500::ms,
               GRAIN_RAMP_FACTOR * 500::ms,
               1);
       10::ms => now; //plus some increasing amount of randomness
     }
+
     .002 +=> pos;
     <<< "[!][!] pos: " + pos >>>;
   }
@@ -242,34 +271,46 @@ fun void partFour() {
 
 fun void partFive() {
   0.558 => float pos;
+  0.1 => leftG1.gain => leftG2.gain => rightG1.gain => rightG2.gain;
+  0.5 => leftG2.gain;
+  0.8 => rightG2.gain;
+  0.4 => leftG3.gain;
 
   while (pos < .58) {
+    if (pos > 0.564) {
+      //use third lisa LEFT
+      spork ~ grain(lisaLEFT3,
+              pos * lisaLEFT3.duration(),
+              2000::ms, 
+              GRAIN_RAMP_FACTOR * 500::ms,
+              GRAIN_RAMP_FACTOR * 500::ms,
+              4);
+    }
+    spork ~ grain(lisaRIGHT2,
+            pos * lisaRIGHT2.duration(),
+            1000::ms, 
+            GRAIN_RAMP_FACTOR * 500::ms,
+            GRAIN_RAMP_FACTOR * 500::ms,
+            1);
+    spork ~ grain(lisaLEFT2,
+            pos * lisaRIGHT2.duration(),
+            2000::ms, 
+            GRAIN_RAMP_FACTOR * 1000::ms,
+            GRAIN_RAMP_FACTOR * 1000::ms,
+            2);
     for (int i; i < 100; i++) { //experiment with this section
-      spork ~ grain(lisaRIGHT2,
-              pos * lisaRIGHT2.duration(),
-              500::ms, 
-              GRAIN_RAMP_FACTOR * 500::ms,
-              GRAIN_RAMP_FACTOR * 500::ms,
-              0.5);
-      spork ~ grain(lisaLEFT2,
-              pos * lisaRIGHT2.duration(),
-              1000::ms, 
-              GRAIN_RAMP_FACTOR * 1000::ms,
-              GRAIN_RAMP_FACTOR * 1000::ms,
-              0.25);
-
-      spork ~ grain(lisaLEFT,
-              pos * lisaLEFT.duration(),
-              500::ms, 
-              GRAIN_RAMP_FACTOR * 250::ms,
-              GRAIN_RAMP_FACTOR * 250::ms,
-              2);
       spork ~ grain(lisaRIGHT,
               pos * lisaRIGHT.duration(),
               500::ms, 
               GRAIN_RAMP_FACTOR * 500::ms,
               GRAIN_RAMP_FACTOR * 500::ms,
-              1);
+              0.25);
+      spork ~ grain(lisaLEFT,
+              pos * lisaLEFT.duration(),
+              250::ms, 
+              GRAIN_RAMP_FACTOR * 250::ms,
+              GRAIN_RAMP_FACTOR * 250::ms,
+              0.5);
       10::ms => now;
     }
     0.001 +=> pos;
@@ -277,8 +318,61 @@ fun void partFive() {
   }
 }
 
+fun void partSix() {
+  0.56 => float pos;
+  0.1 => leftG1.gain => leftG2.gain => rightG1.gain => rightG2.gain;
+  0.5 => leftG2.gain;
+  0.8 => rightG2.gain;
+  0.4 => leftG3.gain => rightG3.gain;
+
+  while (pos < .58) {
+    spork ~ grain(lisaLEFT3,
+            pos * lisaLEFT3.duration(),
+            2000::ms, 
+            GRAIN_RAMP_FACTOR * 500::ms,
+            GRAIN_RAMP_FACTOR * 500::ms,
+            4);
+    
+    spork ~ grain(lisaRIGHT2,
+            pos * lisaRIGHT2.duration(),
+            1000::ms, 
+            GRAIN_RAMP_FACTOR * 500::ms,
+            GRAIN_RAMP_FACTOR * 500::ms,
+            1);
+    spork ~ grain(lisaLEFT2,
+            pos * lisaRIGHT2.duration(),
+            2000::ms, 
+            GRAIN_RAMP_FACTOR * 1000::ms,
+            GRAIN_RAMP_FACTOR * 1000::ms,
+            2);
+    /*
+      for (int i; i < 100; i++) { //experiment with this section
+      spork ~ grain(lisaRIGHT,
+              pos * lisaRIGHT.duration(),
+              500::ms, 
+              GRAIN_RAMP_FACTOR * 500::ms,
+              GRAIN_RAMP_FACTOR * 500::ms,
+              0.25);
+      spork ~ grain(lisaLEFT,
+              pos * lisaLEFT.duration(),
+              250::ms, 
+              GRAIN_RAMP_FACTOR * 250::ms,
+              GRAIN_RAMP_FACTOR * 250::ms,
+              0.5);
+      10::ms => now;
+    }
+
+    */
+    500::ms => now;
+    0.001 +=> pos;
+    <<< "[!][!] pos: " + pos >>>;
+  }
+}
+
+
 fun void end() {
   0.58 => float pos;
+  1 => leftG1.gain => leftG2.gain => rightG1.gain => rightG2.gain;
 
   while (pos < .67) {
     spork ~ grain(lisaRIGHT2,
@@ -389,15 +483,17 @@ fun void end() {
 
 fun void main() {
   <<< "-----[!][!][!] PART 1 [!][!][!]-----" >>>;
-  partOne();
+  //partOne();
   <<< "-----[!][!][!] PART 2 [!][!][!]-----" >>>;
-  partTwo();
+  //partTwo();
   <<< "-----[!][!][!] PART 3 [!][!][!]-----" >>>;  
-  partThree();
+  //partThree();
+  //something different needed around 0.40
   <<< "-----[!][!][!] PART 4 [!][!][!]-----" >>>;  
-  partFour();
+  //partFour();
   <<< "-----[!][!][!] PART 5 [!][!][!]-----" >>>;  
-  partFive();
+  //partFive();
+  partSix();
   <<< "-----[!][!][!] PART 6 [!][!][!]-----" >>>;  
   end();
 
