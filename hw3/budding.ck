@@ -131,6 +131,20 @@ fun LiSa load( string filename )
 //-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 //-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
+fun void rampGain(Gain @ g, float goal) {
+
+  500 => int NUM_STEPS;
+  g.gain() => float start;
+
+  (goal - start) / NUM_STEPS => float delta; 
+
+  for (int i; i < NUM_STEPS; i++) {
+    g.gain() + delta => g.gain;
+    10::ms => now;
+  }
+}
+
+
 fun void partOne() {
   0 => float pos;
 
@@ -191,7 +205,15 @@ fun void partTwo() {
 fun void partThree() {
   0.30 => float pos;
 
-  while (pos < 0.5) {
+  spork ~rampGain(leftG1, 0.7);
+  spork ~rampGain(leftG2, 0.7);
+  spork ~rampGain(leftG3, 0.7);
+  spork ~rampGain(rightG1, 0.7);
+  spork ~rampGain(rightG2, 0.7);
+  spork ~rampGain(rightG2, 0.7);
+
+
+  while (pos < 0.4) {
     for (int i; i < 2; i++) {
       spork ~ grain(lisaRIGHT2,
               pos * lisaRIGHT2.duration(),
@@ -225,14 +247,84 @@ fun void partThree() {
   }
 }
 
+fun void aSlowDown() {
+  0.40 => float pos;
+
+  0.3 => leftG1.gain => leftG2.gain => rightG1.gain => rightG2.gain;
+
+  spork ~rampGain(leftG1, 0.15);
+  spork ~rampGain(leftG2, 0.15);
+  spork ~rampGain(leftG3, 0.05);
+  spork ~rampGain(rightG1, 0.15);
+  spork ~rampGain(rightG2, 0.15);
+  spork ~rampGain(rightG2, 0.05);
+
+
+  while (pos < 0.5) {
+    spork ~ grain(lisaRIGHT3,
+          (pos + Math.random2f(-0.001,0.001)) * lisaRIGHT3.duration(),
+          5000::ms, 
+          GRAIN_RAMP_FACTOR * 5000::ms,
+          GRAIN_RAMP_FACTOR * 5000::ms,
+          0.250);
+
+    spork ~ grain(lisaLEFT3,
+        (pos + Math.random2f(-0.001,0.001)) * lisaRIGHT3.duration(),
+        2000::ms, 
+        GRAIN_RAMP_FACTOR * 2000::ms,
+        GRAIN_RAMP_FACTOR * 2000::ms,
+        0.500);
+
+    0::ms => dur total; 
+    while (total < 500::ms) {
+      Math.random2(30,60)::ms => dur waitTime;
+
+      if (waitTime + total >= 500::ms) {
+        500::ms - total => waitTime;
+      }
+
+      waitTime + total => total;
+
+      spork ~ grain(lisaRIGHT,
+              (pos + Math.random2f(-0.001,0.001)) * lisaRIGHT.duration(),
+              50::ms, 
+              GRAIN_RAMP_FACTOR * 50::ms,
+              GRAIN_RAMP_FACTOR * 50::ms,
+              4);
+      spork ~ grain(lisaRIGHT2,
+              (pos * Math.random2f(-0.001,0.001))  * lisaRIGHT2.duration(),
+              25::ms, 
+              GRAIN_RAMP_FACTOR * 25::ms,
+              GRAIN_RAMP_FACTOR * 25::ms,
+              2);
+      spork ~ grain(lisaLEFT2,
+              (pos * Math.random2f(-0.001,0.001))  * lisaRIGHT2.duration(),
+              50::ms, 
+              GRAIN_RAMP_FACTOR * 50::ms,
+              GRAIN_RAMP_FACTOR * 50::ms,
+              5);
+
+      spork ~ grain(lisaLEFT,
+              (pos * Math.random2f(-0.001,0.001)) * lisaLEFT.duration(),
+              500::ms, 
+              GRAIN_RAMP_FACTOR * 100::ms,
+              GRAIN_RAMP_FACTOR * 100::ms,
+              4);
+      waitTime => now;
+    }
+  .001 +=> pos;
+  <<< "[!][!] pos: " + pos >>>;
+  }
+}
+
 //TODO ADJUST GAIN TO PREVENT CLIPPING!!!!
 
 fun void partFour() {
   0.50 => float pos;
-  0.15 => leftG1.gain => leftG2.gain => rightG1.gain => rightG2.gain;
-
-  //0 => reverbR.mix => reverbL.mix;
-
+  spork ~rampGain(leftG1, 0.15);
+  spork ~rampGain(leftG2, 0.15);
+  spork ~rampGain(rightG1, 0.15);
+  spork ~rampGain(rightG2, 0.15);
 
   while (pos < .558) {
     for (int i; i < 100; i++) {
@@ -272,10 +364,13 @@ fun void partFour() {
 
 fun void partFive() {
   0.558 => float pos;
-  0.1 => leftG1.gain => leftG2.gain => rightG1.gain => rightG2.gain;
-  0.5 => leftG2.gain;
-  0.8 => rightG2.gain;
-  0.4 => leftG3.gain;
+
+  spork ~rampGain(leftG1, 0.1);
+  spork ~rampGain(leftG2, 0.5);
+  spork ~rampGain(leftG3, 0.4);
+  spork ~rampGain(rightG1, 0.1);
+  spork ~rampGain(rightG2, 0.8);
+
 
   while (pos < .58) {
     if (pos > 0.564) {
@@ -321,10 +416,13 @@ fun void partFive() {
 
 fun void partSix() {
   0.56 => float pos;
-  1.0 => leftG1.gain => leftG2.gain => rightG1.gain => rightG2.gain;
-  0.3 => leftG2.gain;
-  0.4 => rightG2.gain;
-  0.3 => leftG3.gain => rightG3.gain;
+
+  spork ~rampGain(leftG1, 1);
+  spork ~rampGain(leftG2, 0.3);
+  spork ~rampGain(leftG3, 0.3);
+  spork ~rampGain(rightG1, 1.0);
+  spork ~rampGain(rightG2, 0.4);
+  spork ~rampGain(rightG3, 0.3);
 
   while (pos < .58) {
     spork ~ grain(lisaLEFT3,
@@ -372,8 +470,13 @@ fun void partSix() {
 
 fun void end() {
   0.58 => float pos;
-  1 => leftG1.gain => leftG2.gain => rightG1.gain => rightG2.gain;
-  0.1 => leftG3.gain => rightG3.gain;
+
+  spork ~rampGain(leftG1, 1);
+  spork ~rampGain(leftG2, 1);
+  spork ~rampGain(leftG3, 0.1);
+  spork ~rampGain(rightG1, 1);
+  spork ~rampGain(rightG2, 1);
+  spork ~rampGain(rightG3, 0.1);
 
 
   while (pos < .67) {
@@ -506,6 +609,7 @@ fun void main() {
   partTwo();
   <<< "-----[!][!][!] PART 3 [!][!][!]-----" >>>;  
   partThree();
+  aSlowDown();
   //something different needed around 0.40
   <<< "-----[!][!][!] PART 4 [!][!][!]-----" >>>;  
   partFour();
