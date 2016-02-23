@@ -17,20 +17,7 @@ if( me.args() > 0 ) me.arg(0) => FILENAME;
 .5 => float GRAIN_RAMP_FACTOR;
 
 // max lisa voices
-
-
-
-//check notes from fFEB 16
-
-
-//TODO::: EXPERIMENT WITH THIS VALUE!!!!
 30 => int LISA_MAX_VOICES;
-
-
-
-
-
-
 
 // load file into a LiSa (use one LiSa per sound)
 load( FILENAME ) @=> LiSa @ lisaLEFT;
@@ -40,15 +27,11 @@ load( FILENAME ) @=> LiSa @ lisaRIGHT2;
 load( FILENAME ) @=> LiSa @ lisaLEFT3;
 load( FILENAME ) @=> LiSa @ lisaRIGHT3;
 
-
-
 // patch it
 PoleZero blockerL => LPF lpfL => NRev reverbL => Gain gL => dac.left;
 PoleZero blockerR => LPF lpfR => NRev reverbR => Gain gR => dac.right; 
 .99 => blockerL.blockZero => blockerR.blockZero;
 4000 => lpfL.freq => lpfR.freq; //to block hissing a bit
-
-0.8 => gL.gain => gR.gain;
 
 // connect
 lisaLEFT.chan(0)   => Gain leftG1  => blockerL;
@@ -256,10 +239,10 @@ fun void aSlowDown() {
 
   spork ~rampGain(leftG1, 0.15);
   spork ~rampGain(leftG2, 0.15);
-  spork ~rampGain(leftG3, 0.05);
+  spork ~rampGain(leftG3, 0.1);
   spork ~rampGain(rightG1, 0.15);
   spork ~rampGain(rightG2, 0.15);
-  spork ~rampGain(rightG2, 0.05);
+  spork ~rampGain(rightG3, 0.05);
 
 
   while (pos < 0.5) {
