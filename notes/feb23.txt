@@ -1,0 +1,4 @@
+1. Realtime sonification of heartbeat data. Maybe with other control parameters
+   or tools that change performance live. Blindfolds?
+2. Realtime sonification of network data. Performance is to browse the internet
+   and sonify the packets sent / received. 
