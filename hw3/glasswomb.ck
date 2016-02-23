@@ -1,9 +1,9 @@
 //------------------------------------------------------------------------------
-// name: budding.ck
+// name: glasswomb.ck
 // author: nathan james tindall
 // date: winter 2016
 //
-// usage: chuck budding.ck
+// usage: chuck glasswomb.ck
 // this really stretches time out
 //
 // control elements:
