@@ -45,5 +45,3 @@ while True:
   msg.add_arg(str.decode("utf-8") )
   msg = msg.build()
   client.send(msg)
-  print (str)
-  time.sleep(1)
