@@ -42,6 +42,27 @@ client = udp_client.UDPClient("127.0.0.1", 6449)
 while True:
   str = tailq.get()
   msg = osc_message_builder.OscMessageBuilder(address = "/data")
-  msg.add_arg(str.decode("utf-8") )
+
+  str = str.decode("utf-8")
+  print (str)
+  elements = str.split()
+
+  from_ipv4 = elements[2].split('.')
+  to_ipv4   = elements[4].split('.')
+
+  try: 
+    msg.add_arg(int(from_ipv4[0]))
+    msg.add_arg(int(from_ipv4[1]))
+    msg.add_arg(int(from_ipv4[2]))
+    msg.add_arg(int(from_ipv4[3]))
+
+
+    msg.add_arg(int(to_ipv4[0]))
+    msg.add_arg(int(to_ipv4[1]))
+    msg.add_arg(int(to_ipv4[2]))
+    msg.add_arg(int(to_ipv4[3]))
+  except:
+    continue;
+
   msg = msg.build()
   client.send(msg)
