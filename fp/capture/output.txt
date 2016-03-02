@@ -1,6 +1,6 @@
- 1  10.29.96.2 (10.29.96.2)  1.750 ms  1.040 ms  1.029 ms
- 2  res-wirelessa-rtr.stanford.edu (128.12.1.42)  1.031 ms  1.025 ms  0.996 ms
- 3  128.12.1.9 (128.12.1.9)  1.060 ms  1.113 ms  1.583 ms
- 4  west-rtr-vlan8.sunet (171.64.255.193)  2.064 ms  4.084 ms  2.420 ms
- 5  woa-srtr-vl1990.sunet (192.168.190.99)  1.863 ms  1.607 ms  1.487 ms
- 6  web.stanford.edu (171.67.215.200)  1.627 ms  1.743 ms  2.033 ms
+ 1  10.29.96.2 (10.29.96.2)  1.270 ms  1.063 ms  1.038 ms
+ 2  res-wirelessa-rtr.stanford.edu (128.12.1.42)  2.176 ms  1.162 ms  1.171 ms
+ 3  128.12.1.9 (128.12.1.9)  1.150 ms  1.223 ms  1.209 ms
+ 4  west-rtr-vlan8.sunet (171.64.255.193)  1.738 ms  1.656 ms  1.699 ms
+ 5  woa-srtr-vl1990.sunet (192.168.190.99)  1.604 ms  1.728 ms  2.338 ms
+ 6  web.stanford.edu (171.67.215.200)  1.702 ms  1.504 ms  1.656 ms

@@ -79,7 +79,6 @@ class KS extends Chubgraph
 public class DelayArray extends Chubgraph {
 
     KS backing_array[ARRAY_SIZE];
-    Gain gain_array[ARRAY_SIZE];
     0 => int logical_size;
 
     // sample rate
@@ -87,8 +86,7 @@ public class DelayArray extends Chubgraph {
 
     // connect to inlet and outlet of chubgraph
     for( int i; i < backing_array.size(); i++ ) {
-        inlet => backing_array[i] => gain_array[i] => outlet;
-        0 => gain_array[i].gain;
+        inlet => backing_array[i] => outlet;
     }
 
       // set feedback    
@@ -116,9 +114,7 @@ public class DelayArray extends Chubgraph {
         return;
       }
 
-      <<< "DelayArray allocating at position: " + logical_size >>>;
       backing_array[logical_size].tune(delay / SRATE);
-      1 => gain_array[logical_size].gain;
 
 
       logical_size + 1 => logical_size;
@@ -126,45 +122,4 @@ public class DelayArray extends Chubgraph {
     }
 }
 
-//------------------------------------------------------------------------------
-// the patch
-SinOsc s => JCRev r => dac;
-.5 => s.gain;
-.1 => r.mix;
-
-// create our OSC receiver
-OscRecv recv;
-// use port 6449 (or whatever)
-6449 => recv.port;
-// start listening (launch thread)
-recv.listen();
-
-// create an address in the receiver, store in new variable
-recv.event( "/data, f i i i i" ) @=> OscEvent @ oe;
-
-
-adc => DelayArray d => LPF l => dac;
-l.freq(200);
-d.feedback(0);
-
-
-// infinite event loop
-while( true )
-{
-    // wait for event to arrive
-    oe => now;
-    
-    // grab the next message from the queue. 
-    while( oe.nextMsg() )
-    { 
-        oe.getFloat() => float f;
-        d.allocate(f);
-    }
-}
-
-// for each traceroute node, create delay line, get dynamic comb filter of
-// network data
-
-//multichannel (4/8)
-
-//make array of 64 ks chords, map them to different channels
+1::day => now;
