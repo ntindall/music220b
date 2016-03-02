@@ -37,7 +37,7 @@ threading.Thread(target=tail_forever, args=(fn,)).start()
 
 
 
-client = udp_client.UDPClient("127.0.0.1", 6449)
+client = udp_client.UDPClient("127.0.0.1", 6471)
 
 while True:
   str = tailq.get()

@@ -1,14 +1,12 @@
- 1  10.29.96.2 (10.29.96.2)  3.766 ms  1.090 ms  1.101 ms
- 2  res-wirelessa-rtr.stanford.edu (128.12.1.42)  1.042 ms  1.096 ms  1.110 ms
- 3  res-press-rtr-vl3965.stanford.edu (128.12.1.53)  1.249 ms  1.698 ms  1.365 ms
- 4  dcb-rtr.stanford.edu (128.12.0.205)  1.633 ms  1.871 ms  1.391 ms
- 5  dc-oak-agg4--stanford-10g.cenic.net (137.164.23.157)  3.173 ms  3.166 ms  3.438 ms
- 6  zayo--oak-agg4-paix-sv8.cenic.net (198.32.251.126)  4.040 ms  4.318 ms  3.975 ms
- 7  ae0.mpr2.pao1.us.zip.zayo.com (64.125.25.166)  4.425 ms  4.196 ms  4.244 ms
- 8  ae7.cr2.sjc2.us.zip.zayo.com (64.125.25.137)  5.155 ms  4.739 ms  4.720 ms
- 9  ae11.mpr4.sfo3.us.zip.zayo.com (64.125.24.226)  23.241 ms  24.693 ms  5.654 ms
-10  * * *
-11  * * *
-12  * * *
-13  * * *
-14  *
+ 1  10.29.96.2 (10.29.96.2)  1.325 ms  1.035 ms  1.100 ms
+ 2  res-wirelessa-rtr-vl3959.stanford.edu (128.12.1.42)  1.219 ms  1.194 ms  1.102 ms
+ 3  res-press-rtr-vl3965.stanford.edu (128.12.1.53)  1.328 ms  1.433 ms  1.342 ms
+ 4  dcb-rtr.stanford.edu (128.12.0.205)  1.369 ms  1.354 ms  1.285 ms
+ 5  dc-oak-agg4--stanford-10g.cenic.net (137.164.23.157)  3.213 ms  3.701 ms  3.227 ms
+ 6  dc-svl-agg4--oak-agg4-100ge.cenic.net (137.164.46.145)  4.459 ms  4.366 ms  4.535 ms
+ 7  72.14.242.90 (72.14.242.90)  4.642 ms
+    74.125.147.146 (74.125.147.146)  4.419 ms
+    72.14.205.134 (72.14.205.134)  6.304 ms
+ 8  209.85.240.114 (209.85.240.114)  4.910 ms  5.268 ms  4.895 ms
+ 9  74.125.37.43 (74.125.37.43)  4.990 ms  5.045 ms  4.916 ms
+10  nuq04s30-in-f14.1e100.net (216.58.192.46)  5.363 ms  4.757 ms  5.114 ms

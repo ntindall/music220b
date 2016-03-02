@@ -15,7 +15,7 @@ from pythonosc import udp_client
 
 tailq = queue.Queue(maxsize=10) # buffer at most 100 lines
 
-fn = "output.txt"
+fn = "capture.txt"
 
 def tail_forever(fn):
     p = subprocess.Popen(["tail", "-F", fn], stdout=subprocess.PIPE)
@@ -44,7 +44,7 @@ while True:
   msg = osc_message_builder.OscMessageBuilder(address = "/data")
 
   str = str.decode("utf-8")
-  print (str)
+  #print (str)
   elements = str.split()
 
   from_ipv4 = elements[2].split('.')

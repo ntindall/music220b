@@ -1,3 +1,5 @@
 python3 tail.py
-python capture.py > output.txt
-chuck r.ck
+python capture.py > capture.txt
+traceroute x > output.txt
+python3 tail_traceroute.py 
+chuck traceroute.ck

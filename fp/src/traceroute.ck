@@ -85,9 +85,12 @@ public class DelayArray extends Chubgraph {
     // sample rate
     second / samp => float SRATE;
 
+    outlet.channels() => int numChannels;
+    <<< "INSTANTIATING ARRAY WITH " + numChannels + " CHANNELS!" >>>;
+
     // connect to inlet and outlet of chubgraph
     for( int i; i < backing_array.size(); i++ ) {
-        inlet => backing_array[i] => gain_array[i] => outlet;
+        inlet => backing_array[i] => gain_array[i] => outlet.chan(i % numChannels);
         0 => gain_array[i].gain;
     }
 
@@ -133,41 +136,103 @@ public class DelayArray extends Chubgraph {
 // the patch
 
 // create our OSC receiver
-OscRecv recv;
+OscRecv tracerote_recv;
 // use port 6449 (or whatever)
-6449 => recv.port;
+6471 => tracerote_recv.port;
 // start listening (launch thread)
-recv.listen();
+tracerote_recv.listen();
 
 // create an address in the receiver, store in new variable
-recv.event( "/data, f i i i i" ) @=> OscEvent @ oe;
+tracerote_recv.event( "/data, f i i i i" ) @=> OscEvent @ tr_oe;
 
 
-Impulse i => DelayArray d => dac;
-d.feedback(0.5);
+// create our OSC receiver
+OscRecv tshark_recv;
+// use port 6449 (or whatever)
+6449 => tshark_recv.port;
+// start listening (launch thread)
+tshark_recv.listen();
 
+// create an address in the receiver, store in new variable
+tshark_recv.event( "/data, i i i i i i i i" ) @=> OscEvent @ ts_oe;
+
+
+//Impulse i => DelayArray d => dac;
+//d.feedback(0.99);
+
+SinOsc s => DelayArray d => dac;
+d.feedback(0.9);
+
+
+/*
 spork ~excite();
 fun void excite() {
     while (true) {
-        1.0 => i.next;
         <<< "Exciting" >>>;
-        1::second => now;    }
-}
+        for (int j; j < 100; j++) {
+            1 => i.next;
+            samp => now; //::second => now;    
+        }
+        1::second => now;
+    }
+}*/
 
-// infinite event loop
-while( true )
-{
-    // wait for event to arrive
-    oe => now;
-    
-    // grab the next message from the queue. 
-    while( oe.nextMsg() )
-    { 
-        oe.getFloat() => float f;
-        d.allocate(f);
+
+fun void traceroute_listen() {
+    // infinite event loop
+    while( true )
+    {
+        // wait for event to arrive
+        tr_oe => now;
+        
+        // grab the next message from the queue. 
+        while( tr_oe.nextMsg() )
+        { 
+            tr_oe.getFloat() => float f;
+            d.allocate(f);
+            5::second => now;
+        }
     }
 }
 
+fun void tshark_listen() {
+    // infinite event loop
+    while( true )
+    {
+        // wait for event to arrive
+        ts_oe => now;
+
+        // grab the next message from the queue. 
+        while( ts_oe.nextMsg() )
+        {   
+            /*
+            //read it in!
+            int array[8];
+            for (0 => int i; i < 8; i++) {
+                ts_oe.getInt() => array[i]; 
+            }
+            //what to do with it?
+            1 => i.next; //excite!
+            */
+            s.gain(0.01); //on
+            int array[8];
+            for (4 => int i; i < 8; i++) {
+                ts_oe.getInt() => array[i];
+                array[i] % 80 => int midiPitch;
+
+                ts_oe.getInt() => midiPitch => Std.mtof => s.freq;
+                2::ms => now;
+            }
+            s.gain(0); //off
+        }
+    }
+}
+
+spork ~traceroute_listen();
+spork ~tshark_listen();
+
+
+1::day => now;
 // for each traceroute node, create delay line, get dynamic comb filter of
 // network data
 
