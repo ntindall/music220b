@@ -13,7 +13,7 @@ OscRecv recv;
 recv.listen();
 
 // create an address in the receiver, store in new variable
-recv.event( "/data, i i i i i i i i" ) @=> OscEvent @ oe;
+recv.event( "/data, f i i i i" ) @=> OscEvent @ oe;
 
 // our function
 fun void print( int bar[] )
@@ -32,16 +32,8 @@ while( true )
     // grab the next message from the queue. 
     while( oe.nextMsg() )
     { 
-        int array[8];
-        array[0] => int waitTime;
-
-        for (1 => int i; i < 8; i++) {
-            array[i] % 80 => int midiPitch;
-            oe.getInt() => midiPitch => Std.mtof => s.freq;
-            5::ms => now;
-        }
-        // print
-        //print(array);
+        oe.getFloat() => float f;
+       <<< f >>>;
     }
 }
 
