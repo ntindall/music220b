@@ -111,13 +111,16 @@ public class DelayArray extends Chubgraph {
     }
 
     fun void allocate( float delay ) {
+      2000000 => int SCALAR;
+
       if (logical_size == backing_array.size()) {
         <<< ARRAY_SIZE + " delays allocated, array full" >>>;
         return;
       }
 
-      <<< "DelayArray allocating at position: " + logical_size >>>;
-      backing_array[logical_size].tune(delay / SRATE);
+      <<< "DelayArray allocating at position: " + logical_size + 
+          " with frequency " + delay * SCALAR / SRATE             >>>;
+      backing_array[logical_size].tune(Std.ftom(delay * SCALAR / SRATE));
       1 => gain_array[logical_size].gain;
 
 
@@ -128,9 +131,6 @@ public class DelayArray extends Chubgraph {
 
 //------------------------------------------------------------------------------
 // the patch
-SinOsc s => JCRev r => dac;
-.5 => s.gain;
-.1 => r.mix;
 
 // create our OSC receiver
 OscRecv recv;
@@ -143,10 +143,16 @@ recv.listen();
 recv.event( "/data, f i i i i" ) @=> OscEvent @ oe;
 
 
-adc => DelayArray d => LPF l => dac;
-l.freq(200);
-d.feedback(0);
+Impulse i => DelayArray d => dac;
+d.feedback(0.5);
 
+spork ~excite();
+fun void excite() {
+    while (true) {
+        1.0 => i.next;
+        <<< "Exciting" >>>;
+        1::second => now;    }
+}
 
 // infinite event loop
 while( true )
