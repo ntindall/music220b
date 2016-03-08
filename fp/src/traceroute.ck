@@ -130,9 +130,7 @@ public class DelayArray extends Chubgraph {
       2000000 => int SCALAR;
 
       if (logical_size == backing_array.size()) {
-        0 => logical_size; //returne
-        <<< ARRAY_SIZE + " delays allocated, carrying over" >>>;
-       // return;
+        0 => logical_size; //wraparound
       }
 
       <<< "DelayArray allocating at position: " + logical_size + 
@@ -217,21 +215,30 @@ fun void tshark_listen() {
         ts_oe => now;
 
         0 => int cur_ptr;
+        4 => int chan_delta;
 
         // grab the next message from the queue. 
         while( ts_oe.nextMsg() )
         {   
             
             int array[8];
-            for (4 => int i; i < 8; i++) {
+            for (0 => int i; i < 4; i++) {
+                ts_oe.getInt();
                 ts_oe.getInt() => array[i];
-                array[i] % 60 => int midiPitch;
-                adsrBank[(cur_ptr + i) % oscBank.size()].keyOn(1); //on
-                ts_oe.getInt() => midiPitch => Std.mtof => float freq;
-                freq => oscBank[(cur_ptr + i) % oscBank.size()].freq;
-                2::ms => now;
-                adsrBank[(cur_ptr + i) % oscBank.size()].keyOff(1); //on
-                // Math.random2f(3,5)::ms => now;
+
+                Math.abs((cur_ptr + chan_delta) % adsrBank.size()) => int osc_idx;
+                //compute frequency
+                array[i] % 60 + 10 => int midiPitch;
+                midiPitch => Std.mtof => float freq;
+                freq => oscBank[osc_idx].freq;
+
+                adsrBank[osc_idx].keyOn(); //turn on patch
+                3::ms => now;
+                adsrBank[osc_idx].keyOff(); //on
+
+                cur_ptr + chan_delta => cur_ptr;
+                // Math.random2f(3,5)::ms => now
+
             }
             //oscBank[cur_ptr % oscBank.size()].gain(0); //off
 
