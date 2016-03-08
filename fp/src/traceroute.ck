@@ -75,9 +75,12 @@ class KS extends Chubgraph
     }
 }
 
-8 => int ARRAY_SIZE;
-8  => int MAX_CHANS;
 public class DelayArray extends Chubgraph {
+
+    8 => int ARRAY_SIZE;
+    8  => int MAX_CHANS;
+
+    Gain in_array[MAX_CHANS];
 
     KS backing_array[ARRAY_SIZE];
     Gain gain_array[ARRAY_SIZE];
@@ -92,8 +95,16 @@ public class DelayArray extends Chubgraph {
 
     // connect to inlet and outlet of chubgraph
     for( int i; i < backing_array.size(); i++ ) {
-        inlet => backing_array[i] => gain_array[i] => out_array[i % MAX_CHANS];
+        in_array[i % MAX_CHANS] => backing_array[i] => gain_array[i] => out_array[i % MAX_CHANS];
         0 => gain_array[i].gain;
+    }
+
+    fun UGen chan(int i) {
+        return in_array[i % MAX_CHANS];
+    }
+
+    fun int channels() {
+        return MAX_CHANS;
     }
 
       // set feedback    
@@ -134,7 +145,7 @@ public class DelayArray extends Chubgraph {
 
     }
 
-    fun void chuck(UGen out) {
+    fun void chuck_out(UGen out) {
         out.channels() => int n_chans;
         <<< "CHUCKING ARRAY TO " + n_chans + " CHANNELS!" >>>;
         for (int i; i < MAX_CHANS; i++) {
@@ -167,9 +178,16 @@ tshark_recv.listen();
 // create an address in the receiver, store in new variable
 tshark_recv.event( "/data, i i i i i i i i" ) @=> OscEvent @ ts_oe;
 
-SawOsc s => DelayArray d;
+DelayArray d;
+TriOsc oscBank[d.channels()] => ADSR adsrBank[d.channels()];
 
-d.chuck(dac);
+for (int i; i < oscBank.size(); i++) {
+    adsrBank[i].gain(0.01); //turn it down
+    adsrBank[i] => d.chan(i);
+    adsrBank[i].set(0.5::ms, 0.5::ms, 1, 0.5::ms);
+}
+
+d.chuck_out(dac);
 d.feedback(0.99);
 
 
@@ -198,31 +216,48 @@ fun void tshark_listen() {
         // wait for event to arrive
         ts_oe => now;
 
+        0 => int cur_ptr;
+
         // grab the next message from the queue. 
         while( ts_oe.nextMsg() )
         {   
-            /*
-            //read it in!
-            int array[8];
-            for (0 => int i; i < 8; i++) {
-                ts_oe.getInt() => array[i]; 
-            }
-            //what to do with it?
-            1 => i.next; //excite!
-            */
-            s.gain(0.01); //on
+            
             int array[8];
             for (4 => int i; i < 8; i++) {
                 ts_oe.getInt() => array[i];
                 array[i] % 60 => int midiPitch;
-
-                ts_oe.getInt() => midiPitch => Std.mtof => s.freq;
+                adsrBank[(cur_ptr + i) % oscBank.size()].keyOn(1); //on
+                ts_oe.getInt() => midiPitch => Std.mtof => float freq;
+                freq => oscBank[(cur_ptr + i) % oscBank.size()].freq;
                 2::ms => now;
+                adsrBank[(cur_ptr + i) % oscBank.size()].keyOff(1); //on
+                // Math.random2f(3,5)::ms => now;
             }
-            s.gain(0); //off
+            //oscBank[cur_ptr % oscBank.size()].gain(0); //off
+
+            cur_ptr + 1 => cur_ptr;
         }
     }
 }
+
+/*
+fun void handler(OscEvent ts_oe, int cur_ptr) {
+    oscBank[cur_ptr % oscBank.size()].gain(0.01); //on
+    
+    int array[8];
+    for (4 => int i; i < 8; i++) {
+        ts_oe.getInt() => array[i];
+        array[i] % 60 => int midiPitch;
+
+        ts_oe.getInt() => midiPitch => Std.mtof => float freq;
+        freq => oscBank[(cur_ptr + i) % oscBank.size()].freq;
+        5::ms => now;
+    }
+    oscBank[cur_ptr % oscBank.size()].gain(0); //off
+
+    cur_ptr + 1 => cur_ptr;
+
+}*/
 
 spork ~traceroute_listen();
 spork ~tshark_listen();
