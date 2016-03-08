@@ -75,7 +75,7 @@ class KS extends Chubgraph
     }
 }
 
-64 => int ARRAY_SIZE;
+8 => int ARRAY_SIZE;
 8  => int MAX_CHANS;
 public class DelayArray extends Chubgraph {
 
@@ -119,8 +119,9 @@ public class DelayArray extends Chubgraph {
       2000000 => int SCALAR;
 
       if (logical_size == backing_array.size()) {
-        <<< ARRAY_SIZE + " delays allocated, array full" >>>;
-        return;
+        0 => logical_size; //returne
+        <<< ARRAY_SIZE + " delays allocated, carrying over" >>>;
+       // return;
       }
 
       <<< "DelayArray allocating at position: " + logical_size + 
@@ -166,7 +167,8 @@ tshark_recv.listen();
 // create an address in the receiver, store in new variable
 tshark_recv.event( "/data, i i i i i i i i" ) @=> OscEvent @ ts_oe;
 
-SinOsc s => DelayArray d;
+SawOsc s => DelayArray d;
+
 d.chuck(dac);
 d.feedback(0.99);
 
@@ -184,7 +186,7 @@ fun void traceroute_listen() {
         { 
             tr_oe.getFloat() => float f;
             d.allocate(f);
-            5::second => now;
+            1::second => now;
         }
     }
 }
@@ -212,7 +214,7 @@ fun void tshark_listen() {
             int array[8];
             for (4 => int i; i < 8; i++) {
                 ts_oe.getInt() => array[i];
-                array[i] % 80 => int midiPitch;
+                array[i] % 60 => int midiPitch;
 
                 ts_oe.getInt() => midiPitch => Std.mtof => s.freq;
                 2::ms => now;
