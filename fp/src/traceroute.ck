@@ -76,21 +76,23 @@ class KS extends Chubgraph
 }
 
 64 => int ARRAY_SIZE;
+8  => int MAX_CHANS;
 public class DelayArray extends Chubgraph {
 
     KS backing_array[ARRAY_SIZE];
     Gain gain_array[ARRAY_SIZE];
     0 => int logical_size;
 
+    Gain out_array[MAX_CHANS];
+
     // sample rate
     second / samp => float SRATE;
 
-    outlet.channels() => int numChannels;
-    <<< "INSTANTIATING ARRAY WITH " + numChannels + " CHANNELS!" >>>;
+    <<< "INSTANTIATING ARRAY WITH " + MAX_CHANS + " CHANNELS!" >>>;
 
     // connect to inlet and outlet of chubgraph
     for( int i; i < backing_array.size(); i++ ) {
-        inlet => backing_array[i] => gain_array[i] => outlet.chan(i % numChannels);
+        inlet => backing_array[i] => gain_array[i] => out_array[i % MAX_CHANS];
         0 => gain_array[i].gain;
     }
 
@@ -130,6 +132,14 @@ public class DelayArray extends Chubgraph {
       logical_size + 1 => logical_size;
 
     }
+
+    fun void chuck(UGen out) {
+        out.channels() => int n_chans;
+        <<< "CHUCKING ARRAY TO " + n_chans + " CHANNELS!" >>>;
+        for (int i; i < MAX_CHANS; i++) {
+            out_array[i] => out.chan(i % n_chans);
+        }
+    }
 }
 
 //------------------------------------------------------------------------------
@@ -156,26 +166,10 @@ tshark_recv.listen();
 // create an address in the receiver, store in new variable
 tshark_recv.event( "/data, i i i i i i i i" ) @=> OscEvent @ ts_oe;
 
+SinOsc s => DelayArray d;
+d.chuck(dac);
+d.feedback(0.99);
 
-//Impulse i => DelayArray d => dac;
-//d.feedback(0.99);
-
-SinOsc s => DelayArray d => dac;
-d.feedback(0.9);
-
-
-/*
-spork ~excite();
-fun void excite() {
-    while (true) {
-        <<< "Exciting" >>>;
-        for (int j; j < 100; j++) {
-            1 => i.next;
-            samp => now; //::second => now;    
-        }
-        1::second => now;
-    }
-}*/
 
 
 fun void traceroute_listen() {
@@ -239,3 +233,5 @@ spork ~tshark_listen();
 //multichannel (4/8)
 
 //make array of 64 ks chords, map them to different channels
+
+//todo, interpolate between frequencies as traceroute changes?
