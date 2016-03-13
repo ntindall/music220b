@@ -1,3 +1,5 @@
+Machine.add("kb-alt.ck");
+
 // single voice Karplus Strong chubgraph
 class KS extends Chubgraph
 {
@@ -180,7 +182,7 @@ DelayArray d;
 TriOsc oscBank[d.channels()] => ADSR adsrBank[d.channels()];
 
 for (int i; i < oscBank.size(); i++) {
-    adsrBank[i].gain(0.01); //turn it down
+    adsrBank[i].gain(0.1); //turn it down
     adsrBank[i] => d.chan(i);
     adsrBank[i].set(0.5::ms, 0.5::ms, 1, 0.5::ms);
 }
@@ -220,20 +222,18 @@ fun void tshark_listen() {
         // grab the next message from the queue. 
         while( ts_oe.nextMsg() )
         {   
-            
             int array[8];
             for (0 => int i; i < 4; i++) {
-                ts_oe.getInt();
                 ts_oe.getInt() => array[i];
 
                 Math.abs((cur_ptr + chan_delta) % adsrBank.size()) => int osc_idx;
                 //compute frequency
-                array[i] % 60 + 10 => int midiPitch;
+                array[i] % 100 + 10 => int midiPitch;
                 midiPitch => Std.mtof => float freq;
                 freq => oscBank[osc_idx].freq;
 
                 adsrBank[osc_idx].keyOn(); //turn on patch
-                3::ms => now;
+                2::ms => now;
                 adsrBank[osc_idx].keyOff(); //on
 
                 cur_ptr + chan_delta => cur_ptr;
@@ -244,6 +244,7 @@ fun void tshark_listen() {
 
             cur_ptr + 1 => cur_ptr;
         }
+        
     }
 }
 
