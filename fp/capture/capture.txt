@@ -1,152 +1,1092 @@
-  1   0.000000  10.29.96.84 -> 224.0.0.251  MDNS 528 Standard query response 0x0000  TXT, cache flush PTR _apple-mobdev2._tcp.local PTR f0:db:e2:68:b8:49@fe80::f2db:e2ff:fe68:b849._apple-mobdev2._tcp.local PTR f0:db:e2:68:b8:49@fe80::f2db:e2ff:fe68:b849._apple-mobdev2._tcp.local SRV, cache flush 0 0 32498 Emma-Budianskys-iPhone.local PTR, cache flush Emma-Budianskys-iPhone.local PTR, cache flush Emma-Budianskys-iPhone.local AAAA, cache flush fe80::89c:cb46:fdac:9317 A, cache flush 10.29.96.84
-  2   0.313272 10.29.96.176 -> 10.29.111.255 UDP 86 Source port: 57621  Destination port: 57621
-  3   1.357718  10.29.112.2 -> 224.0.0.18   VRRP 54 Announcement (v2)
-  4   1.462232   10.29.96.2 -> 224.0.0.18   VRRP 54 Announcement (v2)
-  5   1.462264 10.29.112.84 -> 255.255.255.255 DB-LSP-DISC 197 Dropbox LAN sync Discovery Protocol
-  6   1.462493 10.29.112.84 -> 10.29.127.255 DB-LSP-DISC 197 Dropbox LAN sync Discovery Protocol
-  7   2.611013 10.29.112.51 -> 10.29.127.255 NBNS 92 Name query NB WPAD<00>
-  8   2.611018 10.29.112.51 -> 224.0.0.252  LLMNR 64 Standard query 0xe2d5  A wpad
-  9   2.611126 10.29.112.51 -> 10.29.127.255 NBNS 92 Name query NB WPAD<00>
- 10   2.611255 10.29.112.51 -> 224.0.0.252  LLMNR 64 Standard query 0x41aa  A wpad
- 11   2.715628 10.29.112.51 -> 224.0.0.252  LLMNR 62 Standard query 0x4389  ANY pc
- 12   3.028848 10.29.112.51 -> 224.0.0.252  LLMNR 64 Standard query 0xe2d5  A wpad
- 13   3.028979 10.29.112.51 -> 224.0.0.252  LLMNR 64 Standard query 0x41aa  A wpad
- 14   3.029115  10.29.112.2 -> 224.0.0.18   VRRP 54 Announcement (v2)
- 15   3.133354 10.29.112.51 -> 224.0.0.252  LLMNR 62 Standard query 0x4389  ANY pc
- 16   3.237865 10.29.112.51 -> 10.29.127.255 NBNS 92 Name query NB WPAD<00>
- 17   3.237911 10.29.112.51 -> 224.0.0.252  LLMNR 64 Standard query 0xa813  A wpad
- 18   3.237993 10.29.112.51 -> 224.0.0.252  LLMNR 64 Standard query 0x1ca4  AAAA wpad
- 19   3.238215 10.29.112.51 -> 10.29.127.255 NBNS 92 Name query NB WPAD<00>
- 20   3.238261 10.29.112.51 -> 224.0.0.252  LLMNR 64 Standard query 0xe1f3  A wpad
- 21   3.238399 10.29.112.51 -> 224.0.0.252  LLMNR 64 Standard query 0xb7aa  AAAA wpad
- 22   3.342267   10.29.96.2 -> 224.0.0.18   VRRP 54 Announcement (v2)
- 23   3.342293 10.29.112.51 -> 10.29.127.255 NBNS 92 Name query NB WPAD<00>
- 24   3.342476 10.29.112.51 -> 10.29.127.255 NBNS 92 Name query NB WPAD<00>
- 25   3.551208 10.29.112.51 -> 224.0.0.252  LLMNR 62 Standard query 0xd8b3  ANY pc
- 26   3.760058 10.29.112.51 -> 224.0.0.252  LLMNR 64 Standard query 0xa813  A wpad
- 27   3.760171 10.29.112.51 -> 224.0.0.252  LLMNR 64 Standard query 0xe1f3  A wpad
- 28   3.760317 10.29.112.51 -> 224.0.0.252  LLMNR 64 Standard query 0x1ca4  AAAA wpad
- 29   3.760442 10.29.112.51 -> 224.0.0.252  LLMNR 64 Standard query 0xb7aa  AAAA wpad
- 30   3.969012 10.29.112.51 -> 224.0.0.252  LLMNR 62 Standard query 0xd8b3  ANY pc
- 31   4.073391 10.29.112.51 -> 10.29.127.255 NBNS 92 Name query NB WPAD<00>
- 32   4.073420 10.29.112.51 -> 10.29.127.255 NBNS 92 Name query NB WPAD<00>
- 33   4.073876  10.29.96.84 -> 224.0.0.251  MDNS 528 Standard query response 0x0000  TXT, cache flush PTR _apple-mobdev2._tcp.local PTR f0:db:e2:68:b8:49@fe80::f2db:e2ff:fe68:b849._apple-mobdev2._tcp.local PTR f0:db:e2:68:b8:49@fe80::f2db:e2ff:fe68:b849._apple-mobdev2._tcp.local SRV, cache flush 0 0 32498 Emma-Budianskys-iPhone.local PTR, cache flush Emma-Budianskys-iPhone.local PTR, cache flush Emma-Budianskys-iPhone.local AAAA, cache flush fe80::89c:cb46:fdac:9317 A, cache flush 10.29.96.84
- 34   4.177881 10.29.112.51 -> 10.29.127.255 NBNS 92 Name query NB WPAD<00>
- 35   4.177885 10.29.112.51 -> 10.29.127.255 NBNS 92 Name query NB WPAD<00>
- 36   4.282135  10.29.96.66 -> 10.29.111.255 UDP 86 Source port: 57621  Destination port: 57621
- 37   4.282143 10.29.113.31 -> 10.29.127.255 NBNS 92 Name query NB WPAD<00>
- 38   4.282253 10.29.113.31 -> 224.0.0.252  LLMNR 64 Standard query 0xd169  A wpad
- 39   4.282373 10.29.113.31 -> 224.0.0.252  LLMNR 64 Standard query 0x2c8d  AAAA wpad
- 40   4.700119  10.29.112.2 -> 224.0.0.18   VRRP 54 Announcement (v2)
- 41   4.700233 10.29.113.31 -> 224.0.0.252  LLMNR 64 Standard query 0xd169  A wpad
- 42   4.700312 10.29.113.31 -> 224.0.0.252  LLMNR 64 Standard query 0x2c8d  AAAA wpad
- 43   4.804508 10.29.112.51 -> 10.29.127.255 NBNS 92 Name query NB WPAD<00>
- 44   4.804630 10.29.112.51 -> 10.29.127.255 NBNS 92 Name query NB WPAD<00>
- 45   5.013356 10.29.113.31 -> 10.29.127.255 NBNS 92 Name query NB WPAD<00>
- 46   5.117889   10.29.96.2 -> 224.0.0.18   VRRP 54 Announcement (v2)
- 47   5.848933 10.29.113.31 -> 10.29.127.255 NBNS 92 Name query NB WPAD<00>
- 48   6.684531  10.29.112.2 -> 224.0.0.18   VRRP 54 Announcement (v2)
- 49   6.788954   10.29.96.2 -> 224.0.0.18   VRRP 54 Announcement (v2)
- 50   8.146908 10.29.96.176 -> 255.255.255.255 DB-LSP-DISC 241 Dropbox LAN sync Discovery Protocol
- 51   8.147057 10.29.96.176 -> 10.29.111.255 DB-LSP-DISC 241 Dropbox LAN sync Discovery Protocol
- 52   8.251258  10.29.112.2 -> 224.0.0.18   VRRP 54 Announcement (v2)
- 53   8.460206   10.29.96.2 -> 224.0.0.18   VRRP 54 Announcement (v2)
- 54  11.384724 10.29.112.51 -> 10.29.127.255 NBNS 92 Name query NB WPAD<00>
- 55  11.384889 10.29.112.51 -> 10.29.127.255 NBNS 92 Name query NB WPAD<00>
- 56  12.011463  10.29.112.2 -> 224.0.0.18   VRRP 54 Announcement (v2)
- 57  12.115911   10.29.96.2 -> 224.0.0.18   VRRP 54 Announcement (v2)
- 58  12.951327 172.19.142.9 -> 224.0.0.1    IGMPv2 42 Membership Query, general
- 59  13.055997  10.29.96.78 -> 224.0.0.251  MDNS 87 Standard query 0x0000  PTR _spotify-connect._tcp.local, "QU" question
- 60  13.160392 10.29.96.172 -> 224.0.0.251  MDNS 54 Standard query response 0x0000 
- 61  13.891553  10.29.112.2 -> 224.0.0.18   VRRP 54 Announcement (v2)
- 62  13.996029   10.29.96.2 -> 224.0.0.18   VRRP 54 Announcement (v2)
- 63  15.628664 10.29.96.134 -> 224.0.0.251  IGMPv2 46 Membership Report group 224.0.0.251
- 64  15.667089  10.29.112.2 -> 224.0.0.18   VRRP 54 Announcement (v2)
- 65  15.737386   10.29.96.2 -> 224.0.0.18   VRRP 54 Announcement (v2)
- 66  15.980553 10.29.113.90 -> 224.0.0.251  MDNS 154 Standard query 0x0000  ANY iPhone-95.local, "QU" question ANY iPhone-95.local, "QU" question
- 67  15.980583 10.29.96.172 -> 224.0.0.251  MDNS 54 Standard query response 0x0000 
- 68  16.189415 10.29.113.90 -> 224.0.0.251  MDNS 154 Standard query 0x0000  ANY iPhone-95.local, "QM" question ANY iPhone-95.local, "QM" question
- 69  16.189494 10.29.96.172 -> 224.0.0.251  MDNS 54 Standard query response 0x0000 
- 70  16.502742 10.29.113.90 -> 224.0.0.251  MDNS 154 Standard query 0x0000  ANY iPhone-95.local, "QM" question ANY iPhone-95.local, "QM" question
- 71  16.502833 10.29.96.172 -> 224.0.0.251  MDNS 54 Standard query response 0x0000 
- 72  16.607216 10.29.113.90 -> 224.0.0.251  MDNS 188 Standard query 0x0000  ANY 6c:94:f8:80:6f:0a@fe80::6e94:f8ff:fe80:6f0a._apple-mobdev2._tcp.local, "QU" question
- 73  16.607307 10.29.96.172 -> 224.0.0.251  MDNS 54 Standard query response 0x0000 
- 74  16.711702 10.29.113.90 -> 224.0.0.251  MDNS 319 Standard query response 0x0000  PTR, cache flush iPhone-95.local PTR, cache flush iPhone-95.local AAAA, cache flush fe80::caa:3a1:573e:7406 A, cache flush 10.29.113.90
- 75  17.338258  10.29.112.2 -> 224.0.0.18   VRRP 54 Announcement (v2)
- 76  17.338340   10.29.96.2 -> 224.0.0.18   VRRP 54 Announcement (v2)
- 77  17.964958   10.29.96.2 -> 224.0.0.13   PIMv2 78 Hello
- 78  17.965081   10.29.96.2 -> 224.0.0.13   PIMv2 78 Hello
- 79  18.278272   10.29.96.3 -> 224.0.0.13   PIMv2 78 Hello
- 80  18.278356   10.29.96.3 -> 224.0.0.13   PIMv2 78 Hello
- 81  18.904959 10.29.112.51 -> 10.29.127.255 NBNS 92 Name query NB WPAD<00>
- 82  18.905050 10.29.112.51 -> 224.0.0.252  LLMNR 64 Standard query 0xbba1  A wpad
- 83  18.905223 10.29.112.51 -> 10.29.127.255 NBNS 92 Name query NB WPAD<00>
- 84  18.905305 10.29.112.51 -> 224.0.0.252  LLMNR 64 Standard query 0xa40f  A wpad
- 85  18.905430 10.29.112.195 -> 10.29.127.255 UDP 82 Source port: 57621  Destination port: 57621
- 86  19.218309   10.29.96.2 -> 224.0.0.18   VRRP 54 Announcement (v2)
- 87  19.322762 10.29.112.51 -> 224.0.0.252  LLMNR 64 Standard query 0xa40f  A wpad
- 88  19.322819 10.29.112.51 -> 224.0.0.252  LLMNR 64 Standard query 0xbba1  A wpad
- 89  19.322941  10.29.112.2 -> 224.0.0.18   VRRP 54 Announcement (v2)
- 90  19.636117 10.29.112.51 -> 10.29.127.255 NBNS 92 Name query NB WPAD<00>
- 91  19.636325 10.29.112.51 -> 10.29.127.255 NBNS 92 Name query NB WPAD<00>
- 92  20.367242 10.29.112.51 -> 10.29.127.255 NBNS 92 Name query NB WPAD<00>
- 93  20.367352 10.29.112.51 -> 10.29.127.255 NBNS 92 Name query NB WPAD<00>
- 94  20.576158 10.29.112.51 -> 10.29.127.255 NBNS 92 Name query NB WPAD<00>
- 95  20.576219 10.29.112.51 -> 224.0.0.252  LLMNR 64 Standard query 0x1b71  A wpad
- 96  20.576361 10.29.112.51 -> 224.0.0.252  LLMNR 64 Standard query 0x2871  AAAA wpad
- 97  20.889452   10.29.96.2 -> 224.0.0.18   VRRP 54 Announcement (v2)
- 98  20.993981 10.29.112.51 -> 224.0.0.252  LLMNR 64 Standard query 0x1b71  A wpad
- 99  20.994028 10.29.112.51 -> 224.0.0.252  LLMNR 64 Standard query 0x2871  AAAA wpad
-100  20.994149  10.29.112.2 -> 224.0.0.18   VRRP 54 Announcement (v2)
-101  21.307320 10.29.96.172 -> 10.29.111.255 NBNS 92 Name query NB UNIFLOW-PRD<20>
-102  21.307455 10.29.96.164 -> 10.29.111.255 NBNS 92 Name query NB ISKENDER-PC<20>
-103  21.307573 10.29.112.51 -> 10.29.127.255 NBNS 92 Name query NB WPAD<00>
-104  21.934131 10.29.96.172 -> 10.29.111.255 NBNS 92 Name query NB UNIFLOW-PRD<20>
-105  21.934136 10.29.112.51 -> 10.29.127.255 UDP 86 Source port: 57621  Destination port: 57621
-106  21.934263 10.29.96.164 -> 10.29.111.255 BROWSER 216 Get Backup List Request
-107  22.038412 10.29.112.51 -> 10.29.127.255 NBNS 92 Name query NB WPAD<00>
-108  22.665219 10.29.96.172 -> 10.29.111.255 NBNS 92 Name query NB UNIFLOW-PRD<20>
-109  22.665374 10.29.96.118 -> 255.255.255.255 DB-LSP-DISC 251 Dropbox LAN sync Discovery Protocol
-110  22.665557 10.29.96.118 -> 10.29.111.255 DB-LSP-DISC 251 Dropbox LAN sync Discovery Protocol
-111  22.874097   10.29.96.2 -> 224.0.0.18   VRRP 54 Announcement (v2)
-112  22.978438  10.29.112.2 -> 224.0.0.18   VRRP 54 Announcement (v2)
-113  23.918535 10.29.112.92 -> 255.255.255.255 DB-LSP-DISC 188 Dropbox LAN sync Discovery Protocol
-114  23.918695 10.29.112.92 -> 10.29.127.255 DB-LSP-DISC 188 Dropbox LAN sync Discovery Protocol
-115  24.754166 10.29.96.164 -> 10.29.111.255 UDP 86 Source port: 57621  Destination port: 57621
-116  24.858560   10.29.96.2 -> 224.0.0.18   VRRP 54 Announcement (v2)
-117  24.963066  10.29.112.2 -> 224.0.0.18   VRRP 54 Announcement (v2)
-118  26.529828   10.29.96.2 -> 224.0.0.18   VRRP 54 Announcement (v2)
-119  26.843145  10.29.112.2 -> 224.0.0.18   VRRP 54 Announcement (v2)
-120  28.096442   10.29.96.2 -> 224.0.0.18   VRRP 54 Announcement (v2)
-121  28.305417 10.29.112.84 -> 10.29.127.255 NBNS 92 Name query NB <01><02>__MSBROWSE__<02><01>
-122  28.305446 10.29.112.84 -> 10.29.127.255 NBNS 92 Name query NB WORKGROUP<1d>
-123  28.305700 10.29.112.84 -> 10.29.127.255 BROWSER 216 Get Backup List Request
-124  28.305749 10.29.112.50 -> 10.29.127.255 NBNS 92 Name query NB MACBOOKPRO-53DC<00>
-125  28.409785  10.29.96.78 -> 10.29.111.255 UDP 86 Source port: 57621  Destination port: 57621
-126  28.514295  10.29.112.2 -> 224.0.0.18   VRRP 54 Announcement (v2)
-127  29.663186   10.29.96.2 -> 224.0.0.18   VRRP 54 Announcement (v2)
-128  29.871770 10.29.112.84 -> 10.29.127.255 NBNS 92 Name query NB <01><02>__MSBROWSE__<02><01>
-129  30.185482  10.29.112.2 -> 224.0.0.18   VRRP 54 Announcement (v2)
-130  30.916609 10.29.112.84 -> 10.29.127.255 NBNS 92 Name query NB <01><02>__MSBROWSE__<02><01>
-131  31.020961 10.29.96.176 -> 224.0.0.251  MDNS 87 Standard query 0x0000  PTR _spotify-connect._tcp.local, "QU" question
-132  31.125434 10.29.96.172 -> 224.0.0.251  MDNS 54 Standard query response 0x0000 
-133  31.230013   10.29.96.2 -> 224.0.0.18   VRRP 54 Announcement (v2)
-134  31.543264 10.29.112.84 -> 255.255.255.255 DB-LSP-DISC 197 Dropbox LAN sync Discovery Protocol
-135  31.543559 10.29.112.84 -> 10.29.127.255 DB-LSP-DISC 197 Dropbox LAN sync Discovery Protocol
-136  32.065513  10.29.112.2 -> 224.0.0.18   VRRP 54 Announcement (v2)
-137  32.901078 172.19.142.9 -> 224.0.0.1    IGMPv2 42 Membership Query, general
-138  33.110015   10.29.96.2 -> 224.0.0.18   VRRP 54 Announcement (v2)
-139  33.841137  10.29.112.2 -> 224.0.0.18   VRRP 54 Announcement (v2)
-140  34.781139   10.29.96.2 -> 224.0.0.18   VRRP 54 Announcement (v2)
-141  35.303340  10.29.112.2 -> 224.0.0.18   VRRP 54 Announcement (v2)
-142  36.556762   10.29.96.2 -> 224.0.0.18   VRRP 54 Announcement (v2)
-143  37.079106  10.29.112.2 -> 224.0.0.18   VRRP 54 Announcement (v2)
-144  37.392360 10.29.96.118 -> 224.0.0.251  MDNS 87 Standard query 0x0000  PTR _spotify-connect._tcp.local, "QU" question
-145  37.392455 10.29.96.172 -> 224.0.0.251  MDNS 54 Standard query response 0x0000 
-146  38.019096 10.29.96.176 -> 255.255.255.255 DB-LSP-DISC 241 Dropbox LAN sync Discovery Protocol
-147  38.019205 10.29.96.176 -> 10.29.111.255 DB-LSP-DISC 241 Dropbox LAN sync Discovery Protocol
-148  38.019368   10.29.96.2 -> 224.0.0.18   VRRP 54 Announcement (v2)
-149  38.750227  10.29.112.2 -> 224.0.0.18   VRRP 54 Announcement (v2)
-150  39.376824 10.29.112.217 -> 10.29.127.255 UDP 86 Source port: 57621  Destination port: 57621
-151  39.643451 10.29.96.134 -> 224.0.0.251  IGMPv2 46 Membership Report group 224.0.0.251
-152  39.690232   10.29.96.2 -> 224.0.0.18   VRRP 54 Announcement (v2)
+  1   0.000000 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=1 Win=691 Len=0 TSval=4197583338 TSecr=315366328
+  2   0.000118  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+  3   0.024618 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=2 Win=691 Len=0 TSval=4197583363 TSecr=315366353
+  4   0.024738  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+  5   0.049272 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=3 Win=691 Len=0 TSval=4197583387 TSecr=315366377
+  6   0.049336  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+  7   0.073969 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=4 Win=691 Len=0 TSval=4197583412 TSecr=315366401
+  8   0.074053  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+  9   0.098718 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=5 Win=691 Len=0 TSval=4197583437 TSecr=315366425
+ 10   0.098868  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+ 11   0.123804 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=6 Win=691 Len=0 TSval=4197583462 TSecr=315366449
+ 12   0.123874  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+ 13   0.148481 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=7 Win=691 Len=0 TSval=4197583487 TSecr=315366473
+ 14   0.148573  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+ 15   0.160969   10.29.96.2 -> 224.0.0.18   VRRP 54 Announcement (v2)
+ 16   0.173218 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=8 Win=691 Len=0 TSval=4197583511 TSecr=315366498
+ 17   0.173313  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+ 18   0.197901 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=9 Win=691 Len=0 TSval=4197583536 TSecr=315366521
+ 19   0.198014  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+ 20   0.222599 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=10 Win=691 Len=0 TSval=4197583561 TSecr=315366545
+ 21   0.222729  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+ 22   0.247438 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=11 Win=691 Len=0 TSval=4197583585 TSecr=315366569
+ 23   0.247541  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+ 24   0.257631  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34939  Destination port: 33453
+ 25   0.261951  4.15.122.45 -> 10.29.96.80  ICMP 94 Time-to-live exceeded (Time to live exceeded in transit)
+ 26   0.262234  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34939  Destination port: 33454
+ 27   0.266399  4.15.122.45 -> 10.29.96.80  ICMP 94 Time-to-live exceeded (Time to live exceeded in transit)
+ 28   0.266480  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34939  Destination port: 33455
+ 29   0.270722  4.15.122.45 -> 10.29.96.80  ICMP 94 Time-to-live exceeded (Time to live exceeded in transit)
+ 30   0.270807  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34939  Destination port: 33456
+ 31   0.272095 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=12 Win=691 Len=0 TSval=4197583610 TSecr=315366593
+ 32   0.272179  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+ 33   0.275270 4.69.209.193 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+ 34   0.275486  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34939  Destination port: 33457
+ 35   0.279951 4.69.209.185 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+ 36   0.280204  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34939  Destination port: 33458
+ 37   0.284723 4.69.209.181 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+ 38   0.284927  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34939  Destination port: 33459
+ 39   0.288442  4.68.62.214 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+ 40   0.288677  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34939  Destination port: 33460
+ 41   0.292110  77.67.69.97 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+ 42   0.292317  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34939  Destination port: 33461
+ 43   0.295902  4.68.62.214 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+ 44   0.296118  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34939  Destination port: 33462
+ 45   0.301985 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=13 Win=691 Len=0 TSval=4197583640 TSecr=315366617
+ 46   0.302062  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+ 47   0.326720 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=14 Win=691 Len=0 TSval=4197583665 TSecr=315366646
+ 48   0.326770  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+ 49   0.351367 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=15 Win=691 Len=0 TSval=4197583689 TSecr=315366670
+ 50   0.351443  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+ 51   0.376098 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=16 Win=691 Len=0 TSval=4197583714 TSecr=315366694
+ 52   0.376224  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+ 53   0.415632 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=17 Win=691 Len=0 TSval=4197583739 TSecr=315366718
+ 54   0.415728  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+ 55   0.440653 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=18 Win=691 Len=0 TSval=4197583779 TSecr=315366757
+ 56   0.440722  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+ 57   0.447108 89.149.187.190 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+ 58   0.447407  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34939  Destination port: 33463
+ 59   0.465342 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=19 Win=691 Len=0 TSval=4197583803 TSecr=315366781
+ 60   0.465537  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+ 61   0.490226 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=20 Win=691 Len=0 TSval=4197583828 TSecr=315366805
+ 62   0.490294  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+ 63   0.514883 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=21 Win=691 Len=0 TSval=4197583853 TSecr=315366828
+ 64   0.514966  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+ 65   0.539577 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=22 Win=691 Len=0 TSval=4197583878 TSecr=315366852
+ 66   0.539726  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+ 67   0.564441 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=23 Win=691 Len=0 TSval=4197583902 TSecr=315366876
+ 68   0.564583  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+ 69   0.589262 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=24 Win=691 Len=0 TSval=4197583927 TSecr=315366900
+ 70   0.589340  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+ 71   0.598150 89.149.187.190 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+ 72   0.598262  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34939  Destination port: 33464
+ 73   0.613943 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=25 Win=691 Len=0 TSval=4197583952 TSecr=315366923
+ 74   0.614020  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+ 75   0.638639 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=26 Win=691 Len=0 TSval=4197583977 TSecr=315366947
+ 76   0.638703  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+ 77   0.663331 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=27 Win=691 Len=0 TSval=4197584001 TSecr=315366971
+ 78   0.663425  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+ 79   0.687976 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=28 Win=691 Len=0 TSval=4197584026 TSecr=315366995
+ 80   0.688046  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+ 81   0.712749 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=29 Win=691 Len=0 TSval=4197584051 TSecr=315367019
+ 82   0.712825  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+ 83   0.737475 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=30 Win=691 Len=0 TSval=4197584075 TSecr=315367043
+ 84   0.737549  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+ 85   0.749003 89.149.187.190 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+ 86   0.749132  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34939  Destination port: 33465
+ 87   0.762168 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=31 Win=691 Len=0 TSval=4197584100 TSecr=315367067
+ 88   0.762257  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+ 89   0.786877 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=32 Win=691 Len=0 TSval=4197584125 TSecr=315367091
+ 90   0.786937  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+ 91   0.811610 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=33 Win=691 Len=0 TSval=4197584150 TSecr=315367115
+ 92   0.811693  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+ 93   0.836363 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=34 Win=691 Len=0 TSval=4197584174 TSecr=315367139
+ 94   0.836437  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+ 95   0.861105 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=35 Win=691 Len=0 TSval=4197584199 TSecr=315367163
+ 96   0.861181  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+ 97   0.885913 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=36 Win=691 Len=0 TSval=4197584224 TSecr=315367187
+ 98   0.885960  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+ 99   0.891811 46.33.92.106 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+100   0.892111  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34939  Destination port: 33466
+101   0.910643 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=37 Win=691 Len=0 TSval=4197584249 TSecr=315367211
+102   0.910713  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+103   0.935255 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=38 Win=691 Len=0 TSval=4197584273 TSecr=315367235
+104   0.935365  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+105   0.960597 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=39 Win=691 Len=0 TSval=4197584299 TSecr=315367259
+106   0.960673  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+107   0.985408 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=40 Win=691 Len=0 TSval=4197584323 TSecr=315367284
+108   0.985484  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+109   1.010183 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=41 Win=691 Len=0 TSval=4197584348 TSecr=315367308
+110   1.010279  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+111   1.034274 46.33.92.106 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+112   1.034379  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34939  Destination port: 33467
+113   1.034928 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=42 Win=691 Len=0 TSval=4197584373 TSecr=315367331
+114   1.035000  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+115   1.088711 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=43 Win=691 Len=0 TSval=4197584398 TSecr=315367356
+116   1.088807  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+117   1.090357  10.29.112.2 -> 224.0.0.18   VRRP 54 Announcement (v2)
+118   1.114139 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=44 Win=691 Len=0 TSval=4197584452 TSecr=315367409
+119   1.114239  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+120   1.135167  10.29.96.54 -> 224.0.0.251  MDNS 156 Standard query 0x0000  PTR _00000000-053d-d9b0-e2a7-8960d99e4988._sub._home-sharing._tcp.local, "QM" question
+121   1.139050 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=45 Win=691 Len=0 TSval=4197584477 TSecr=315367433
+122   1.139157  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+123   1.163756 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=46 Win=691 Len=0 TSval=4197584502 TSecr=315367457
+124   1.163843  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+125   1.181635 46.33.92.106 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+126   1.181753  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34939  Destination port: 33468
+127   1.188421 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=47 Win=691 Len=0 TSval=4197584527 TSecr=315367481
+128   1.188512  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+129   1.213098 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=48 Win=691 Len=0 TSval=4197584551 TSecr=315367505
+130   1.213181  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+131   1.238873 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=49 Win=691 Len=0 TSval=4197584577 TSecr=315367529
+132   1.238970  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+133   1.263607 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=50 Win=691 Len=0 TSval=4197584602 TSecr=315367553
+134   1.263685  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+135   1.288301 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=51 Win=691 Len=0 TSval=4197584626 TSecr=315367577
+136   1.288378  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+137   1.312975 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=52 Win=691 Len=0 TSval=4197584651 TSecr=315367601
+138   1.313051  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+139   1.337589 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=53 Win=691 Len=0 TSval=4197584676 TSecr=315367625
+140   1.337669  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+141   1.344242 212.227.120.49 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+142   1.344625  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34939  Destination port: 33469
+143   1.362310 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=54 Win=691 Len=0 TSval=4197584700 TSecr=315367648
+144   1.362399  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+145   1.387413 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=55 Win=691 Len=0 TSval=4197584725 TSecr=315367672
+146   1.387564  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+147   1.412159 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=56 Win=691 Len=0 TSval=4197584750 TSecr=315367696
+148   1.498896 212.227.120.49 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+149   1.498989  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34939  Destination port: 33470
+150   1.653413 212.227.120.49 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+151   1.653536  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34939  Destination port: 33471
+152   1.714440   10.29.96.2 -> 224.0.0.18   VRRP 54 Announcement (v2)
+153   1.814711 212.227.121.171 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+154   1.815041  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34939  Destination port: 33472
+155   1.976395 212.227.121.171 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+156   1.976519  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34939  Destination port: 33473
+157   2.137531 212.227.121.171 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+158   2.137663  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34939  Destination port: 33474
+159   2.291030 217.160.127.79 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+160   2.291422  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34939  Destination port: 33475
+161   2.444796 217.160.127.79 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+162   2.444933  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34939  Destination port: 33476
+163   2.598329 217.160.127.79 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+164   2.598463  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34939  Destination port: 33477
+165   2.750467  10.29.112.2 -> 224.0.0.18   VRRP 54 Announcement (v2)
+166   2.752822 82.165.210.229 -> 10.29.96.80  ICMP 94 Destination unreachable (Port unreachable)
+167   2.753152  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34939  Destination port: 33478
+168   2.907200 82.165.210.229 -> 10.29.96.80  ICMP 94 Destination unreachable (Port unreachable)
+169   2.907361  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34939  Destination port: 33479
+170   3.027326 10.29.112.58 -> 10.29.127.255 UDP 86 Source port: 57621  Destination port: 57621
+171   3.061410 82.165.210.229 -> 10.29.96.80  ICMP 94 Destination unreachable (Port unreachable)
+172   3.070925  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34972  Destination port: 33435
+173   3.072797   10.29.96.2 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+174   3.073165  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34972  Destination port: 33436
+175   3.074853   10.29.96.2 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+176   3.074937  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34972  Destination port: 33437
+177   3.076693   10.29.96.2 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+178   3.076787  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34972  Destination port: 33438
+179   3.078571  128.12.1.42 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+180   3.078834  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34972  Destination port: 33439
+181   3.080700  128.12.1.42 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+182   3.080784  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34972  Destination port: 33440
+183   3.082564  128.12.1.42 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+184   3.082653  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34972  Destination port: 33441
+185   3.084559  128.12.1.53 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+186   3.084826  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34972  Destination port: 33442
+187   3.486361   10.29.96.2 -> 224.0.0.18   VRRP 54 Announcement (v2)
+188   4.426508 10.29.96.144 -> 255.255.255.255 DB-LSP-DISC 195 Dropbox LAN sync Discovery Protocol
+189   4.426622 10.29.96.144 -> 10.29.111.255 DB-LSP-DISC 195 Dropbox LAN sync Discovery Protocol
+190   4.635360  10.29.112.2 -> 224.0.0.18   VRRP 54 Announcement (v2)
+191   5.366557   10.29.96.2 -> 224.0.0.18   VRRP 54 Announcement (v2)
+192   6.097770  10.29.112.2 -> 224.0.0.18   VRRP 54 Announcement (v2)
+193   6.828896   10.29.96.2 -> 224.0.0.18   VRRP 54 Announcement (v2)
+194   7.357975  10.29.96.80 -> 192.30.252.88 TCP 54 50414→443 [ACK] Seq=1 Ack=1 Win=4106 Len=0
+195   7.458556 192.30.252.88 -> 10.29.96.80  TCP 66 [TCP ACKed unseen segment] 443→50414 [ACK] Seq=1 Ack=2 Win=31 Len=0 TSval=3528863138 TSecr=315328591
+196   7.873486  10.29.96.74 -> 255.255.255.255 DB-LSP-DISC 196 Dropbox LAN sync Discovery Protocol
+197   7.873736  10.29.96.74 -> 255.255.255.255 DB-LSP-DISC 196 Dropbox LAN sync Discovery Protocol
+198   7.873858  10.29.96.74 -> 255.255.255.255 DB-LSP-DISC 196 Dropbox LAN sync Discovery Protocol
+199   7.874006  10.29.96.74 -> 10.29.111.255 DB-LSP-DISC 196 Dropbox LAN sync Discovery Protocol
+200   8.082413  10.29.112.2 -> 224.0.0.18   VRRP 54 Announcement (v2)
+201   8.089280  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34972  Destination port: 33443
+202   8.090859  128.12.1.53 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+203   8.090953  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34972  Destination port: 33444
+204   8.092375 128.12.0.205 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+205   8.092819  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34972  Destination port: 33445
+206   8.094572 128.12.0.205 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+207   8.094697  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34972  Destination port: 33446
+208   8.096121 128.12.0.205 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+209   8.096201  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34972  Destination port: 33447
+210   8.099558 137.164.23.157 -> 10.29.96.80  ICMP 110 Time-to-live exceeded (Time to live exceeded in transit)
+211   8.099860  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34972  Destination port: 33448
+212   8.102785 137.164.23.157 -> 10.29.96.80  ICMP 110 Time-to-live exceeded (Time to live exceeded in transit)
+213   8.102869  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34972  Destination port: 33449
+214   8.105850 137.164.23.157 -> 10.29.96.80  ICMP 110 Time-to-live exceeded (Time to live exceeded in transit)
+215   8.105948  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34972  Destination port: 33450
+216   8.110270 137.164.46.145 -> 10.29.96.80  ICMP 110 Time-to-live exceeded (Time to live exceeded in transit)
+217   8.110528  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34972  Destination port: 33451
+218   8.114727 137.164.46.145 -> 10.29.96.80  ICMP 110 Time-to-live exceeded (Time to live exceeded in transit)
+219   8.114846  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34972  Destination port: 33452
+220   8.119071 137.164.46.145 -> 10.29.96.80  ICMP 110 Time-to-live exceeded (Time to live exceeded in transit)
+221   8.119164  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34972  Destination port: 33453
+222   8.124167 72.14.205.134 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+223   8.124494  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34972  Destination port: 33454
+224   8.129319 72.14.205.134 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+225   8.129422  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34972  Destination port: 33455
+226   8.133685 72.14.242.90 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+227   8.134130  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34972  Destination port: 33456
+228   8.139189 216.239.49.250 -> 10.29.96.80  ICMP 110 Time-to-live exceeded (Time to live exceeded in transit)
+229   8.139461  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34972  Destination port: 33457
+230   8.500245   10.29.96.2 -> 224.0.0.18   VRRP 54 Announcement (v2)
+231   9.500330  10.29.96.80 -> 10.31.99.58  TCP 78 50514→5000 [SYN] Seq=0 Win=65535 Len=0 MSS=1460 WS=32 TSval=315375801 TSecr=0 SACK_PERM=1
+232   9.517967  10.31.99.58 -> 10.29.96.80  TCP 78 5000→50514 [SYN, ACK] Seq=0 Ack=1 Win=65535 Len=0 MSS=1460 WS=16 TSval=152015623 TSecr=315375801 SACK_PERM=1
+233   9.518041  10.29.96.80 -> 10.31.99.58  TCP 66 50514→5000 [ACK] Seq=1 Ack=1 Win=131744 Len=0 TSval=315375818 TSecr=152015623
+234   9.518068  10.29.96.80 -> 10.31.99.58  IPA 107 unknown 0x54 [Malformed Packet]
+235   9.525439  10.31.99.58 -> 10.29.96.80  TCP 66 [TCP Window Update] 5000→50514 [ACK] Seq=1 Ack=1 Win=131760 Len=0 TSval=152015639 TSecr=315375818
+236   9.525750  10.31.99.58 -> 10.29.96.80  TCP 66 5000→50514 [ACK] Seq=1 Ack=42 Win=131712 Len=0 TSval=152015639 TSecr=315375818
+237   9.545798  10.31.99.58 -> 10.29.96.80  IPA 1249 unknown 0x53 [Malformed Packet]
+238   9.545851  10.29.96.80 -> 10.31.99.58  TCP 66 50514→5000 [ACK] Seq=42 Ack=1184 Win=130560 Len=0 TSval=315375845 TSecr=152015658
+239   9.546205  10.29.96.80 -> 10.31.99.58  TCP 66 50514→5000 [FIN, ACK] Seq=42 Ack=1184 Win=131072 Len=0 TSval=315375845 TSecr=152015658
+240   9.549397  10.31.99.58 -> 10.29.96.80  TCP 66 5000→50514 [ACK] Seq=1184 Ack=43 Win=131712 Len=0 TSval=152015661 TSecr=315375845
+241   9.549467  10.29.96.80 -> 10.31.99.58  TCP 66 [TCP Dup ACK 238#1] 50514→5000 [ACK] Seq=43 Ack=1184 Win=131072 Len=0 TSval=315375848 TSecr=152015661
+242   9.550027  10.31.99.58 -> 10.29.96.80  TCP 66 5000→50514 [FIN, ACK] Seq=1184 Ack=43 Win=131712 Len=0 TSval=152015661 TSecr=315375845
+243   9.550071  10.29.96.80 -> 10.31.99.58  TCP 66 50514→5000 [ACK] Seq=43 Ack=1185 Win=131072 Len=0 TSval=315375848 TSecr=152015661
+244   9.683052  10.29.112.2 -> 224.0.0.18   VRRP 54 Announcement (v2)
+245   9.695534 10.29.112.41 -> 255.255.255.255 DB-LSP-DISC 184 Dropbox LAN sync Discovery Protocol
+246   9.695814 10.29.112.41 -> 10.29.127.255 DB-LSP-DISC 184 Dropbox LAN sync Discovery Protocol
+247  10.171516  10.29.96.54 -> 224.0.0.251  MDNS 156 Standard query 0x0000  PTR _00000000-053d-d9b0-e2a7-8960d99e4988._sub._home-sharing._tcp.local, "QM" question
+248  10.232597  10.29.96.80 -> 173.194.203.188 TCP 54 50417→5228 [ACK] Seq=1 Ack=1 Win=4107 Len=0
+249  10.278855 173.194.203.188 -> 10.29.96.80  TCP 66 [TCP ACKed unseen segment] 5228→50417 [ACK] Seq=1 Ack=2 Win=358 Len=0 TSval=4194571916 TSecr=314199018
+250  10.392894   10.29.96.2 -> 224.0.0.18   VRRP 54 Announcement (v2)
+251  10.798300 10.29.96.193 -> 10.29.111.255 UDP 86 Source port: 57621  Destination port: 57621
+252  11.633895  10.29.112.2 -> 224.0.0.18   VRRP 54 Announcement (v2)
+253  12.051704 10.29.112.133 -> 10.29.127.255 UDP 86 Source port: 57621  Destination port: 57621
+254  12.365198   10.29.96.2 -> 224.0.0.18   VRRP 54 Announcement (v2)
+255  12.721086  10.29.96.80 -> 171.64.197.141 TCP 54 50510→443 [ACK] Seq=1 Ack=1 Win=4112 Len=0
+256  12.721087  10.29.96.80 -> 171.64.197.141 TCP 54 50509→443 [ACK] Seq=1 Ack=1 Win=4112 Len=0
+257  12.721087  10.29.96.80 -> 171.64.197.141 TCP 54 50508→443 [ACK] Seq=1 Ack=1 Win=4112 Len=0
+258  12.726958 171.64.197.141 -> 10.29.96.80  TCP 66 [TCP ACKed unseen segment] 443→50510 [ACK] Seq=1 Ack=2 Win=122 Len=0 TSval=170527706 TSecr=315334013
+259  12.728096 171.64.197.141 -> 10.29.96.80  TCP 66 [TCP ACKed unseen segment] 443→50509 [ACK] Seq=1 Ack=2 Win=122 Len=0 TSval=170527710 TSecr=315334013
+260  12.728266 171.64.197.141 -> 10.29.96.80  TCP 66 [TCP ACKed unseen segment] 443→50508 [ACK] Seq=1 Ack=2 Win=122 Len=0 TSval=170527710 TSecr=315334013
+261  13.140570  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34972  Destination port: 33458
+262  13.148055 72.14.232.138 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+263  13.148640  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34972  Destination port: 33459
+264  13.153966 209.85.249.63 -> 10.29.96.80  ICMP 182 Time-to-live exceeded (Time to live exceeded in transit)
+265  13.154216  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34972  Destination port: 33460
+266  13.160137 209.85.249.63 -> 10.29.96.80  ICMP 182 Time-to-live exceeded (Time to live exceeded in transit)
+267  13.160228  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34972  Destination port: 33461
+268  13.165988 209.85.246.38 -> 10.29.96.80  ICMP 182 Time-to-live exceeded (Time to live exceeded in transit)
+269  13.166323  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34972  Destination port: 33462
+270  13.177218 64.233.174.204 -> 10.29.96.80  ICMP 182 Time-to-live exceeded (Time to live exceeded in transit)
+271  13.177524  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34972  Destination port: 33463
+272  13.253970 10.29.113.67 -> 224.0.0.251  MDNS 103 Standard query 0x0000  PTR _233637DE._sub._googlecast._tcp.local, "QM" question PTR _googlecast._tcp.local, "QM" question
+273  13.514099  10.29.112.2 -> 224.0.0.18   VRRP 54 Announcement (v2)
+274  13.827466 172.19.142.9 -> 224.0.0.1    IGMPv2 42 Membership Query, general
+275  14.140923   10.29.96.3 -> 224.0.0.13   PIMv2 78 Hello
+276  14.141018   10.29.96.3 -> 224.0.0.13   PIMv2 78 Hello
+277  14.349798   10.29.96.2 -> 224.0.0.18   VRRP 54 Announcement (v2)
+278  14.767597 10.29.96.118 -> 224.0.0.251  MDNS 87 Standard query 0x0000  PTR _spotify-connect._tcp.local, "QU" question
+279  15.080976 2001:0:9d38:6abd:2ce3:e9fd:7ff3:2f5 -> ff02::1      IPv6 82 IPv6 no next header
+280  15.498746  10.29.112.2 -> 224.0.0.18   VRRP 54 Announcement (v2)
+281  16.021128   10.29.96.2 -> 224.0.0.18   VRRP 54 Announcement (v2)
+282  16.247563  10.29.96.80 -> 171.67.36.76 TCP 54 50443→443 [ACK] Seq=1 Ack=1 Win=65535 Len=0
+283  16.252219 171.67.36.76 -> 10.29.96.80  TCP 66 [TCP ACKed unseen segment] 443→50443 [ACK] Seq=1 Ack=2 Win=5756 Len=0 TSval=2157645995 TSecr=315156701
+284  17.170070  10.29.112.2 -> 224.0.0.18   VRRP 54 Announcement (v2)
+285  17.587965   10.29.96.2 -> 224.0.0.18   VRRP 54 Announcement (v2)
+286  18.178948  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34972  Destination port: 33464
+287  18.192360 64.233.174.206 -> 10.29.96.80  ICMP 182 Time-to-live exceeded (Time to live exceeded in transit)
+288  18.192782  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34972  Destination port: 33465
+289  18.203912 64.233.174.189 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+290  18.204188  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34972  Destination port: 33466
+291  18.258655 209.85.246.234 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+292  18.259064  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34972  Destination port: 33467
+293  18.270347 64.233.175.151 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+294  18.270639  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34972  Destination port: 33468
+295  18.281827 209.85.250.245 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+296  18.282057  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34972  Destination port: 33469
+297  18.293216 209.85.250.245 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+298  18.293295  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34972  Destination port: 33470
+299  18.304505 209.85.250.245 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+300  18.304611  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34972  Destination port: 33471
+301  18.315697 172.217.2.238 -> 10.29.96.80  ICMP 70 Destination unreachable (Port unreachable)
+302  18.316043  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34972  Destination port: 33472
+303  18.328511 172.217.2.238 -> 10.29.96.80  ICMP 70 Destination unreachable (Port unreachable)
+304  18.328666  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34972  Destination port: 33473
+305  18.339373 172.217.2.238 -> 10.29.96.80  ICMP 70 Destination unreachable (Port unreachable)
+306  18.350836  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34973  Destination port: 33435
+307  18.352045   10.29.96.2 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+308  18.352438  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34973  Destination port: 33436
+309  18.353436   10.29.96.2 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+310  18.353502  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34973  Destination port: 33437
+311  18.354451   10.29.96.2 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+312  18.354543  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34973  Destination port: 33438
+313  18.355596  128.12.1.42 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+314  18.355846  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34973  Destination port: 33439
+315  18.356848  128.12.1.42 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+316  18.356931  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34973  Destination port: 33440
+317  18.357934  128.12.1.42 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+318  18.357994  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34973  Destination port: 33441
+319  18.359225  128.12.1.53 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+320  18.359519  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34973  Destination port: 33442
+321  18.360799  128.12.1.53 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+322  18.361032  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34973  Destination port: 33443
+323  18.362342  128.12.1.53 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+324  18.362428  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34973  Destination port: 33444
+325  18.363680 128.12.0.205 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+326  18.363924  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34973  Destination port: 33445
+327  18.365208 128.12.0.205 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+328  18.365293  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34973  Destination port: 33446
+329  18.366635 128.12.0.205 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+330  18.366737  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34973  Destination port: 33447
+331  18.369846 137.164.23.157 -> 10.29.96.80  ICMP 110 Time-to-live exceeded (Time to live exceeded in transit)
+332  18.370085  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34973  Destination port: 33448
+333  18.373136 137.164.23.157 -> 10.29.96.80  ICMP 110 Time-to-live exceeded (Time to live exceeded in transit)
+334  18.373219  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34973  Destination port: 33449
+335  18.376323 137.164.23.157 -> 10.29.96.80  ICMP 110 Time-to-live exceeded (Time to live exceeded in transit)
+336  18.376398  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34973  Destination port: 33450
+337  18.380771 137.164.46.145 -> 10.29.96.80  ICMP 110 Time-to-live exceeded (Time to live exceeded in transit)
+338  18.381062  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34973  Destination port: 33451
+339  18.385342 137.164.46.145 -> 10.29.96.80  ICMP 110 Time-to-live exceeded (Time to live exceeded in transit)
+340  18.385409  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34973  Destination port: 33452
+341  18.389615 137.164.46.145 -> 10.29.96.80  ICMP 110 Time-to-live exceeded (Time to live exceeded in transit)
+342  18.389727  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34973  Destination port: 33453
+343  18.393834  4.15.122.45 -> 10.29.96.80  ICMP 94 Time-to-live exceeded (Time to live exceeded in transit)
+344  18.394147  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34973  Destination port: 33454
+345  18.398441  4.15.122.45 -> 10.29.96.80  ICMP 94 Time-to-live exceeded (Time to live exceeded in transit)
+346  18.398530  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34973  Destination port: 33455
+347  18.403401  4.15.122.45 -> 10.29.96.80  ICMP 94 Time-to-live exceeded (Time to live exceeded in transit)
+348  18.403491  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34973  Destination port: 33456
+349  18.407891 4.69.209.193 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+350  18.408151  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34973  Destination port: 33457
+351  18.412722 4.69.209.189 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+352  18.412985  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34973  Destination port: 33458
+353  18.417407 4.69.209.181 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+354  18.417674  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34973  Destination port: 33459
+355  18.421236  4.68.62.214 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+356  18.421479  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34973  Destination port: 33460
+357  18.736870  10.29.112.2 -> 224.0.0.18   VRRP 54 Announcement (v2)
+358  19.008207  10.29.96.80 -> 216.58.216.2 TCP 54 50458→443 [ACK] Seq=1 Ack=1 Win=4111 Len=0
+359  19.008207  10.29.96.80 -> 172.217.0.14 TCP 54 50457→443 [ACK] Seq=1 Ack=1 Win=4096 Len=0
+360  19.008208  10.29.96.80 -> 216.58.193.68 TCP 54 50451→443 [ACK] Seq=1 Ack=1 Win=4111 Len=0
+361  19.008372  10.29.96.80 -> 172.217.2.225 TCP 54 50449→443 [ACK] Seq=1 Ack=1 Win=4096 Len=0
+362  19.008372  10.29.96.80 -> 74.125.28.191 TCP 54 50446→443 [ACK] Seq=1 Ack=1 Win=4096 Len=0
+363  19.008372  10.29.96.80 -> 74.125.28.132 TCP 54 50445→80 [ACK] Seq=1 Ack=1 Win=4096 Len=0
+364  19.021881 216.58.216.2 -> 10.29.96.80  TCP 66 [TCP ACKed unseen segment] 443→50458 [ACK] Seq=1 Ack=2 Win=350 Len=0 TSval=1105409754 TSecr=315159805
+365  19.022128 172.217.0.14 -> 10.29.96.80  TCP 66 [TCP ACKed unseen segment] 443→50457 [ACK] Seq=1 Ack=2 Win=358 Len=0 TSval=3092848237 TSecr=315159558
+366  19.022368 172.217.2.225 -> 10.29.96.80  TCP 66 [TCP ACKed unseen segment] 443→50449 [ACK] Seq=1 Ack=2 Win=358 Len=0 TSval=1193501266 TSecr=315159412
+367  19.032169 216.58.193.68 -> 10.29.96.80  TCP 66 [TCP ACKed unseen segment] 443→50451 [ACK] Seq=1 Ack=2 Win=350 Len=0 TSval=2551320767 TSecr=315159232
+368  19.035325 74.125.28.132 -> 10.29.96.80  TCP 66 [TCP ACKed unseen segment] 80→50445 [ACK] Seq=1 Ack=2 Win=342 Len=0 TSval=3023938362 TSecr=315159174
+369  19.036058 74.125.28.191 -> 10.29.96.80  TCP 66 [TCP ACKed unseen segment] 443→50446 [ACK] Seq=1 Ack=2 Win=384 Len=0 TSval=2909980604 TSecr=315159362
+370  19.363657   10.29.96.2 -> 224.0.0.18   VRRP 54 Announcement (v2)
+371  20.049893  10.29.96.80 -> 216.58.216.2 TCP 54 50459→80 [ACK] Seq=1 Ack=1 Win=4102 Len=0
+372  20.063231 216.58.216.2 -> 10.29.96.80  TCP 66 [TCP ACKed unseen segment] 80→50459 [ACK] Seq=1 Ack=2 Win=348 Len=0 TSval=424219332 TSecr=315160021
+373  20.512659  10.29.112.2 -> 224.0.0.18   VRRP 54 Announcement (v2)
+374  20.550866  10.29.96.80 -> 172.217.2.238 TCP 54 50464→443 [ACK] Seq=1 Ack=1 Win=4111 Len=0
+375  20.550866  10.29.96.80 -> 74.125.28.191 TCP 54 50455→443 [ACK] Seq=1 Ack=1 Win=4096 Len=0
+376  20.564223 172.217.2.238 -> 10.29.96.80  TCP 66 [TCP ACKed unseen segment] 443→50464 [ACK] Seq=1 Ack=2 Win=350 Len=0 TSval=1042521518 TSecr=315160524
+377  20.578711 74.125.28.191 -> 10.29.96.80  TCP 66 [TCP ACKed unseen segment] 443→50455 [ACK] Seq=1 Ack=2 Win=366 Len=0 TSval=3176197809 TSecr=315160229
+378  21.034928  10.29.96.22 -> 10.29.111.255 UDP 86 Source port: 57621  Destination port: 57621
+379  21.050994  10.29.96.80 -> 172.217.2.238 TCP 54 50469→80 [ACK] Seq=1 Ack=1 Win=4115 Len=0
+380  21.050995  10.29.96.80 -> 216.58.192.13 TCP 54 50467→443 [ACK] Seq=1 Ack=1 Win=4111 Len=0
+381  21.061438 216.58.192.13 -> 10.29.96.80  TCP 66 [TCP ACKed unseen segment] 443→50467 [ACK] Seq=1 Ack=2 Win=350 Len=0 TSval=417258562 TSecr=315160623
+382  21.063953 172.217.2.238 -> 10.29.96.80  TCP 66 [TCP ACKed unseen segment] 80→50469 [ACK] Seq=1 Ack=2 Win=377 Len=0 TSval=1042522018 TSecr=315160885
+383  21.205722   10.29.96.2 -> 224.0.0.18   VRRP 54 Announcement (v2)
+384  22.020500  10.29.96.80 -> 224.0.0.251  MDNS 91 Standard query 0x0000  PTR _raop._tcp.local, "QU" question PTR _airplay._tcp.local, "QU" question
+385  22.071779  10.29.112.2 -> 224.0.0.18   VRRP 54 Announcement (v2)
+386  22.545006  10.29.96.80 -> 224.0.0.251  IGMPv2 46 Membership Report group 224.0.0.251
+387  22.545502 192.30.252.88 -> 10.29.96.80  TLSv1.2 97 [TCP ACKed unseen segment] Application Data
+388  22.545588  10.29.96.80 -> 192.30.252.88 TCP 66 [TCP Previous segment not captured] 50414→443 [ACK] Seq=2 Ack=32 Win=4105 Len=0 TSval=315388828 TSecr=3528866844
+389  22.545727  10.29.96.80 -> 192.30.252.88 TLSv1.2 101 Application Data
+390  22.549786 192.30.252.88 -> 10.29.96.80  TLSv1.2 97 [TCP ACKed unseen segment] [TCP Retransmission] Application Data
+391  22.549862  10.29.96.80 -> 192.30.252.88 TCP 66 [TCP Dup ACK 388#1] 50414→443 [ACK] Seq=37 Ack=32 Win=4105 Len=0 TSval=315388832 TSecr=3528866918
+392  22.561596 10.29.96.144 -> 10.29.111.255 NBNS 92 Name query NB LAZARARAMOS<20>
+393  22.615855 192.30.252.88 -> 10.29.96.80  TCP 66 443→50414 [ACK] Seq=32 Ack=37 Win=31 Len=0 TSval=3528866934 TSecr=315388828
+394  23.069089  10.29.96.80 -> 224.0.0.251  MDNS 91 Standard query 0x0000  PTR _raop._tcp.local, "QM" question PTR _airplay._tcp.local, "QM" question
+395  23.097176 10.29.96.144 -> 10.29.111.255 BROWSER 216 Get Backup List Request
+396  23.140270   10.29.96.2 -> 224.0.0.18   VRRP 54 Announcement (v2)
+397  23.593167  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34973  Destination port: 33461
+398  23.597072  4.68.62.214 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+399  23.597403  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34973  Destination port: 33462
+400  24.117897 89.149.187.190 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+401  24.118247  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34973  Destination port: 33463
+402  24.642076 89.149.187.190 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+403  24.642200  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34973  Destination port: 33464
+404  25.166813 89.149.187.190 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+405  25.166993  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34973  Destination port: 33465
+406  26.214846  10.29.96.80 -> 224.0.0.251  MDNS 91 Standard query 0x0000  PTR _raop._tcp.local, "QM" question PTR _airplay._tcp.local, "QM" question
+407  26.215566 46.33.92.106 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+408  26.215911  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34973  Destination port: 33466
+409  26.739844 46.33.92.106 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+410  26.739986  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34973  Destination port: 33467
+411  26.809684   10.29.96.2 -> 224.0.0.18   VRRP 54 Announcement (v2)
+412  27.072985 46.33.92.106 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+413  27.073094  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34973  Destination port: 33468
+414  27.227411 212.227.120.49 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+415  27.227803  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34973  Destination port: 33469
+416  27.285251  10.29.112.2 -> 224.0.0.18   VRRP 54 Announcement (v2)
+417  27.597262 212.227.120.49 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+418  28.783171   10.29.96.2 -> 224.0.0.18   VRRP 54 Announcement (v2)
+419  30.363565   10.29.96.2 -> 224.0.0.18   VRRP 54 Announcement (v2)
+420  30.874340  10.29.112.2 -> 224.0.0.18   VRRP 54 Announcement (v2)
+421  32.005919 74.125.28.132 -> 10.29.96.80  TCP 66 [TCP ACKed unseen segment] 80→50445 [FIN, ACK] Seq=1 Ack=2 Win=342 Len=0 TSval=3023951332 TSecr=315159174
+422  32.007213  10.29.96.80 -> 74.125.28.132 TCP 66 [TCP Previous segment not captured] 50445→80 [ACK] Seq=2 Ack=2 Win=4096 Len=0 TSval=315398281 TSecr=3023951332
+423  32.316778 216.58.193.68 -> 10.29.96.80  TLSv1.2 129 [TCP ACKed unseen segment] Application Data
+424  32.316872  10.29.96.80 -> 216.58.193.68 TCP 66 [TCP Previous segment not captured] 50451→443 [ACK] Seq=2 Ack=64 Win=4109 Len=0 TSval=315398591 TSecr=2551333835
+425  32.316918 216.58.193.68 -> 10.29.96.80  TCP 66 [TCP ACKed unseen segment] 443→50451 [FIN, ACK] Seq=64 Ack=2 Win=350 Len=0 TSval=2551333835 TSecr=315159232
+426  32.316920 216.58.193.68 -> 10.29.96.80  TCP 66 [TCP Out-Of-Order] 443→50451 [FIN, ACK] Seq=64 Ack=2 Win=350 Len=0 TSval=2551333883 TSecr=315159232
+427  32.316958  10.29.96.80 -> 216.58.193.68 TCP 66 50451→443 [ACK] Seq=2 Ack=65 Win=4109 Len=0 TSval=315398591 TSecr=2551333835
+428  32.316963  10.29.96.80 -> 216.58.193.68 TCP 66 [TCP Dup ACK 427#1] 50451→443 [ACK] Seq=2 Ack=65 Win=4109 Len=0 TSval=315398591 TSecr=2551333835
+429  32.317090  10.29.96.80 -> 216.58.193.68 TCP 66 50451→443 [FIN, ACK] Seq=2 Ack=65 Win=4109 Len=0 TSval=315398591 TSecr=2551333835
+430  32.317318 74.125.28.191 -> 10.29.96.80  TLSv1.2 129 [TCP ACKed unseen segment] Application Data
+431  32.317321 74.125.28.191 -> 10.29.96.80  TCP 66 [TCP ACKed unseen segment] 443→50446 [FIN, ACK] Seq=64 Ack=2 Win=384 Len=0 TSval=2909993817 TSecr=315159362
+432  32.317387  10.29.96.80 -> 74.125.28.191 TCP 66 [TCP Previous segment not captured] 50446→443 [ACK] Seq=2 Ack=64 Win=4094 Len=0 TSval=315398591 TSecr=2909993817
+433  32.317387  10.29.96.80 -> 74.125.28.191 TCP 66 50446→443 [ACK] Seq=2 Ack=65 Win=4094 Len=0 TSval=315398591 TSecr=2909993817
+434  32.317516  10.29.96.80 -> 74.125.28.191 TCP 66 50446→443 [FIN, ACK] Seq=2 Ack=65 Win=4096 Len=0 TSval=315398591 TSecr=2909993817
+435  32.317705 172.217.2.225 -> 10.29.96.80  TLSv1.2 129 [TCP ACKed unseen segment] Application Data
+436  32.317707 172.217.2.225 -> 10.29.96.80  TCP 66 [TCP ACKed unseen segment] 443→50449 [FIN, ACK] Seq=64 Ack=2 Win=358 Len=0 TSval=1193514513 TSecr=315159412
+437  32.317707 172.217.2.225 -> 10.29.96.80  TCP 66 [TCP ACKed unseen segment] [TCP Out-Of-Order] 443→50449 [FIN, ACK] Seq=64 Ack=2 Win=358 Len=0 TSval=1193514541 TSecr=315159412
+438  32.317708 74.125.28.191 -> 10.29.96.80  TCP 66 [TCP ACKed unseen segment] [TCP Out-Of-Order] 443→50446 [FIN, ACK] Seq=64 Ack=2 Win=384 Len=0 TSval=2909993873 TSecr=315159362
+439  32.317764  10.29.96.80 -> 172.217.2.225 TCP 66 [TCP Previous segment not captured] 50449→443 [ACK] Seq=2 Ack=64 Win=4094 Len=0 TSval=315398591 TSecr=1193514513
+440  32.317764  10.29.96.80 -> 172.217.2.225 TCP 66 50449→443 [ACK] Seq=2 Ack=65 Win=4096 Len=0 TSval=315398591 TSecr=1193514513
+441  32.317764  10.29.96.80 -> 172.217.2.225 TCP 66 [TCP Dup ACK 440#1] 50449→443 [ACK] Seq=2 Ack=65 Win=4096 Len=0 TSval=315398591 TSecr=1193514513
+442  32.317782  10.29.96.80 -> 74.125.28.191 TCP 66 [TCP Out-Of-Order] 50446→443 [FIN, ACK] Seq=2 Ack=65 Win=4096 Len=0 TSval=315398591 TSecr=2909993817
+443  32.317865  10.29.96.80 -> 172.217.2.225 TCP 66 50449→443 [FIN, ACK] Seq=2 Ack=65 Win=4096 Len=0 TSval=315398592 TSecr=1193514513
+444  32.329516 172.217.2.225 -> 10.29.96.80  TCP 66 [TCP ACKed unseen segment] 443→50449 [ACK] Seq=65 Ack=3 Win=358 Len=0 TSval=1193514572 TSecr=315398592
+445  32.339272 216.58.193.68 -> 10.29.96.80  TCP 66 443→50451 [ACK] Seq=65 Ack=3 Win=350 Len=0 TSval=2551334073 TSecr=315398591
+446  32.343257 74.125.28.191 -> 10.29.96.80  TCP 66 443→50446 [ACK] Seq=65 Ack=3 Win=384 Len=0 TSval=2909993910 TSecr=315398591
+447  32.344142 74.125.28.191 -> 10.29.96.80  TCP 66 [TCP Dup ACK 446#1] 443→50446 [ACK] Seq=65 Ack=3 Win=384 Len=0 TSval=2909993910 TSecr=315398591
+448  32.344197  10.29.96.80 -> 74.125.28.191 TCP 54 50446→443 [RST] Seq=3 Win=0 Len=0
+449  32.454080 172.217.0.14 -> 10.29.96.80  TLSv1.2 129 [TCP ACKed unseen segment] Application Data
+450  32.454141 172.217.0.14 -> 10.29.96.80  TCP 66 [TCP ACKed unseen segment] 443→50457 [FIN, ACK] Seq=64 Ack=2 Win=358 Len=0 TSval=3092861667 TSecr=315159558
+451  32.454154  10.29.96.80 -> 172.217.0.14 TCP 66 [TCP Previous segment not captured] 50457→443 [ACK] Seq=2 Ack=64 Win=4094 Len=0 TSval=315398724 TSecr=3092861667
+452  32.454190  10.29.96.80 -> 172.217.0.14 TCP 66 50457→443 [ACK] Seq=2 Ack=65 Win=4094 Len=0 TSval=315398724 TSecr=3092861667
+453  32.454402  10.29.96.80 -> 172.217.0.14 TCP 66 50457→443 [FIN, ACK] Seq=2 Ack=65 Win=4096 Len=0 TSval=315398724 TSecr=3092861667
+454  32.465473 172.217.0.14 -> 10.29.96.80  TCP 66 [TCP ACKed unseen segment] 443→50457 [ACK] Seq=65 Ack=3 Win=358 Len=0 TSval=3092861679 TSecr=315398724
+455  32.616256  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34973  Destination port: 33471
+456  32.629556  10.29.112.2 -> 224.0.0.18   VRRP 54 Announcement (v2)
+457  32.840104  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+458  32.840804 216.58.216.2 -> 10.29.96.80  TLSv1.2 129 [TCP ACKed unseen segment] Application Data
+459  32.840839 216.58.216.2 -> 10.29.96.80  TCP 66 [TCP ACKed unseen segment] 443→50458 [FIN, ACK] Seq=64 Ack=2 Win=350 Len=0 TSval=1105423448 TSecr=315159805
+460  32.840892  10.29.96.80 -> 216.58.216.2 TCP 66 [TCP Previous segment not captured] 50458→443 [ACK] Seq=2 Ack=64 Win=4109 Len=0 TSval=315399108 TSecr=1105423448
+461  32.840892  10.29.96.80 -> 216.58.216.2 TCP 66 50458→443 [ACK] Seq=2 Ack=65 Win=4109 Len=0 TSval=315399108 TSecr=1105423448
+462  32.841046 216.58.216.2 -> 10.29.96.80  TCP 66 [TCP ACKed unseen segment] [TCP Out-Of-Order] 443→50458 [FIN, ACK] Seq=64 Ack=2 Win=350 Len=0 TSval=1105423472 TSecr=315159805
+463  32.841105  10.29.96.80 -> 216.58.216.2 TCP 66 [TCP Dup ACK 461#1] 50458→443 [ACK] Seq=2 Ack=65 Win=4109 Len=0 TSval=315399108 TSecr=1105423448
+464  32.841195  10.29.96.80 -> 216.58.216.2 TCP 66 50458→443 [FIN, ACK] Seq=2 Ack=65 Win=4109 Len=0 TSval=315399108 TSecr=1105423448
+465  32.841352 212.227.121.171 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+466  32.841708  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34973  Destination port: 33472
+467  32.852952 216.58.216.2 -> 10.29.96.80  TCP 66 443→50458 [ACK] Seq=65 Ack=3 Win=350 Len=0 TSval=1105423584 TSecr=315399108
+468  32.864850 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=57 Win=691 Len=0 TSval=4197616201 TSecr=315398996
+469  32.864951  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+470  32.889529 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=58 Win=691 Len=0 TSval=4197616225 TSecr=315399131
+471  32.889598  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+472  32.914213 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=59 Win=691 Len=0 TSval=4197616250 TSecr=315399155
+473  32.914302  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+474  32.934200 216.58.216.2 -> 10.29.96.80  TCP 66 [TCP ACKed unseen segment] 80→50459 [FIN, ACK] Seq=1 Ack=2 Win=348 Len=0 TSval=424232202 TSecr=315160021
+475  32.934263  10.29.96.80 -> 216.58.216.2 TCP 66 [TCP Previous segment not captured] 50459→80 [ACK] Seq=2 Ack=2 Win=4102 Len=0 TSval=315399198 TSecr=424232202
+476  32.944329 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=60 Win=691 Len=0 TSval=4197616275 TSecr=315399179
+477  32.944424  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+478  32.968973 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=61 Win=691 Len=0 TSval=4197616305 TSecr=315399208
+479  32.969065  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+480  32.993589 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=62 Win=691 Len=0 TSval=4197616329 TSecr=315399232
+481  32.993694  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+482  33.018233 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=63 Win=691 Len=0 TSval=4197616354 TSecr=315399256
+483  33.018360  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+484  33.042948 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=64 Win=691 Len=0 TSval=4197616379 TSecr=315399280
+485  33.043043  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+486  33.061785 212.227.121.171 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+487  33.061909  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34973  Destination port: 33473
+488  33.067553 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=65 Win=691 Len=0 TSval=4197616403 TSecr=315399304
+489  33.067650  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+490  33.093048 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=66 Win=691 Len=0 TSval=4197616428 TSecr=315399328
+491  33.093112  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+492  33.118257 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=67 Win=691 Len=0 TSval=4197616454 TSecr=315399353
+493  33.118370  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+494  33.143574 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=68 Win=691 Len=0 TSval=4197616479 TSecr=315399377
+495  33.143658  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+496  33.365000 74.125.28.191 -> 10.29.96.80  TLSv1.2 129 [TCP ACKed unseen segment] Application Data
+497  33.365065  10.29.96.80 -> 74.125.28.191 TCP 66 [TCP Previous segment not captured] 50455→443 [ACK] Seq=2 Ack=64 Win=4094 Len=0 TSval=315399622 TSecr=3176210393
+498  33.365220 74.125.28.191 -> 10.29.96.80  TCP 66 [TCP ACKed unseen segment] 443→50455 [FIN, ACK] Seq=64 Ack=2 Win=366 Len=0 TSval=3176210393 TSecr=315160229
+499  33.365258  10.29.96.80 -> 74.125.28.191 TCP 66 50455→443 [ACK] Seq=2 Ack=65 Win=4096 Len=0 TSval=315399622 TSecr=3176210393
+500  33.365333  10.29.96.80 -> 74.125.28.191 TCP 66 50455→443 [FIN, ACK] Seq=2 Ack=65 Win=4096 Len=0 TSval=315399622 TSecr=3176210393
+501  33.365370 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=69 Win=691 Len=0 TSval=4197616504 TSecr=315399402
+502  33.365433  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+503  33.365540 74.125.28.191 -> 10.29.96.80  TCP 66 [TCP Out-Of-Order] 443→50455 [FIN, ACK] Seq=64 Ack=2 Win=366 Len=0 TSval=3176210445 TSecr=315160229
+504  33.365567  10.29.96.80 -> 74.125.28.191 TCP 66 [TCP Out-Of-Order] 50455→443 [FIN, ACK] Seq=2 Ack=65 Win=4096 Len=0 TSval=315399622 TSecr=3176210393
+505  33.365733 212.227.121.171 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+506  33.365826  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34973  Destination port: 33474
+507  33.393041 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=70 Win=691 Len=0 TSval=4197616726 TSecr=315399622
+508  33.393128  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+509  33.393191 74.125.28.191 -> 10.29.96.80  TCP 66 443→50455 [ACK] Seq=65 Ack=3 Win=366 Len=0 TSval=3176210622 TSecr=315399622
+510  33.393345 74.125.28.191 -> 10.29.96.80  TCP 66 [TCP Dup ACK 509#1] 443→50455 [ACK] Seq=65 Ack=3 Win=366 Len=0 TSval=3176210622 TSecr=315399622
+511  33.393372  10.29.96.80 -> 74.125.28.191 TCP 54 50455→443 [RST] Seq=3 Win=0 Len=0
+512  33.417880 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=71 Win=691 Len=0 TSval=4197616754 TSecr=315399650
+513  33.418281  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+514  33.443061 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=72 Win=691 Len=0 TSval=4197616779 TSecr=315399674
+515  33.443140  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+516  33.455635 172.217.2.238 -> 10.29.96.80  TLSv1.2 129 [TCP ACKed unseen segment] Application Data
+517  33.455699 172.217.2.238 -> 10.29.96.80  TCP 66 [TCP ACKed unseen segment] 443→50464 [FIN, ACK] Seq=64 Ack=2 Win=350 Len=0 TSval=1042534409 TSecr=315160524
+518  33.455716  10.29.96.80 -> 172.217.2.238 TCP 66 [TCP Previous segment not captured] 50464→443 [ACK] Seq=2 Ack=64 Win=4109 Len=0 TSval=315399711 TSecr=1042534409
+519  33.455741  10.29.96.80 -> 172.217.2.238 TCP 66 50464→443 [ACK] Seq=2 Ack=65 Win=4109 Len=0 TSval=315399711 TSecr=1042534409
+520  33.455873  10.29.96.80 -> 172.217.2.238 TCP 66 50464→443 [FIN, ACK] Seq=2 Ack=65 Win=4109 Len=0 TSval=315399711 TSecr=1042534409
+521  33.467058 172.217.2.238 -> 10.29.96.80  TCP 66 [TCP ACKed unseen segment] 443→50464 [ACK] Seq=65 Ack=3 Win=350 Len=0 TSval=1042534420 TSecr=315399711
+522  33.467839 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=73 Win=691 Len=0 TSval=4197616804 TSecr=315399699
+523  33.467942  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+524  33.509058 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=74 Win=691 Len=0 TSval=4197616834 TSecr=315399722
+525  33.509180  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+526  33.519439 217.160.127.79 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+527  33.519769  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34973  Destination port: 33475
+528  33.533769 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=75 Win=691 Len=0 TSval=4197616870 TSecr=315399763
+529  33.533870  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+530  33.550851 216.58.192.13 -> 10.29.96.80  TLSv1.2 129 [TCP ACKed unseen segment] Application Data
+531  33.550857 216.58.192.13 -> 10.29.96.80  TCP 66 [TCP ACKed unseen segment] 443→50467 [FIN, ACK] Seq=64 Ack=2 Win=350 Len=0 TSval=417271051 TSecr=315160623
+532  33.550937  10.29.96.80 -> 216.58.192.13 TCP 66 [TCP Previous segment not captured] 50467→443 [ACK] Seq=2 Ack=64 Win=4109 Len=0 TSval=315399804 TSecr=417271051
+533  33.550937  10.29.96.80 -> 216.58.192.13 TCP 66 50467→443 [ACK] Seq=2 Ack=65 Win=4109 Len=0 TSval=315399804 TSecr=417271051
+534  33.551090  10.29.96.80 -> 216.58.192.13 TCP 66 50467→443 [FIN, ACK] Seq=2 Ack=65 Win=4109 Len=0 TSval=315399804 TSecr=417271051
+535  33.555895 216.58.192.13 -> 10.29.96.80  TCP 66 [TCP ACKed unseen segment] 443→50467 [ACK] Seq=65 Ack=3 Win=350 Len=0 TSval=417271056 TSecr=315399804
+536  33.558535 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=76 Win=691 Len=0 TSval=4197616894 TSecr=315399787
+537  33.558630  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+538  33.583658 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=77 Win=691 Len=0 TSval=4197616919 TSecr=315399811
+539  33.583729  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+540  33.608382 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=78 Win=691 Len=0 TSval=4197616944 TSecr=315399836
+541  33.608503  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+542  33.633138 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=79 Win=691 Len=0 TSval=4197616969 TSecr=315399860
+543  33.633208  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+544  33.658352 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=80 Win=691 Len=0 TSval=4197616994 TSecr=315399884
+545  33.658450  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+546  33.889109 217.160.127.79 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+547  33.889144 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=81 Win=691 Len=0 TSval=4197617019 TSecr=315399909
+548  33.889222  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+549  33.889248  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34973  Destination port: 33476
+550  33.889381 172.217.2.238 -> 10.29.96.80  TCP 66 [TCP ACKed unseen segment] 80→50469 [FIN, ACK] Seq=1 Ack=2 Win=377 Len=0 TSval=1042534780 TSecr=315160885
+551  33.889441  10.29.96.80 -> 172.217.2.238 TCP 66 [TCP Previous segment not captured] 50469→80 [ACK] Seq=2 Ack=2 Win=4115 Len=0 TSval=315400138 TSecr=1042534780
+552  33.914409 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=82 Win=691 Len=0 TSval=4197617250 TSecr=315400138
+553  33.914505  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+554  33.939053 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=83 Win=691 Len=0 TSval=4197617275 TSecr=315400163
+555  33.939137  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+556  33.963679 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=84 Win=691 Len=0 TSval=4197617299 TSecr=315400187
+557  33.963764  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+558  33.988763 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=85 Win=691 Len=0 TSval=4197617324 TSecr=315400210
+559  33.988863  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+560  34.013473 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=86 Win=691 Len=0 TSval=4197617349 TSecr=315400235
+561  34.013573  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+562  34.038116 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=87 Win=691 Len=0 TSval=4197617374 TSecr=315400259
+563  34.038210  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+564  34.043575 217.160.127.79 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+565  34.043696  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34973  Destination port: 33477
+566  34.080897 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=88 Win=691 Len=0 TSval=4197617399 TSecr=315400283
+567  34.080982  10.29.96.80 -> 173.194.203.125 XMPP/XML 67 UNKNOWN PACKET 
+568  34.106357 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=89 Win=691 Len=0 TSval=4197617441 TSecr=315400325
+569  34.106486  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+570  34.131145 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=90 Win=691 Len=0 TSval=4197617467 TSecr=315400350
+571  34.131249  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+572  34.142537   10.29.96.2 -> 224.0.0.18   VRRP 54 Announcement (v2)
+573  34.155863 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=91 Win=691 Len=0 TSval=4197617492 TSecr=315400374
+574  34.155941  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+575  34.181118 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=92 Win=691 Len=0 TSval=4197617516 TSecr=315400397
+576  34.181253  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+577  34.197059 82.165.210.229 -> 10.29.96.80  ICMP 94 Destination unreachable (Port unreachable)
+578  34.412861  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34973  Destination port: 33478
+579  34.413336 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=93 Win=691 Len=0 TSval=4197617542 TSecr=315400422
+580  34.413446  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+581  34.438106 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=94 Win=691 Len=0 TSval=4197617774 TSecr=315400652
+582  34.438160  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+583  34.462756 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=95 Win=691 Len=0 TSval=4197617799 TSecr=315400676
+584  34.462870  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+585  34.487522 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=96 Win=691 Len=0 TSval=4197617823 TSecr=315400700
+586  34.487611  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+587  34.516281 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=97 Win=691 Len=0 TSval=4197617848 TSecr=315400724
+588  34.516374  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+589  34.541047 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=98 Win=691 Len=0 TSval=4197617877 TSecr=315400752
+590  34.541197  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+591  34.565873 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=99 Win=691 Len=0 TSval=4197617902 TSecr=315400776
+592  34.565965  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+593  34.566747 82.165.210.229 -> 10.29.96.80  ICMP 94 Destination unreachable (Port unreachable)
+594  34.566870  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34973  Destination port: 33479
+595  34.590540 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=100 Win=691 Len=0 TSval=4197617926 TSecr=315400800
+596  34.590619  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+597  34.599252 10.29.96.172 -> 10.29.111.255 NBNS 92 Name query NB WPAD<00>
+598  34.600680 10.29.96.172 -> 224.0.0.252  LLMNR 64 Standard query 0xf7c1  A wpad
+599  34.602156 10.29.96.172 -> 224.0.0.252  LLMNR 64 Standard query 0xa3d9  AAAA wpad
+600  34.615176 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=101 Win=691 Len=0 TSval=4197617951 TSecr=315400824
+601  34.615291  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+602  34.639867 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=102 Win=691 Len=0 TSval=4197617976 TSecr=315400848
+603  34.639974  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+604  34.664675 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=103 Win=691 Len=0 TSval=4197618000 TSecr=315400872
+605  34.664776  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+606  34.689293 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=104 Win=691 Len=0 TSval=4197618025 TSecr=315400896
+607  34.689373  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+608  34.713972 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=105 Win=691 Len=0 TSval=4197618050 TSecr=315400920
+609  34.714063  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+610  34.720484 82.165.210.229 -> 10.29.96.80  ICMP 94 Destination unreachable (Port unreachable)
+611  34.937296  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34974  Destination port: 33435
+612  34.937315  10.29.96.80 -> 173.194.68.120 TCP 54 50471→443 [ACK] Seq=1 Ack=1 Win=4096 Len=0
+613  34.938000 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=106 Win=691 Len=0 TSval=4197618074 TSecr=315400944
+614  34.938114  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+615  34.939096   10.29.96.2 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+616  34.939561  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34974  Destination port: 33436
+617  34.941023   10.29.96.2 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+618  34.941109  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34974  Destination port: 33437
+619  34.942015   10.29.96.2 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+620  34.942084  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34974  Destination port: 33438
+621  34.943086  128.12.1.42 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+622  34.943330  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34974  Destination port: 33439
+623  34.944340  128.12.1.42 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+624  34.944411  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34974  Destination port: 33440
+625  34.945466  128.12.1.42 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+626  34.945547  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34974  Destination port: 33441
+627  34.946772  128.12.1.53 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+628  34.946987  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34974  Destination port: 33442
+629  34.948401  128.12.1.53 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+630  34.948484  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34974  Destination port: 33443
+631  34.950068  128.12.1.53 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+632  34.950150  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34974  Destination port: 33444
+633  34.951348 128.12.0.205 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+634  34.951571  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34974  Destination port: 33445
+635  34.952852 128.12.0.205 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+636  34.952925  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34974  Destination port: 33446
+637  34.954271 128.12.0.205 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+638  34.954358  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34974  Destination port: 33447
+639  34.966658 137.164.23.157 -> 10.29.96.80  ICMP 110 Time-to-live exceeded (Time to live exceeded in transit)
+640  34.966664 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=107 Win=691 Len=0 TSval=4197618299 TSecr=315401167
+641  34.966759  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+642  34.966969  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34974  Destination port: 33448
+643  34.970196 137.164.23.157 -> 10.29.96.80  ICMP 110 Time-to-live exceeded (Time to live exceeded in transit)
+644  34.970275  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34974  Destination port: 33449
+645  34.973598 137.164.23.157 -> 10.29.96.80  ICMP 110 Time-to-live exceeded (Time to live exceeded in transit)
+646  34.973696  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34974  Destination port: 33450
+647  34.978084 137.164.46.145 -> 10.29.96.80  ICMP 110 Time-to-live exceeded (Time to live exceeded in transit)
+648  34.978408  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34974  Destination port: 33451
+649  34.982797 137.164.46.145 -> 10.29.96.80  ICMP 110 Time-to-live exceeded (Time to live exceeded in transit)
+650  34.982887  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34974  Destination port: 33452
+651  34.987154 137.164.46.145 -> 10.29.96.80  ICMP 110 Time-to-live exceeded (Time to live exceeded in transit)
+652  34.987239  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34974  Destination port: 33453
+653  34.991294 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=108 Win=691 Len=0 TSval=4197618327 TSecr=315401195
+654  34.991383  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+655  34.992200 74.125.147.146 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+656  34.992518  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34974  Destination port: 33454
+657  34.996737 72.14.205.134 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+658  34.997120  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34974  Destination port: 33455
+659  35.001575 74.125.147.146 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+660  35.001884  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34974  Destination port: 33456
+661  35.007685 173.194.68.120 -> 10.29.96.80  TCP 66 [TCP ACKed unseen segment] 443→50471 [ACK] Seq=1 Ack=2 Win=350 Len=0 TSval=81821957 TSecr=315175199
+662  35.016019 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=109 Win=691 Len=0 TSval=4197618352 TSecr=315401219
+663  35.016125  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+664  35.031991 10.29.96.172 -> 10.29.111.255 NBNS 92 Name query NB WPAD<00>
+665  35.032220 10.29.96.172 -> 224.0.0.252  LLMNR 64 Standard query 0xcd8d  A wpad
+666  35.032382 10.29.96.172 -> 224.0.0.252  LLMNR 64 Standard query 0xc9f8  AAAA wpad
+667  35.032505 10.29.96.172 -> 224.0.0.252  LLMNR 63 Standard query 0xeeb3  ANY Ben
+668  35.032628 10.29.96.172 -> 224.0.0.252  LLMNR 64 Standard query 0xf7c1  A wpad
+669  35.032791 10.29.96.172 -> 224.0.0.252  LLMNR 64 Standard query 0xa3d9  AAAA wpad
+670  35.032964 10.29.96.144 -> 10.29.111.255 BROWSER 216 Get Backup List Request
+671  35.040745 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=110 Win=691 Len=0 TSval=4197618376 TSecr=315401242
+672  35.040858  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+673  35.065566 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=111 Win=691 Len=0 TSval=4197618401 TSecr=315401266
+674  35.065680  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+675  35.081611  10.29.96.80 -> 224.0.0.251  MDNS 91 Standard query 0x0000  PTR _raop._tcp.local, "QM" question PTR _airplay._tcp.local, "QM" question
+676  35.082995 2001:0:5ef5:79fb:1882:fbf5:7ff3:2f5 -> ff02::1      IPv6 82 IPv6 no next header
+677  35.090260 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=112 Win=691 Len=0 TSval=4197618426 TSecr=315401290
+678  35.090321  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+679  35.114939 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=113 Win=691 Len=0 TSval=4197618451 TSecr=315401313
+680  35.115034  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+681  35.139739 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=114 Win=691 Len=0 TSval=4197618475 TSecr=315401337
+682  35.139836  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+683  35.164469 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=115 Win=691 Len=0 TSval=4197618500 TSecr=315401361
+684  35.164548  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+685  35.230672 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=116 Win=691 Len=0 TSval=4197618525 TSecr=315401385
+686  35.230820  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+687  35.461997 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=117 Win=691 Len=0 TSval=4197618591 TSecr=315401451
+688  35.462094  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+689  35.486664 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=118 Win=691 Len=0 TSval=4197618822 TSecr=315401681
+690  35.486782  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+691  35.511365 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=119 Win=691 Len=0 TSval=4197618847 TSecr=315401705
+692  35.511463  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+693  35.535983 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=120 Win=691 Len=0 TSval=4197618872 TSecr=315401729
+694  35.536074  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+695  35.560672 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=121 Win=691 Len=0 TSval=4197618896 TSecr=315401753
+696  35.560771  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+697  35.585327 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=122 Win=691 Len=0 TSval=4197618921 TSecr=315401777
+698  35.585418  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+699  35.610075 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=123 Win=691 Len=0 TSval=4197618946 TSecr=315401801
+700  35.610172  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+701  35.653934 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=124 Win=691 Len=0 TSval=4197618970 TSecr=315401825
+702  35.654032  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+703  35.679201 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=125 Win=691 Len=0 TSval=4197619014 TSecr=315401868
+704  35.679294  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+705  35.703962 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=126 Win=691 Len=0 TSval=4197619040 TSecr=315401893
+706  35.704046  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+707  35.717515 10.29.96.172 -> 10.29.111.255 NBNS 92 Name query NB WPAD<00>
+708  35.728520 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=127 Win=691 Len=0 TSval=4197619064 TSecr=315401917
+709  35.728597  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+710  35.755755 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=128 Win=691 Len=0 TSval=4197619089 TSecr=315401940
+711  35.755852  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+712  35.986446 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=129 Win=691 Len=0 TSval=4197619116 TSecr=315401967
+713  35.986559  10.29.96.80 -> 173.194.203.125 TCP 67 [TCP segment of a reassembled PDU]
+714  36.011171 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=130 Win=691 Len=0 TSval=4197619347 TSecr=315402196
+715  36.075712   10.29.96.2 -> 224.0.0.18   VRRP 54 Announcement (v2)
+716  36.102523  10.29.112.2 -> 224.0.0.18   VRRP 54 Announcement (v2)
+717  36.103011 10.29.96.172 -> 10.29.111.255 NBNS 92 Name query NB WPAD<00>
+718  36.285461 10.29.96.172 -> 224.0.0.252  LLMNR 63 Standard query 0xde11  ANY Ben
+719  36.759487 10.29.96.135 -> 10.29.111.255 UDP 82 Source port: 57621  Destination port: 57621
+720  36.779078 10.29.96.118 -> 10.29.111.255 UDP 86 Source port: 57621  Destination port: 57621
+721  37.566204  10.29.96.80 -> 74.125.28.95 TCP 54 50484→443 [ACK] Seq=1 Ack=1 Win=4111 Len=0
+722  37.590943 74.125.28.95 -> 10.29.96.80  TCP 66 [TCP ACKed unseen segment] 443→50484 [ACK] Seq=1 Ack=2 Win=350 Len=0 TSval=2994852159 TSecr=315177220
+723  37.740545  10.29.96.74 -> 10.29.111.255 NBNS 92 Name query NB WPAD<00>
+724  37.741467  10.29.96.74 -> 224.0.0.252  LLMNR 64 Standard query 0xb4f9  A wpad
+725  37.741529  10.29.96.74 -> 224.0.0.252  LLMNR 72 Standard query 0x81e4  ANY Sarah-laptop
+726  37.741786  10.29.96.74 -> 224.0.0.252  LLMNR 64 Standard query 0x84df  AAAA wpad
+727  37.798732  10.29.112.2 -> 224.0.0.18   VRRP 54 Announcement (v2)
+728  37.862962  10.29.96.74 -> 255.255.255.255 DB-LSP-DISC 196 Dropbox LAN sync Discovery Protocol
+729  37.864037  10.29.96.74 -> 255.255.255.255 DB-LSP-DISC 196 Dropbox LAN sync Discovery Protocol
+730  37.864426  10.29.96.74 -> 255.255.255.255 DB-LSP-DISC 196 Dropbox LAN sync Discovery Protocol
+731  37.864547  10.29.96.74 -> 10.29.111.255 DB-LSP-DISC 196 Dropbox LAN sync Discovery Protocol
+732  38.088626 10.29.96.172 -> 10.29.111.255 NBNS 92 Name query NB WPAD<00>
+733  38.090011 10.29.96.144 -> 10.29.111.255 BROWSER 216 Get Backup List Request
+734  38.090115 10.29.96.172 -> 224.0.0.252  LLMNR 64 Standard query 0xda13  A wpad
+735  38.091490 10.29.96.172 -> 224.0.0.252  LLMNR 64 Standard query 0xb882  AAAA wpad
+736  38.153578  10.29.96.74 -> 224.0.0.252  LLMNR 64 Standard query 0xb4f9  A wpad
+737  38.153601  10.29.96.74 -> 224.0.0.252  LLMNR 72 Standard query 0x81e4  ANY Sarah-laptop
+738  38.153772  10.29.96.74 -> 224.0.0.252  LLMNR 64 Standard query 0x84df  AAAA wpad
+739  38.330499  10.29.96.80 -> 173.194.203.125 TCP 1148 [TCP segment of a reassembled PDU]
+740  38.355265 173.194.203.125 -> 10.29.96.80  TCP 66 5222→49450 [ACK] Seq=1 Ack=1212 Win=709 Len=0 TSval=4197621691 TSecr=315404533
+741  38.609807  10.29.96.74 -> 224.0.0.252  LLMNR 72 Standard query 0x98ad  ANY Sarah-laptop
+742  38.839704 10.29.96.172 -> 10.29.111.255 NBNS 92 Name query NB WPAD<00>
+743  39.314753  10.29.96.74 -> 10.29.111.255 NBNS 92 Name query NB WPAD<00>
+744  39.782550 10.29.112.41 -> 255.255.255.255 DB-LSP-DISC 184 Dropbox LAN sync Discovery Protocol
+745  39.782739 10.29.112.41 -> 10.29.127.255 DB-LSP-DISC 184 Dropbox LAN sync Discovery Protocol
+746  39.909039   10.29.96.2 -> 224.0.0.18   VRRP 54 Announcement (v2)
+747  40.180694  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34974  Destination port: 33457
+748  40.340040 10.29.96.101 -> 224.0.0.251  MDNS 87 Standard query 0x0000  PTR _spotify-connect._tcp.local, "QU" question
+749  41.299403  10.29.96.74 -> 10.29.111.255 NBNS 92 Name query NB WPAD<00>
+750  41.299483  10.29.96.74 -> 224.0.0.252  LLMNR 64 Standard query 0x480e  A wpad
+751  41.299654  10.29.96.74 -> 224.0.0.252  LLMNR 64 Standard query 0x699f  AAAA wpad
+752  41.299859  10.29.112.2 -> 224.0.0.18   VRRP 54 Announcement (v2)
+753  41.821633   10.29.96.2 -> 224.0.0.18   VRRP 54 Announcement (v2)
+754  42.030603  10.29.96.74 -> 10.29.111.255 NBNS 92 Name query NB WPAD<00>
+755  42.333651 10.29.96.118 -> 255.255.255.255 DB-LSP-DISC 251 Dropbox LAN sync Discovery Protocol
+756  42.333716 10.29.96.118 -> 10.29.111.255 DB-LSP-DISC 251 Dropbox LAN sync Discovery Protocol
+757  42.858580  10.29.96.71 -> 224.0.0.251  MDNS 258 Standard query 0x0000  ANY 9c:fc:01:14:9d:e1@fe80::9efc:1ff:fe14:9de1._apple-mobdev2._tcp.local, "QM" question ANY Kendall-Weierichs-iPhone.local, "QM" question ANY Kendall-Weierichs-iPhone.local, "QM" question
+758  42.884046  10.29.112.2 -> 224.0.0.18   VRRP 54 Announcement (v2)
+759  43.362868  10.29.96.71 -> 224.0.0.251  MDNS 529 Standard query response 0x0000  TXT, cache flush PTR _apple-mobdev2._tcp.local PTR 9c:fc:01:14:9d:e1@fe80::9efc:1ff:fe14:9de1._apple-mobdev2._tcp.local PTR 9c:fc:01:14:9d:e1@fe80::9efc:1ff:fe14:9de1._apple-mobdev2._tcp.local SRV, cache flush 0 0 32498 Kendall-Weierichs-iPhone.local PTR, cache flush Kendall-Weierichs-iPhone.local AAAA, cache flush fe80::83f:631c:aa44:e4fe PTR, cache flush Kendall-Weierichs-iPhone.local A, cache flush 10.29.96.71
+760  43.555191   10.29.96.2 -> 224.0.0.18   VRRP 54 Announcement (v2)
+761  43.910757   10.29.96.3 -> 224.0.0.13   PIMv2 78 Hello
+762  43.910935   10.29.96.3 -> 224.0.0.13   PIMv2 78 Hello
+763  44.433326  10.29.96.71 -> 224.0.0.251  MDNS 529 Standard query response 0x0000  TXT, cache flush PTR _apple-mobdev2._tcp.local PTR 9c:fc:01:14:9d:e1@fe80::9efc:1ff:fe14:9de1._apple-mobdev2._tcp.local PTR 9c:fc:01:14:9d:e1@fe80::9efc:1ff:fe14:9de1._apple-mobdev2._tcp.local SRV, cache flush 0 0 32498 Kendall-Weierichs-iPhone.local PTR, cache flush Kendall-Weierichs-iPhone.local AAAA, cache flush fe80::83f:631c:aa44:e4fe PTR, cache flush Kendall-Weierichs-iPhone.local A, cache flush 10.29.96.71
+764  44.572907  10.29.96.54 -> 224.0.0.251  MDNS 156 Standard query 0x0000  PTR _00000000-053d-d9b0-e2a7-8960d99e4988._sub._home-sharing._tcp.local, "QM" question
+765  45.012015  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34974  Destination port: 33458
+766  45.018066 72.14.232.136 -> 10.29.96.80  ICMP 110 Time-to-live exceeded (Time to live exceeded in transit)
+767  45.018379  10.29.96.80 -> 171.67.1.234 DNS 86 Standard query 0xdca7  PTR 136.232.14.72.in-addr.arpa
+768  45.044008 171.67.1.234 -> 10.29.96.80  DNS 146 Standard query response 0xdca7 No such name
+769  45.044282  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34974  Destination port: 33459
+770  45.049427 209.85.246.20 -> 10.29.96.80  ICMP 182 Time-to-live exceeded (Time to live exceeded in transit)
+771  45.049773  10.29.96.80 -> 171.67.1.234 DNS 86 Standard query 0x565b  PTR 20.246.85.209.in-addr.arpa
+772  45.074820 171.67.1.234 -> 10.29.96.80  DNS 146 Standard query response 0x565b No such name
+773  45.075159  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34974  Destination port: 33460
+774  45.080054 64.233.174.91 -> 10.29.96.80  ICMP 182 Time-to-live exceeded (Time to live exceeded in transit)
+775  45.080398  10.29.96.80 -> 171.67.1.234 DNS 86 Standard query 0x4e64  PTR 91.174.233.64.in-addr.arpa
+776  45.096773   10.29.96.2 -> 224.0.0.18   VRRP 54 Announcement (v2)
+777  45.105982 171.67.1.234 -> 10.29.96.80  DNS 146 Standard query response 0x4e64 No such name
+778  45.106291  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34974  Destination port: 33461
+779  45.120372 209.85.249.63 -> 10.29.96.80  ICMP 182 Time-to-live exceeded (Time to live exceeded in transit)
+780  45.120751  10.29.96.80 -> 171.67.1.234 DNS 86 Standard query 0xeb95  PTR 63.249.85.209.in-addr.arpa
+781  45.145453 171.67.1.234 -> 10.29.96.80  DNS 146 Standard query response 0xeb95 No such name
+782  45.145720  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34974  Destination port: 33462
+783  45.156797 64.233.174.206 -> 10.29.96.80  ICMP 182 Time-to-live exceeded (Time to live exceeded in transit)
+784  45.157106  10.29.96.80 -> 171.67.1.234 DNS 87 Standard query 0x7a40  PTR 206.174.233.64.in-addr.arpa
+785  45.182614 171.67.1.234 -> 10.29.96.80  DNS 147 Standard query response 0x7a40 No such name
+786  45.182897  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34974  Destination port: 33463
+787  45.193974 64.233.174.206 -> 10.29.96.80  ICMP 182 Time-to-live exceeded (Time to live exceeded in transit)
+788  45.194066  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34974  Destination port: 33464
+789  45.205108 64.233.174.206 -> 10.29.96.80  ICMP 182 Time-to-live exceeded (Time to live exceeded in transit)
+790  45.205199  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34974  Destination port: 33465
+791  45.424451 64.233.174.189 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+792  45.424771  10.29.96.80 -> 171.67.1.234 DNS 87 Standard query 0xc50e  PTR 189.174.233.64.in-addr.arpa
+793  45.451082 171.67.1.234 -> 10.29.96.80  DNS 147 Standard query response 0xc50e No such name
+794  45.451334  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34974  Destination port: 33466
+795  45.480133 209.85.246.234 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+796  45.480528  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34974  Destination port: 33467
+797  45.491634 209.85.247.0 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+798  45.491994  10.29.96.80 -> 171.67.1.234 DNS 85 Standard query 0xa87a  PTR 0.247.85.209.in-addr.arpa
+799  45.516775 171.67.1.234 -> 10.29.96.80  DNS 145 Standard query response 0xa87a No such name
+800  45.517076  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34974  Destination port: 33468
+801  45.528423 209.85.250.245 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+802  45.528816  10.29.96.80 -> 171.67.1.234 DNS 87 Standard query 0x2de9  PTR 245.250.85.209.in-addr.arpa
+803  45.554410 171.67.1.234 -> 10.29.96.80  DNS 147 Standard query response 0x2de9 No such name
+804  45.554686  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34974  Destination port: 33469
+805  45.565980 209.85.250.245 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+806  45.566104  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34974  Destination port: 33470
+807  45.577316 209.85.250.245 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+808  45.577499  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34974  Destination port: 33471
+809  45.588447 172.217.2.238 -> 10.29.96.80  ICMP 70 Destination unreachable (Port unreachable)
+810  45.588764  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34974  Destination port: 33472
+811  45.599652 172.217.2.238 -> 10.29.96.80  ICMP 70 Destination unreachable (Port unreachable)
+812  45.599744  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34974  Destination port: 33473
+813  45.610621 172.217.2.238 -> 10.29.96.80  ICMP 70 Destination unreachable (Port unreachable)
+814  45.621268  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34975  Destination port: 33435
+815  46.254809  10.29.112.2 -> 224.0.0.18   VRRP 54 Announcement (v2)
+816  46.633497   10.29.96.2 -> 224.0.0.18   VRRP 54 Announcement (v2)
+817  48.218385 173.194.68.120 -> 10.29.96.80  TLSv1.2 129 [TCP ACKed unseen segment] Application Data
+818  48.218460 173.194.68.120 -> 10.29.96.80  TCP 66 [TCP ACKed unseen segment] 443→50471 [FIN, ACK] Seq=64 Ack=2 Win=350 Len=0 TSval=81835167 TSecr=315175199
+819  48.218472  10.29.96.80 -> 173.194.68.120 TCP 66 [TCP Previous segment not captured] 50471→443 [ACK] Seq=2 Ack=64 Win=4094 Len=0 TSval=315414412 TSecr=81835167
+820  48.218498  10.29.96.80 -> 173.194.68.120 TCP 66 50471→443 [ACK] Seq=2 Ack=65 Win=4096 Len=0 TSval=315414412 TSecr=81835167
+821  48.218610  10.29.96.80 -> 173.194.68.120 TCP 66 50471→443 [FIN, ACK] Seq=2 Ack=65 Win=4096 Len=0 TSval=315414412 TSecr=81835167
+822  48.235160  10.29.112.2 -> 224.0.0.18   VRRP 54 Announcement (v2)
+823  48.289465 173.194.68.120 -> 10.29.96.80  TCP 66 [TCP ACKed unseen segment] 443→50471 [ACK] Seq=65 Ack=3 Win=350 Len=0 TSval=81835238 TSecr=315414412
+824  50.195161 10.29.96.144 -> 10.29.111.255 UDP 86 Source port: 57621  Destination port: 57621
+825  50.200728   10.29.96.2 -> 224.0.0.18   VRRP 54 Announcement (v2)
+826  50.311822 74.125.28.95 -> 10.29.96.80  TLSv1.2 129 [TCP ACKed unseen segment] Application Data
+827  50.311919 74.125.28.95 -> 10.29.96.80  TCP 66 [TCP ACKed unseen segment] 443→50484 [FIN, ACK] Seq=64 Ack=2 Win=350 Len=0 TSval=2994864879 TSecr=315177220
+828  50.311942  10.29.96.80 -> 74.125.28.95 TCP 66 [TCP Previous segment not captured] 50484→443 [ACK] Seq=2 Ack=64 Win=4109 Len=0 TSval=315416499 TSecr=2994864879
+829  50.311985  10.29.96.80 -> 74.125.28.95 TCP 66 50484→443 [ACK] Seq=2 Ack=65 Win=4109 Len=0 TSval=315416499 TSecr=2994864879
+830  50.312146  10.29.96.80 -> 74.125.28.95 TCP 66 50484→443 [FIN, ACK] Seq=2 Ack=65 Win=4109 Len=0 TSval=315416499 TSecr=2994864879
+831  50.337273 74.125.28.95 -> 10.29.96.80  TCP 66 [TCP ACKed unseen segment] 443→50484 [ACK] Seq=65 Ack=3 Win=350 Len=0 TSval=2994864905 TSecr=315416499
+832  50.375323  10.29.96.71 -> 224.0.0.251  MDNS 529 Standard query response 0x0000  TXT, cache flush PTR _apple-mobdev2._tcp.local PTR 9c:fc:01:14:9d:e1@fe80::9efc:1ff:fe14:9de1._apple-mobdev2._tcp.local PTR 9c:fc:01:14:9d:e1@fe80::9efc:1ff:fe14:9de1._apple-mobdev2._tcp.local SRV, cache flush 0 0 32498 Kendall-Weierichs-iPhone.local PTR, cache flush Kendall-Weierichs-iPhone.local AAAA, cache flush fe80::83f:631c:aa44:e4fe PTR, cache flush Kendall-Weierichs-iPhone.local A, cache flush 10.29.96.71
+833  50.667162  10.29.96.80 -> 10.31.99.58  TCP 78 50515→5000 [SYN] Seq=0 Win=65535 Len=0 MSS=1460 WS=32 TSval=315416780 TSecr=0 SACK_PERM=1
+834  50.667164  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34975  Destination port: 33436
+835  50.669026   10.29.96.2 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+836  50.669604  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34975  Destination port: 33437
+837  50.670593   10.29.96.2 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+838  50.670701  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34975  Destination port: 33438
+839  50.671793  128.12.1.42 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+840  50.672071  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34975  Destination port: 33439
+841  50.673103  128.12.1.42 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+842  50.673171  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34975  Destination port: 33440
+843  50.674542  128.12.1.42 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+844  50.674629  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34975  Destination port: 33441
+845  50.675890  128.12.1.53 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+846  50.676152  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34975  Destination port: 33442
+847  50.677723  128.12.1.53 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+848  50.677809  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34975  Destination port: 33443
+849  50.679886  128.12.1.53 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+850  50.679976  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34975  Destination port: 33444
+851  50.681291 128.12.0.205 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+852  50.681527  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34975  Destination port: 33445
+853  50.682746 128.12.0.205 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+854  50.682819  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34975  Destination port: 33446
+855  50.684463 128.12.0.205 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+856  50.684575  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34975  Destination port: 33447
+857  50.687637 137.164.23.157 -> 10.29.96.80  ICMP 110 Time-to-live exceeded (Time to live exceeded in transit)
+858  50.687947  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34975  Destination port: 33448
+859  50.691075 137.164.23.157 -> 10.29.96.80  ICMP 110 Time-to-live exceeded (Time to live exceeded in transit)
+860  50.691161  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34975  Destination port: 33449
+861  50.694628 137.164.23.157 -> 10.29.96.80  ICMP 110 Time-to-live exceeded (Time to live exceeded in transit)
+862  50.694716  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34975  Destination port: 33450
+863  50.699114 137.164.46.145 -> 10.29.96.80  ICMP 110 Time-to-live exceeded (Time to live exceeded in transit)
+864  50.699344  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34975  Destination port: 33451
+865  50.703582 137.164.46.145 -> 10.29.96.80  ICMP 110 Time-to-live exceeded (Time to live exceeded in transit)
+866  50.703666  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34975  Destination port: 33452
+867  50.708720 137.164.46.145 -> 10.29.96.80  ICMP 110 Time-to-live exceeded (Time to live exceeded in transit)
+868  50.708805  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34975  Destination port: 33453
+869  50.713378  4.15.122.45 -> 10.29.96.80  ICMP 94 Time-to-live exceeded (Time to live exceeded in transit)
+870  50.713650  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34975  Destination port: 33454
+871  50.717819  4.15.122.45 -> 10.29.96.80  ICMP 94 Time-to-live exceeded (Time to live exceeded in transit)
+872  50.717940  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34975  Destination port: 33455
+873  50.723424  4.15.122.45 -> 10.29.96.80  ICMP 94 Time-to-live exceeded (Time to live exceeded in transit)
+874  50.723641  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34975  Destination port: 33456
+875  50.728326 4.69.209.189 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+876  50.731931  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34975  Destination port: 33457
+877  50.782121 4.69.209.189 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+878  50.782356  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34975  Destination port: 33458
+879  50.786975 4.69.209.181 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+880  50.787493  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34975  Destination port: 33459
+881  50.790825  77.67.69.97 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+882  50.791126  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34975  Destination port: 33460
+883  50.794696  4.68.62.214 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+884  50.795028  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34975  Destination port: 33461
+885  50.798500  4.68.62.214 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+886  50.798627  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34975  Destination port: 33462
+887  50.949863 89.149.187.190 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+888  50.950374  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34975  Destination port: 33463
+889  51.192024 89.149.187.190 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+890  51.192168  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34975  Destination port: 33464
+891  51.343365 89.149.187.190 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+892  51.343610  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34975  Destination port: 33465
+893  51.485953 46.33.92.106 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+894  51.486444  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34975  Destination port: 33466
+895  51.716075  10.29.96.80 -> 10.31.99.58  TCP 78 [TCP Retransmission] 50515→5000 [SYN] Seq=0 Win=65535 Len=0 MSS=1460 WS=32 TSval=315417780 TSecr=0 SACK_PERM=1
+896  51.716603 46.33.92.106 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+897  51.716733  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34975  Destination port: 33467
+898  51.868037 46.33.92.106 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+899  51.868186  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34975  Destination port: 33468
+900  51.892516  10.29.112.2 -> 224.0.0.18   VRRP 54 Announcement (v2)
+901  52.023220 212.227.120.49 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+902  52.240328  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34975  Destination port: 33469
+903  52.241262  10.31.99.58 -> 10.29.96.80  TCP 78 5000→50515 [SYN, ACK] Seq=0 Ack=1 Win=65535 Len=0 MSS=1460 WS=16 TSval=152039005 TSecr=315416780 SACK_PERM=1
+904  52.241265  10.31.99.58 -> 10.29.96.80  TCP 78 [TCP Out-Of-Order] 5000→50515 [SYN, ACK] Seq=0 Ack=1 Win=65535 Len=0 MSS=1460 WS=16 TSval=152039005 TSecr=315417780 SACK_PERM=1
+905  52.241335  10.29.96.80 -> 10.31.99.58  TCP 66 50515→5000 [ACK] Seq=1 Ack=1 Win=131744 Len=0 TSval=315418424 TSecr=152039005
+906  52.241336  10.29.96.80 -> 10.31.99.58  TCP 66 [TCP Dup ACK 905#1] 50515→5000 [ACK] Seq=1 Ack=1 Win=131744 Len=0 TSval=315418424 TSecr=152039005
+907  52.241408  10.29.96.80 -> 10.31.99.58  IPA 107 unknown 0x54 [Malformed Packet]
+908  52.267273   10.29.96.2 -> 224.0.0.18   VRRP 54 Announcement (v2)
+909  52.267361 10.29.113.166 -> 224.0.0.251  MDNS 91 Standard query 0x0000  PTR _raop._tcp.local, "QU" question PTR _airplay._tcp.local, "QU" question
+910  52.298004 10.29.113.57 -> 224.0.0.251  MDNS 127 Standard query 0x0000  PTR _00000000-63b9-2590-d84b-df80417d4d48._sub._home-sharing._tcp.local, "QM" question
+911  52.363611   10.29.96.2 -> 224.0.0.13   PIMv2 78 Hello
+912  52.363827   10.29.96.2 -> 224.0.0.13   PIMv2 78 Hello
+913  52.398322 212.227.120.49 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+914  52.398537  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34975  Destination port: 33470
+915  52.765365 212.227.120.49 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+916  52.765590  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34975  Destination port: 33471
+917  52.926753 212.227.121.171 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+918  52.927291  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34975  Destination port: 33472
+919  53.018080  10.29.96.80 -> 17.253.4.253 NTP 90 NTP Version 4, client
+920  53.021624 17.253.4.253 -> 10.29.96.80  NTP 90 NTP Version 4, server
+921  53.013708  10.31.99.58 -> 10.29.96.80  TCP 78 [TCP Spurious Retransmission] 5000→50515 [SYN, ACK] Seq=0 Ack=1 Win=65535 Len=0 MSS=1460 WS=16 TSval=152040006 TSecr=315417780 SACK_PERM=1
+922  53.013711 212.227.121.171 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+923  53.013785  10.29.96.80 -> 10.31.99.58  TCP 66 [TCP Dup ACK 905#2] 50515→5000 [ACK] Seq=42 Ack=1 Win=131744 Len=0 TSval=315419471 TSecr=152040006
+924  53.013892  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34975  Destination port: 33473
+925  53.019167  10.31.99.58 -> 10.29.96.80  TCP 66 [TCP Window Update] 5000→50515 [ACK] Seq=1 Ack=1 Win=131760 Len=0 TSval=152040228 TSecr=315417780
+926  53.036189 10.29.113.166 -> 224.0.0.251  MDNS 91 Standard query 0x0000  PTR _raop._tcp.local, "QM" question PTR _airplay._tcp.local, "QM" question
+927  53.036397 10.29.113.67 -> 224.0.0.251  MDNS 103 Standard query 0x0000  PTR _233637DE._sub._googlecast._tcp.local, "QM" question PTR _googlecast._tcp.local, "QM" question
+928  53.175314 212.227.121.171 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+929  53.175442  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34975  Destination port: 33474
+930  53.537988 217.160.127.79 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+931  53.538467  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34975  Destination port: 33475
+932  53.558426 172.19.142.9 -> 224.0.0.1    IGMPv2 42 Membership Query, general
+933  53.573113  10.29.112.2 -> 224.0.0.18   VRRP 54 Announcement (v2)
+934  53.574119 10.29.96.144 -> 224.0.0.251  MDNS 102 Standard query 0x0000  PTR _uscan._tcp.local, "QU" question PTR _uscans._tcp.local, "QU" question PTR _ptp._tcp.local, "QU" question
+935  53.610181   10.29.96.2 -> 224.0.0.18   VRRP 54 Announcement (v2)
+936  53.692145 217.160.127.79 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+937  53.692258  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34975  Destination port: 33476
+938  53.845718 217.160.127.79 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+939  54.061867  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34975  Destination port: 33477
+940  54.225075 82.165.210.229 -> 10.29.96.80  ICMP 94 Destination unreachable (Port unreachable)
+941  54.225640  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34975  Destination port: 33478
+942  54.585947  10.29.96.80 -> 17.253.4.253 NTP 90 NTP Version 4, client
+943  54.586390 82.165.210.229 -> 10.29.96.80  ICMP 94 Destination unreachable (Port unreachable)
+944  54.586590  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34975  Destination port: 33479
+945  54.589271 17.253.4.253 -> 10.29.96.80  NTP 90 NTP Version 4, server
+946  54.751727 82.165.210.229 -> 10.29.96.80  ICMP 94 Destination unreachable (Port unreachable)
+947  54.761088  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34987  Destination port: 33435
+948  54.762549   10.29.96.2 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+949  54.762856  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34987  Destination port: 33436
+950  54.763791   10.29.96.2 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+951  54.763869  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34987  Destination port: 33437
+952  54.764959   10.29.96.2 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+953  54.765053  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34987  Destination port: 33438
+954  54.766109  128.12.1.42 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+955  54.766329  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34987  Destination port: 33439
+956  54.767328  128.12.1.42 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+957  54.767411  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34987  Destination port: 33440
+958  54.768521  128.12.1.42 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+959  54.768610  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34987  Destination port: 33441
+960  54.769900  128.12.1.53 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+961  54.770108  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34987  Destination port: 33442
+962  54.771359  128.12.1.53 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+963  54.771444  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34987  Destination port: 33443
+964  54.772685  128.12.1.53 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+965  54.772775  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34987  Destination port: 33444
+966  54.774047 128.12.0.205 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+967  54.774300  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34987  Destination port: 33445
+968  54.775560 128.12.0.205 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+969  54.775647  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34987  Destination port: 33446
+970  54.776951 128.12.0.205 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+971  54.777047  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34987  Destination port: 33447
+972  54.780015 137.164.23.157 -> 10.29.96.80  ICMP 110 Time-to-live exceeded (Time to live exceeded in transit)
+973  54.780242  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34987  Destination port: 33448
+974  54.783225 137.164.23.157 -> 10.29.96.80  ICMP 110 Time-to-live exceeded (Time to live exceeded in transit)
+975  54.783311  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34987  Destination port: 33449
+976  54.786380 137.164.23.157 -> 10.29.96.80  ICMP 110 Time-to-live exceeded (Time to live exceeded in transit)
+977  54.786471  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34987  Destination port: 33450
+978  54.791216 137.164.46.145 -> 10.29.96.80  ICMP 110 Time-to-live exceeded (Time to live exceeded in transit)
+979  54.791508  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34987  Destination port: 33451
+980  54.795707 137.164.46.145 -> 10.29.96.80  ICMP 110 Time-to-live exceeded (Time to live exceeded in transit)
+981  54.795777  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34987  Destination port: 33452
+982  54.800006 137.164.46.145 -> 10.29.96.80  ICMP 110 Time-to-live exceeded (Time to live exceeded in transit)
+983  54.800144  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34987  Destination port: 33453
+984  54.804435 72.14.205.134 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+985  54.804770  10.29.96.80 -> 171.67.1.234 DNS 86 Standard query 0x8eb0  PTR 134.205.14.72.in-addr.arpa
+986  54.830193 171.67.1.234 -> 10.29.96.80  DNS 146 Standard query response 0x8eb0 No such name
+987  54.830490  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34987  Destination port: 33454
+988  54.835444 74.125.147.146 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+989  54.835788  10.29.96.80 -> 171.67.1.234 DNS 87 Standard query 0x2a05  PTR 146.147.125.74.in-addr.arpa
+990  54.861291 171.67.1.234 -> 10.29.96.80  DNS 147 Standard query response 0x2a05 No such name
+991  54.870607  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34987  Destination port: 33455
+992  54.875287 72.14.205.134 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+993  54.875682  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34987  Destination port: 33456
+994  54.880549 209.85.240.114 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+995  54.880852  10.29.96.80 -> 171.67.1.234 DNS 87 Standard query 0xf4f7  PTR 114.240.85.209.in-addr.arpa
+996  55.110671 171.67.1.234 -> 10.29.96.80  DNS 147 Standard query response 0xf4f7 No such name
+997  55.110982  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34987  Destination port: 33457
+998  55.115973 72.14.232.136 -> 10.29.96.80  ICMP 110 Time-to-live exceeded (Time to live exceeded in transit)
+999  55.116476  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34987  Destination port: 33458
+1000  55.117697  10.29.96.80 -> 173.194.203.188 TCP 54 [TCP Dup ACK 248#1] 50417→5228 [ACK] Seq=1 Ack=1 Win=4107 Len=0
+1001  55.121522 216.239.49.250 -> 10.29.96.80  ICMP 110 Time-to-live exceeded (Time to live exceeded in transit)
+1002  55.121832  10.29.96.80 -> 171.67.1.234 DNS 87 Standard query 0x74fc  PTR 250.49.239.216.in-addr.arpa
+1003  55.125111 10.29.113.57 -> 224.0.0.251  MDNS 127 Standard query 0x0000  PTR _00000000-63b9-2590-d84b-df80417d4d48._sub._home-sharing._tcp.local, "QM" question
+1004  55.125201 10.29.96.172 -> 10.29.111.255 NBNS 92 Name query NB WPAD<00>
+1005  55.125407 10.29.96.172 -> 224.0.0.252  LLMNR 64 Standard query 0x1ddf  A wpad
+1006  55.125518 10.29.96.172 -> 224.0.0.252  LLMNR 64 Standard query 0x3333  AAAA wpad
+1007  55.125751 10.29.96.144 -> 10.29.111.255 BROWSER 216 Get Backup List Request
+1008  55.141408 173.194.203.188 -> 10.29.96.80  TCP 66 [TCP Dup ACK 249#1] [TCP ACKed unseen segment] 5228→50417 [ACK] Seq=1 Ack=2 Win=358 Len=0 TSval=4194617072 TSecr=314199018
+1009  55.147274 171.67.1.234 -> 10.29.96.80  DNS 147 Standard query response 0x74fc No such name
+1010  55.147659  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34987  Destination port: 33459
+1011  55.152863 209.85.249.63 -> 10.29.96.80  ICMP 182 Time-to-live exceeded (Time to live exceeded in transit)
+1012  55.153246  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34987  Destination port: 33460
+1013  55.158133 209.85.246.20 -> 10.29.96.80  ICMP 182 Time-to-live exceeded (Time to live exceeded in transit)
+1014  55.158525  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34987  Destination port: 33461
+1015  55.163937 209.85.249.63 -> 10.29.96.80  ICMP 182 Time-to-live exceeded (Time to live exceeded in transit)
+1016  55.164378  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34987  Destination port: 33462
+1017  55.175355 64.233.174.206 -> 10.29.96.80  ICMP 182 Time-to-live exceeded (Time to live exceeded in transit)
+1018  55.175850  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34987  Destination port: 33463
+1019  55.186777 64.233.174.204 -> 10.29.96.80  ICMP 182 Time-to-live exceeded (Time to live exceeded in transit)
+1020  55.187352  10.29.96.80 -> 171.67.1.234 DNS 87 Standard query 0x3466  PTR 204.174.233.64.in-addr.arpa
+1021  55.212058 171.67.1.234 -> 10.29.96.80  DNS 147 Standard query response 0x3466 No such name
+1022  55.212463  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34987  Destination port: 33464
+1023  55.223553 64.233.174.206 -> 10.29.96.80  ICMP 182 Time-to-live exceeded (Time to live exceeded in transit)
+1024  55.224157  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34987  Destination port: 33465
+1025  55.229961  10.29.112.2 -> 224.0.0.18   VRRP 54 Announcement (v2)
+1026  55.235155 64.233.174.189 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+1027  55.235615  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34987  Destination port: 33466
+1028  55.246478 64.233.175.151 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+1029  55.247028  10.29.96.80 -> 171.67.1.234 DNS 87 Standard query 0x9e9b  PTR 151.175.233.64.in-addr.arpa
+1030  55.272820 171.67.1.234 -> 10.29.96.80  DNS 147 Standard query response 0x9e9b No such name
+1031  55.273218  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34987  Destination port: 33467
+1032  55.284163 64.233.175.151 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+1033  55.284356  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34987  Destination port: 33468
+1034  55.295763 209.85.250.245 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+1035  55.296266  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34987  Destination port: 33469
+1036  55.307390 209.85.250.245 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+1037  55.307477  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34987  Destination port: 33470
+1038  55.318537 209.85.250.245 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+1039  55.318733  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34987  Destination port: 33471
+1040  55.329648 172.217.2.238 -> 10.29.96.80  ICMP 70 Destination unreachable (Port unreachable)
+1041  55.330045  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34987  Destination port: 33472
+1042  55.340967 172.217.2.238 -> 10.29.96.80  ICMP 70 Destination unreachable (Port unreachable)
+1043  55.341138  10.29.96.80 -> 172.217.2.238 UDP 66 Source port: 34987  Destination port: 33473
+1044  55.352073 172.217.2.238 -> 10.29.96.80  ICMP 70 Destination unreachable (Port unreachable)
+1045  55.363049  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34988  Destination port: 33435
+1046  55.364079   10.29.96.2 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+1047  55.364522  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34988  Destination port: 33436
+1048  55.365607   10.29.96.2 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+1049  55.365679  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34988  Destination port: 33437
+1050  55.366721   10.29.96.2 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+1051  55.366809  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34988  Destination port: 33438
+1052  55.367829  128.12.1.42 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+1053  55.368104  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34988  Destination port: 33439
+1054  55.369045  128.12.1.42 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+1055  55.369099  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34988  Destination port: 33440
+1056  55.370064  128.12.1.42 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+1057  55.370114  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34988  Destination port: 33441
+1058  55.371297  128.12.1.53 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+1059  55.371534  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34988  Destination port: 33442
+1060  55.372768  128.12.1.53 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+1061  55.372848  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34988  Destination port: 33443
+1062  55.374028  128.12.1.53 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+1063  55.374118  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34988  Destination port: 33444
+1064  55.375356 128.12.0.205 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+1065  55.375584  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34988  Destination port: 33445
+1066  55.377094 128.12.0.205 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+1067  55.377179  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34988  Destination port: 33446
+1068  55.378459 128.12.0.205 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+1069  55.378554  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34988  Destination port: 33447
+1070  55.384201 137.164.23.157 -> 10.29.96.80  ICMP 110 Time-to-live exceeded (Time to live exceeded in transit)
+1071  55.384441  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34988  Destination port: 33448
+1072  55.387431 137.164.23.157 -> 10.29.96.80  ICMP 110 Time-to-live exceeded (Time to live exceeded in transit)
+1073  55.387518  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34988  Destination port: 33449
+1074  55.390574 137.164.23.157 -> 10.29.96.80  ICMP 110 Time-to-live exceeded (Time to live exceeded in transit)
+1075  55.390664  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34988  Destination port: 33450
+1076  55.395019 137.164.46.145 -> 10.29.96.80  ICMP 110 Time-to-live exceeded (Time to live exceeded in transit)
+1077  55.395234  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34988  Destination port: 33451
+1078  55.399487 137.164.46.145 -> 10.29.96.80  ICMP 110 Time-to-live exceeded (Time to live exceeded in transit)
+1079  55.399593  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34988  Destination port: 33452
+1080  55.403897 137.164.46.145 -> 10.29.96.80  ICMP 110 Time-to-live exceeded (Time to live exceeded in transit)
+1081  55.403995  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34988  Destination port: 33453
+1082  55.408192  4.15.122.45 -> 10.29.96.80  ICMP 94 Time-to-live exceeded (Time to live exceeded in transit)
+1083  55.408468  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34988  Destination port: 33454
+1084  55.412706  4.15.122.45 -> 10.29.96.80  ICMP 94 Time-to-live exceeded (Time to live exceeded in transit)
+1085  55.412779  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34988  Destination port: 33455
+1086  55.416980  4.15.122.45 -> 10.29.96.80  ICMP 94 Time-to-live exceeded (Time to live exceeded in transit)
+1087  55.417091  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34988  Destination port: 33456
+1088  55.635046 4.69.209.193 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+1089  55.635527  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34988  Destination port: 33457
+1090  55.651749 4.69.209.193 -> 10.29.96.80  ICMP 70 Time-to-live exceeded (Time to live exceeded in transit)
+1091  55.651894  10.29.96.80 -> 82.165.210.229 UDP 66 Source port: 34988  Destination port: 33458
+1092  55.656484 4.69.209.1

@@ -188,7 +188,7 @@ for (int i; i < oscBank.size(); i++) {
 }
 
 d.chuck_out(dac);
-d.feedback(0.99);
+d.feedback(0.90);
 
 
 
@@ -222,6 +222,7 @@ fun void tshark_listen() {
         // grab the next message from the queue. 
         while( ts_oe.nextMsg() )
         {   
+
             int array[8];
             for (0 => int i; i < 4; i++) {
                 ts_oe.getInt() => array[i];
@@ -233,7 +234,7 @@ fun void tshark_listen() {
                 freq => oscBank[osc_idx].freq;
 
                 adsrBank[osc_idx].keyOn(); //turn on patch
-                2::ms => now;
+                1::ms => now;
                 adsrBank[osc_idx].keyOff(); //on
 
                 cur_ptr + chan_delta => cur_ptr;
@@ -243,30 +244,26 @@ fun void tshark_listen() {
             //oscBank[cur_ptr % oscBank.size()].gain(0); //off
 
             cur_ptr + 1 => cur_ptr;
+
+            if (Globals.buttonDown() == 1) {
+                <<< "CLEARING QUEUE" >>>;
+                while (ts_oe.nextMsg()) {
+
+                }
+            }
         }
         
     }
 }
 
-/*
-fun void handler(OscEvent ts_oe, int cur_ptr) {
-    oscBank[cur_ptr % oscBank.size()].gain(0.01); //on
-    
-    int array[8];
-    for (4 => int i; i < 8; i++) {
-        ts_oe.getInt() => array[i];
-        array[i] % 60 => int midiPitch;
+fun void keyboard_listener() {
+    Globals.getDelay() => float delay;
+    d.feedback(delay);
+    0.25::second => now;
 
-        ts_oe.getInt() => midiPitch => Std.mtof => float freq;
-        freq => oscBank[(cur_ptr + i) % oscBank.size()].freq;
-        5::ms => now;
-    }
-    oscBank[cur_ptr % oscBank.size()].gain(0); //off
+}
 
-    cur_ptr + 1 => cur_ptr;
-
-}*/
-
+spork ~keyboard_listener();
 spork ~traceroute_listen();
 spork ~tshark_listen();
 
