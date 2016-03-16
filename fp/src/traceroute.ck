@@ -179,12 +179,14 @@ tshark_recv.listen();
 tshark_recv.event( "/data, i i i i i i i i" ) @=> OscEvent @ ts_oe;
 
 DelayArray d;
-TriOsc oscBank[d.channels()] => ADSR adsrBank[d.channels()];
+TriOsc oscBank[d.channels()] => LPF lpfBank[d.channels()] => ADSR adsrBank[d.channels()];
 
 for (int i; i < oscBank.size(); i++) {
-    adsrBank[i].gain(0.1); //turn it down
+    adsrBank[i].gain(0.05); //turn it down
     adsrBank[i] => d.chan(i);
     adsrBank[i].set(0.5::ms, 0.5::ms, 1, 0.5::ms);
+
+    lpfBank[i].freq(10000);
 }
 
 d.chuck_out(dac);
@@ -229,13 +231,13 @@ fun void tshark_listen() {
 
                 Math.abs((cur_ptr + chan_delta) % adsrBank.size()) => int osc_idx;
                 //compute frequency
-                array[i] % 100 + 10 => int midiPitch;
+                array[i] % 80 + 10 => int midiPitch;
                 midiPitch => Std.mtof => float freq;
-                freq => oscBank[osc_idx].freq;
+                freq  => oscBank[osc_idx].freq;
 
-                adsrBank[osc_idx].keyOn(); //turn on patch
-                1::ms => now;
-                adsrBank[osc_idx].keyOff(); //on
+                spork ~trigger(osc_idx, freq);
+                5::ms => now;
+               // 100 => lpfBank[i].freq;
 
                 cur_ptr + chan_delta => cur_ptr;
                 // Math.random2f(3,5)::ms => now
@@ -256,10 +258,18 @@ fun void tshark_listen() {
     }
 }
 
+fun void trigger(int idx, float freq) {
+    adsrBank[idx].keyOn(); //turn on patch
+    50::ms => now;
+    adsrBank[idx].keyOff(); //on
+}
+
 fun void keyboard_listener() {
-    Globals.getDelay() => float delay;
-    d.feedback(delay);
-    0.25::second => now;
+    while (true) {
+        Globals.getDelay() => float delay;
+        d.feedback(delay);
+        0.25::second => now;
+    }
 
 }
 

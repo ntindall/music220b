@@ -12,7 +12,7 @@ public class Globals
   }
 }
 
-0.5 => Globals.delay;
+0.8 => Globals.delay;
 
 <<< "--------- [TRACEROUTE] INITIALIZING GLOBALS --------- " >>>;
 
