@@ -64,22 +64,22 @@ while( true )
             }
 
             if (msg.which == 82) {
-              Math.min(Globals.getDelay() + 0.01, 0.99) => Globals.delay; 
+              Math.min(Globals.getDelay() + 0.02, 0.99) => Globals.delay; 
               <<< "Delay is now " + Globals.getDelay() >>>;
             }
 
             if (msg.which == 81) {
-              Math.max(Globals.getDelay() - 0.01, 0.4) => Globals.delay; 
+              Math.max(Globals.getDelay() - 0.02, 0.4) => Globals.delay; 
               <<< "Delay is now " + Globals.getDelay() >>>;
             }
 
             if (msg.which == 79) { //rightarrow
-              Math.max(Globals.separation + 1, 1) $ int => Globals.separation;
+              Math.max(Globals.separation + 2, 1) $ int => Globals.separation;
               <<< "Separation is now " + Globals.separation >>>;
             }
 
             if (msg.which == 80) { //leftarrow
-              Math.max(Globals.separation - 1, 1) $ int => Globals.separation;
+              Math.max(Globals.separation - 2, 1) $ int => Globals.separation;
               <<< "Separation is now " + Globals.separation >>>;
             }
 

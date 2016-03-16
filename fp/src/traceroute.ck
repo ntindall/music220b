@@ -183,7 +183,7 @@ tshark_recv.listen();
 tshark_recv.event( "/data, i i i i i i i i" ) @=> OscEvent @ ts_oe;
 
 DelayArray d;
-TriOsc oscBank[d.channels()] => LPF lpfBank[d.channels()] => ADSR adsrBank[d.channels()];
+SqrOsc oscBank[d.channels()] => LPF lpfBank[d.channels()] => ADSR adsrBank[d.channels()];
 
 for (int i; i < oscBank.size(); i++) {
     adsrBank[i].gain(0.05); //turn it down
@@ -224,7 +224,6 @@ fun void tshark_listen() {
 
         0 => int cur_ptr;
         4 => int chan_delta;
-
         // grab the next message from the queue. 
         while( ts_oe.nextMsg() )
         {   
@@ -261,7 +260,7 @@ fun void tshark_listen() {
 
 fun void trigger(int idx, float freq) {
     adsrBank[idx].keyOn(); //turn on patch
-    50::ms => now;
+    100::ms => now;
     adsrBank[idx].keyOff(); //on
 }
 
