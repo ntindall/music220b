@@ -105,6 +105,10 @@ public class DelayArray extends Chubgraph {
         return in_array[i % MAX_CHANS];
     }
 
+    fun int size() {
+        return Math.max(logical_size, 1) $ int;
+    }
+
     fun int channels() {
         return MAX_CHANS;
     }
@@ -226,26 +230,23 @@ fun void tshark_listen() {
         {   
 
             int array[8];
-            for (0 => int i; i < 4; i++) {
+            for (0 => int i; i < 8; i++) {
                 ts_oe.getInt() => array[i];
 
-                Math.abs((cur_ptr + chan_delta) % adsrBank.size()) => int osc_idx;
+                Math.abs((cur_ptr + chan_delta)) % d.size() => int osc_idx;
                 //compute frequency
-                array[i] % 80 + 10 => int midiPitch;
+                array[i] % 60 + 20 => int midiPitch;
+
                 midiPitch => Std.mtof => float freq;
                 freq  => oscBank[osc_idx].freq;
 
                 spork ~trigger(osc_idx, freq);
-                5::ms => now;
-               // 100 => lpfBank[i].freq;
+                spork ~trigger((osc_idx + 4) % d.size() ,freq/2);
+                (Globals.separation)::ms => now;
 
-                cur_ptr + chan_delta => cur_ptr;
-                // Math.random2f(3,5)::ms => now
 
             }
-            //oscBank[cur_ptr % oscBank.size()].gain(0); //off
-
-            cur_ptr + 1 => cur_ptr;
+            cur_ptr + 1 + chan_delta => cur_ptr;
 
             if (Globals.buttonDown() == 1) {
                 <<< "CLEARING QUEUE" >>>;

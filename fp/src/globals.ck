@@ -2,6 +2,7 @@ public class Globals
 {
   static int buttonIsDown;
   static float delay;
+  static int separation;
 
   fun static int buttonDown() {
     return buttonIsDown;
@@ -13,6 +14,7 @@ public class Globals
 }
 
 0.8 => Globals.delay;
+5 => Globals.separation;
 
 <<< "--------- [TRACEROUTE] INITIALIZING GLOBALS --------- " >>>;
 

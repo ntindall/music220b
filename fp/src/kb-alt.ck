@@ -73,6 +73,16 @@ while( true )
               <<< "Delay is now " + Globals.getDelay() >>>;
             }
 
+            if (msg.which == 79) { //rightarrow
+              Math.max(Globals.separation + 1, 1) $ int => Globals.separation;
+              <<< "Separation is now " + Globals.separation >>>;
+            }
+
+            if (msg.which == 80) { //leftarrow
+              Math.max(Globals.separation - 1, 1) $ int => Globals.separation;
+              <<< "Separation is now " + Globals.separation >>>;
+            }
+
             // print
           //  <<< "down:", msg.which >>>;
         }
