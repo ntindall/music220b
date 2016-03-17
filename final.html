@@ -1,0 +1,46 @@
+<body style="background-color:#000000; color:white">
+<h1>Final Project - Nathan Tindall</h1>
+<a href="fp/src/traceroute.ck" style="color:white">traceroute.ck</a> 
+<br>
+<a href="fp/src/globals.ck" style="color:white">globals.ck</a> 
+<br>
+<a href="fp/src/kb-alt.ck" style="color:white">kb-alt.ck</a> 
+<br>
+<a href="fp/capture/capture.py" style="color:white">capture.py </a> 
+<br>
+<a href="fp/capture/traceroute.py" style="color:white">traceroute.py</a>
+<br>
+<a href="fp/capture/tail_traceroute.py" style="color:white">tail_traceroute.py</a>
+<br>
+<a href="fp/capture/tail.py" style="color:white">tail.py</a>
+<br>
+<a href="fp/capture/howto.txt" style="color:white">Instructions for invoking</a> 
+<br>
+<br>
+Notes
+
+For my final project, I have constructed a framework to sonify network
+data live. Each packet that is sent or received on my machine is captured
+by Wireshark and written to a file. A separate process then reads from the file
+(in real time) and sends OSC messges to Chuck, which then sonifies the sound
+based upon the packet received. The pitch of the articulation is mapped to one
+of the 4 integers in an IPv4 address. The articulation is then fed through a 
+comb filter bank, which is dynamically constructed by trace routing to hosts,
+building up a "reverberation space" in which sounds from the traffic can
+resonate. There is an additional human interaction component, that allows for
+more artful manipulation of an otherwise highly stochastic sound. The arrow keys
+control both delay of the comb filters and the rate of articulation (delay
+between each subsequent note). The sound is presented in an eight channel
+soundscape that encompassses the listener with the sheer volume and randomness
+of the dataset.
+<br>
+<br>
+Because the data is so random, it makes reasoning about the behaviour of the
+piece somewhat difficult. A big part of the performance is embracing the
+uncertainty of what results actions on the computer will produce. Part of the
+point is coming to grips with the fact that behind the scenes of high level
+abstractions there are deep and highly intricate systems at work. 
+
+-NJT 3/16/16
+</body>
+</html>
