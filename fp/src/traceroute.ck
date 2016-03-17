@@ -215,6 +215,7 @@ fun void traceroute_listen() {
     }
 }
 
+
 fun void tshark_listen() {
     // infinite event loop
     while( true )
@@ -234,7 +235,7 @@ fun void tshark_listen() {
 
                 Math.abs((cur_ptr + chan_delta)) % d.size() => int osc_idx;
                 //compute frequency
-                array[i] % 60 + 20 => int midiPitch;
+                array[i] % 100 + 20 => int midiPitch;
 
                 midiPitch => Std.mtof => float freq;
                 freq  => oscBank[osc_idx].freq;
