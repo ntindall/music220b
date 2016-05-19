@@ -16,7 +16,12 @@ OscRecv recv;
 // start listening (launch thread)
 recv.listen();
 
-SqrOsc osc => LPF lpf => ADSR adsr => KS d => dac;
+SqrOsc osc => LPF lpf => ADSR adsr => Gain g => KS d => dac;
+g.gain(0.05); //turn it down!
+adsr.set(0.5::ms, 0.5::ms, 1, 0.5::ms);
+
+
+lpf.freq(10000);
 d.feedback(0.90); //init
 
 
@@ -76,9 +81,10 @@ fun void trigger_listen()
       while( trig_oe.nextMsg() )
       { 
         trig_oe.getFloat() => float f;
+        <<< f >>>;
         osc.freq(f);
         spork ~trigger();
-        
+
       }
     }
 
@@ -94,6 +100,7 @@ fun void trigger()
 
 spork ~feedback_listen();
 spork ~trigger_listen();
+spork ~tune_listen();
 
 
 while ( true ) 1::day => now;
