@@ -25,7 +25,9 @@ def tail_forever(fn):
         if not line:
             break
 
-threading.Thread(target=tail_forever, args=(fn,)).start()
+t = threading.Thread(target=tail_forever, args=(fn,))
+t.daemon = True
+t.start()
 
 # f = open ('tail.txt', 'a')
 # while True:

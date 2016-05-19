@@ -1,1 +1,1 @@
-killall python; killall python3; killall chuck; killall traceroute; killall tail;
+rm capture/capture.txt; rm capture/output.txt; killall python; killall python3; killall chuck; killall traceroute; killall tail; killall tshark-bin;

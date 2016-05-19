@@ -1,2 +1,4 @@
 *.wav
 *.aiff
+fp/capture/capture.txt
+fp/capture/output.txt
