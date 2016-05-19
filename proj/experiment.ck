@@ -1,10 +1,83 @@
 0.6::second => dur BEAT;
 
+
+/* LiSa stuff */
+/*
+.5 => float GRAIN_RAMP_FACTOR;
+
+// max lisa voices
+30 => int LISA_MAX_VOICES;
+
+// grain sporkee
+fun void grain(LiSa @ lisa,    //UGen       
+               dur pos,        //position in buffer
+               dur grainLen,   //length of grain
+               dur rampUp,     //triangle envelope rampUp
+               dur rampDown,   //triangle envelope rampDown
+               float rate )    //sample playback rate
+{
+    // get a voice to use
+    lisa.getVoice() => int voice;
+
+    // if available
+    if( voice > -1 )
+    {
+        // set rate
+        lisa.rate( voice, rate );
+        // set playhead
+        lisa.playPos( voice, pos );
+        // ramp up
+        lisa.rampUp( voice, rampUp );
+        // wait
+        (grainLen - rampUp) => now;
+        // ramp down
+        lisa.rampDown( voice, rampDown );
+        // wait
+        rampDown => now;
+    }
+    500::ms => now; //decay
+}
+
+// load file into a LiSa
+fun LiSa load( string filename )
+{
+    // sound buffer
+    SndBuf buffy;
+    // load it
+    filename => buffy.read;
+    
+    // new LiSa
+    LiSa lisa;
+    // set duration
+    buffy.samples()::samp => lisa.duration;
+    
+    // transfer values from SndBuf to LiSa
+    for( 0 => int i; i < buffy.samples(); i++ )
+    {
+        // args are sample value and sample index
+        // (dur must be integral in samples)
+        lisa.valueAt( buffy.valueAt(i), i::samp );        
+    }
+    
+    // set LiSa parameters
+    lisa.play( false );
+    lisa.loop( false );
+    lisa.maxVoices( LISA_MAX_VOICES );
+    
+    return lisa;
+
+}
+
+*/
 Gain rhythmR => LPF lR => dac.right;
 Gain rhythmL => LPF lL => dac.left;
 
 lR.freq(500);
 lL.freq(500);
+
+rhythmR.gain(0.5);
+rhythmL.gain(0.5);
+
 
 fun void bass() {
   SndBuf bass => PitShift shifter;
@@ -16,7 +89,6 @@ fun void bass() {
   shifter => rhythmL;
   bass.read(me.sourceDir() + "audio/bass.wav");
   bass.rate(Math.random2f(0.999,1.001));
-
 
   bass.length() => now;
 }
@@ -421,12 +493,12 @@ for (int i; i < 2; i++) {
   spork ~playChord(71,71,71, BEAT * 4 * 4, 0, 0.03, 400);
   spork ~groove2();
   for (int i; i < 2; i++) {
-    spork ~jitter(43, 0.1, 400);
+    spork ~jitter(43, 0.03, 400);
     arp(0.02);
   }
   spork ~groove2();
   for (int i; i < 2; i++) {
-    spork ~jitter(43, 0.1, 400);
+    spork ~jitter(43, 0.03, 400);
     arp(0.02);
   }
 }
@@ -436,7 +508,7 @@ spork ~playChord(71,69,69, BEAT * 4 * 3, 0, 0.1, 400);
 arp1C.modFreq(0);
 spork ~groove2();
 for (int i; i < 2; i++) {
-  spork ~jitter(43, 0.1, 400);
+  spork ~jitter(43, 0.03, 400);
   arp(0.02);
 }
 
@@ -444,19 +516,19 @@ spork ~playChord(55,64,72, BEAT * 4 * 3, 0, 0.1, 400);
 spork ~playChord(76,74,79, BEAT * 4 * 3, 0, 0.1, 400);
 spork ~groove2();
 for (int i; i < 2; i++) {
-  spork ~jitter(43, 0.1, 400);
+  spork ~jitter(43, 0.03, 400);
   arp(0.02);
 }
 spork ~playChord(55,67,74, BEAT * 4 * 4, 0, 0.1, 400);
 spork ~playChord(71,72,79, BEAT * 4 * 4, 0, 0.1, 400);
 spork ~groove2();
 for (int i; i < 2; i++) {
-  spork ~jitter(43, 0.1, 400);
+  spork ~jitter(43, 0.03, 400);
   arp(0.02);
 }
 spork ~groove2();
 for (int i; i < 2; i++) {
-  spork ~jitter(43, 0.1, 400);
+  spork ~jitter(43, 0.03, 400);
   arp(0.01);
 }
 
@@ -482,12 +554,12 @@ spork ~playChord(55,67,74, BEAT * 4 * 4, 0, 0.08, 800);
 spork ~playChord(71,72,79, BEAT * 4 * 4, 0, 0.08, 800);
 spork ~groove2();
 for (int i; i < 2; i++) {
-  spork ~jitter(43, 0.1, 800);
+  spork ~jitter(43, 0.03, 800);
   BEAT * 4 => now;
 }
 spork ~groove2();
 for (int i; i < 2; i++) {
-  spork ~jitter(43, 0.1, 800);
+  spork ~jitter(43, 0.03, 800);
   BEAT * 4 => now;
 }
 
@@ -504,7 +576,7 @@ BEAT * 16 => now;
 spork ~playChord(55,67,74, BEAT * 4 * 5, 0, 0.08, 2000);
 spork ~playChord(79,69,71, BEAT * 4 * 5, 0, 0.08, 2000);
 for (int i; i < 4; i++) {
-  spork ~jitter(43, 0.15, 2000);
+  spork ~jitter(43, 0.03, 2000);
   BEAT * 4 => now;
 }
 
@@ -523,8 +595,8 @@ for (int i; i < 4; i++) {
 
 /*********** CHANGE TO GLOBAL GAIN *****/
 
-rhythmR.gain(0.8);
-rhythmL.gain(0.8);
+rhythmR.gain(0.5);
+rhythmL.gain(0.5);
 spork ~rampLPF(lR, 2000, BEAT*4*8); 
 spork ~rampLPF(lL, 2000, BEAT*4*8);
 for (int i; i < 4; i++) {

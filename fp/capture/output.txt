@@ -1,360 +1,657 @@
- 1  192.168.176.1 (192.168.176.1)  12.286 ms  14.785 ms  1.040 ms
- 2  noa-srtr-vl652.sunet (171.64.197.1)  1.570 ms  5.466 ms  1.578 ms
+ 1  192.168.176.1 (192.168.176.1)  4.762 ms  5.732 ms  5.624 ms
+ 2  noa-srtr-vl652.sunet (171.64.197.1)  11.247 ms  12.685 ms  2.883 ms
  3  * * *
- 4  dca-rtr-vlan8.sunet (171.64.255.204)  4.166 ms  1.949 ms  1.773 ms
- 5  dc-svl-agg4--stanford-10ge.cenic.net (137.164.50.157)  2.613 ms  2.933 ms  2.858 ms
- 6  74.125.147.146 (74.125.147.146)  2.838 ms
-    72.14.242.90 (72.14.242.90)  22.760 ms
-    72.14.205.134 (72.14.205.134)  2.994 ms
- 7  72.14.232.136 (72.14.232.136)  3.822 ms  3.914 ms
-    209.85.240.114 (209.85.240.114)  3.767 ms
- 8  209.85.246.38 (209.85.246.38)  3.870 ms  3.817 ms
-    64.233.174.91 (64.233.174.91)  3.368 ms
- 9  64.233.174.204 (64.233.174.204)  10.272 ms  10.470 ms  10.603 ms
-10  209.85.246.222 (209.85.246.222)  10.600 ms
-    209.85.248.124 (209.85.248.124)  10.810 ms
-    209.85.246.228 (209.85.246.228)  10.446 ms
-11  209.85.253.185 (209.85.253.185)  11.326 ms  10.728 ms  10.670 ms
-12  lax17s02-in-f14.1e100.net (172.217.1.238)  10.397 ms  10.232 ms  10.433 ms
- 1  192.168.176.1 (192.168.176.1)  1.130 ms  1.057 ms  1.037 ms
- 2  noa-srtr-vl652.sunet (171.64.197.1)  1.564 ms  1.566 ms  1.532 ms
+ 4  dca-rtr.stanford.edu (171.64.255.204)  4.819 ms  1.832 ms  1.746 ms
+ 5  dc-svl-agg4--stanford-10ge.cenic.net (137.164.50.157)  2.841 ms  2.632 ms  2.544 ms
+ 6  72.14.205.134 (72.14.205.134)  2.934 ms
+    74.125.147.146 (74.125.147.146)  2.862 ms
+    72.14.205.134 (72.14.205.134)  3.286 ms
+ 7  72.14.232.136 (72.14.232.136)  3.614 ms
+    216.239.49.250 (216.239.49.250)  3.899 ms  3.949 ms
+ 8  74.125.37.41 (74.125.37.41)  3.320 ms  3.265 ms  3.159 ms
+ 9  nuq04s29-in-f14.1e100.net (216.58.192.14)  3.306 ms  2.991 ms  3.203 ms
+ 1  192.168.176.1 (192.168.176.1)  1.126 ms  1.005 ms  0.977 ms
+ 2  noa-srtr-vl652.sunet (171.64.197.1)  1.547 ms  1.544 ms  1.591 ms
  3  * * *
- 4  dca-rtr-vlan8.sunet (171.64.255.204)  10.191 ms  2.702 ms  7.732 ms
- 5  dc-svl-agg4--stanford-10ge.cenic.net (137.164.50.157)  14.987 ms  3.825 ms  5.044 ms
- 6  10-1-1-91.ear1.sanjose1.level3.net (4.15.122.45)  8.757 ms  7.590 ms  5.922 ms
- 7  ae-2-6.edge2.sanjose3.level3.net (4.69.209.185)  8.226 ms
-    ae-3-19.edge2.sanjose3.level3.net (4.69.209.189)  18.254 ms  5.242 ms
- 8  xe-5-2-0.sjc10.ip4.gtt.net (77.67.69.97)  12.968 ms
-    tinet-level3-xe.sanjose3.level3.net (4.68.62.214)  6.404 ms
-    xe-5-2-0.sjc10.ip4.gtt.net (77.67.69.97)  6.840 ms
- 9  et-2-3-0.lon10.ip4.gtt.net (89.149.187.190)  153.414 ms  151.488 ms  151.920 ms
-10  1u1-gw.ip4.gtt.net (46.33.92.106)  150.400 ms  147.078 ms  149.848 ms
-11  ae-6.bb-c.bap.rhr.de.oneandone.net (212.227.120.49)  153.926 ms  160.846 ms  154.347 ms
-12  ae-1.gw-dista-a.bap.rhr.de.oneandone.net (212.227.121.171)  539.084 ms  152.986 ms  153.125 ms
-13  vl-1991.gw-ps11.bap.rhr.de.oneandone.net (217.160.127.79)  153.218 ms  154.744 ms  153.009 ms
-14  kundenserver.de (82.165.210.229)  160.550 ms  160.571 ms  160.462 ms
- 1  192.168.176.1 (192.168.176.1)  1.804 ms  1.028 ms  0.980 ms
- 2  noa-srtr-vl652.sunet (171.64.197.1)  1.572 ms  6.138 ms  1.503 ms
+ 4  dca-rtr.stanford.edu (171.64.255.204)  1.963 ms  1.950 ms  2.347 ms
+ 5  dc-svl-agg4--stanford-10ge.cenic.net (137.164.50.157)  3.033 ms  2.730 ms  2.688 ms
+ 6  10-1-1-91.ear1.sanjose1.level3.net (4.15.122.45)  2.883 ms  3.131 ms  2.701 ms
+ 7  ae-1-9.edge2.sanjose3.level3.net (4.69.209.181)  2.887 ms  3.117 ms  3.264 ms
+ 8  tinet-level3-xe.sanjose3.level3.net (4.68.62.214)  2.882 ms
+    xe-5-2-0.sjc10.ip4.gtt.net (77.67.69.97)  2.998 ms
+    tinet-level3-xe.sanjose3.level3.net (4.68.62.214)  2.911 ms
+ 9  et-2-3-0.lon10.ip4.gtt.net (89.149.187.190)  150.478 ms  149.941 ms  151.837 ms
+10  1u1-gw.ip4.gtt.net (46.33.92.106)  146.519 ms  149.894 ms  153.978 ms
+11  ae-6.bb-c.bap.rhr.de.oneandone.net (212.227.120.49)  156.423 ms  159.706 ms  168.870 ms
+12  ae-1.gw-dista-a.bap.rhr.de.oneandone.net (212.227.121.171)  155.104 ms  153.175 ms  153.591 ms
+13  vl-1991.gw-ps11.bap.rhr.de.oneandone.net (217.160.127.79)  168.984 ms  160.554 ms  160.111 ms
+14  kundenserver.de (82.165.210.229)  177.156 ms  179.837 ms  166.450 ms
+ 1  192.168.176.1 (192.168.176.1)  8.525 ms  61.552 ms  5.297 ms
+ 2  noa-srtr-vl652.sunet (171.64.197.1)  17.400 ms  19.488 ms  25.538 ms
  3  * * *
- 4  dca-rtr-vlan8.sunet (171.64.255.204)  4.495 ms  1.953 ms  2.095 ms
- 5  dc-svl-agg4--stanford-10ge.cenic.net (137.164.50.157)  2.499 ms  2.650 ms  2.592 ms
- 6  74.125.147.146 (74.125.147.146)  2.743 ms
-    72.14.242.90 (72.14.242.90)  2.811 ms
-    74.125.147.146 (74.125.147.146)  2.761 ms
- 7  209.85.240.114 (209.85.240.114)  3.431 ms
-    72.14.232.138 (72.14.232.138)  33.912 ms
-    216.239.49.250 (216.239.49.250)  5.506 ms
- 8  209.85.249.63 (209.85.249.63)  3.768 ms
-    209.85.246.38 (209.85.246.38)  3.863 ms
-    64.233.174.91 (64.233.174.91)  3.237 ms
- 9  64.233.174.204 (64.233.174.204)  10.409 ms
-    64.233.174.206 (64.233.174.206)  10.746 ms
-    64.233.174.204 (64.233.174.204)  10.460 ms
-10  64.233.174.191 (64.233.174.191)  10.668 ms
-    209.85.246.228 (209.85.246.228)  10.517 ms
-    209.85.246.222 (209.85.246.222)  10.448 ms
-11  209.85.253.185 (209.85.253.185)  10.888 ms  10.724 ms  10.610 ms
-12  lax17s02-in-f14.1e100.net (172.217.1.238)  10.264 ms  10.314 ms  10.638 ms
- 1  192.168.176.1 (192.168.176.1)  1.328 ms  0.911 ms  0.977 ms
- 2  noa-srtr-vl652.sunet (171.64.197.1)  1.580 ms  1.791 ms  2.750 ms
+ 4  dca-rtr.stanford.edu (171.64.255.204)  12.419 ms  5.234 ms  10.349 ms
+ 5  dc-svl-agg4--stanford-10ge.cenic.net (137.164.50.157)  18.978 ms  4.793 ms  11.396 ms
+ 6  74.125.147.146 (74.125.147.146)  8.080 ms
+    72.14.205.134 (72.14.205.134)  6.307 ms
+    72.14.242.90 (72.14.242.90)  4.440 ms
+ 7  72.14.232.136 (72.14.232.136)  8.988 ms
+    216.239.49.250 (216.239.49.250)  4.930 ms
+    72.14.232.136 (72.14.232.136)  3.672 ms
+ 8  74.125.37.41 (74.125.37.41)  3.204 ms  3.007 ms  3.611 ms
+ 9  nuq04s29-in-f14.1e100.net (216.58.192.14)  3.817 ms  3.066 ms  5.272 ms
+ 1  192.168.176.1 (192.168.176.1)  1.210 ms  1.002 ms  1.048 ms
+ 2  noa-srtr-vl652.sunet (171.64.197.1)  2.046 ms  1.634 ms  1.997 ms
  3  * * *
- 4  dca-rtr-vlan8.sunet (171.64.255.204)  5.420 ms  3.993 ms  1.763 ms
- 5  dc-svl-agg4--stanford-10ge.cenic.net (137.164.50.157)  2.575 ms  5.726 ms  2.745 ms
- 6  10-1-1-91.ear1.sanjose1.level3.net (4.15.122.45)  2.851 ms  2.423 ms  2.645 ms
- 7  ae-2-6.edge2.sanjose3.level3.net (4.69.209.185)  2.902 ms
-    ae-1-9.edge2.sanjose3.level3.net (4.69.209.181)  2.691 ms
+ 4  dca-rtr.stanford.edu (171.64.255.204)  2.101 ms  1.863 ms  1.943 ms
+ 5  dc-svl-agg4--stanford-10ge.cenic.net (137.164.50.157)  2.918 ms  2.563 ms  2.629 ms
+ 6  10-1-1-91.ear1.sanjose1.level3.net (4.15.122.45)  2.955 ms  4.244 ms  2.561 ms
+ 7  ae-1-9.edge2.sanjose3.level3.net (4.69.209.181)  2.954 ms
+    ae-3-19.edge2.sanjose3.level3.net (4.69.209.189)  11.763 ms
+    ae-2-6.edge2.sanjose3.level3.net (4.69.209.185)  2.942 ms
+ 8  tinet-level3-xe.sanjose3.level3.net (4.68.62.214)  2.991 ms
+    xe-5-2-0.sjc10.ip4.gtt.net (77.67.69.97)  2.926 ms  3.352 ms
+ 9  et-2-3-0.lon10.ip4.gtt.net (89.149.187.190)  149.837 ms  150.293 ms  149.932 ms
+10  1u1-gw.ip4.gtt.net (46.33.92.106)  143.020 ms  149.523 ms  153.158 ms
+11  ae-6.bb-c.bap.rhr.de.oneandone.net (212.227.120.49)  160.238 ms  166.285 ms  153.880 ms
+12  ae-1.gw-dista-a.bap.rhr.de.oneandone.net (212.227.121.171)  153.874 ms  484.274 ms  408.395 ms
+13  vl-1991.gw-ps11.bap.rhr.de.oneandone.net (217.160.127.79)  159.896 ms  210.689 ms  157.593 ms
+14  kundenserver.de (82.165.210.229)  160.583 ms  160.499 ms  160.520 ms
+ 1  192.168.176.1 (192.168.176.1)  1.235 ms  1.002 ms  0.936 ms
+ 2  noa-srtr-vl652.sunet (171.64.197.1)  1.565 ms  1.609 ms  1.571 ms
+ 3  * * *
+ 4  dca-rtr.stanford.edu (171.64.255.204)  4.672 ms  1.882 ms  2.118 ms
+ 5  dc-svl-agg4--stanford-10ge.cenic.net (137.164.50.157)  4.763 ms  2.603 ms  2.610 ms
+ 6  72.14.205.134 (72.14.205.134)  3.181 ms
+    74.125.147.146 (74.125.147.146)  2.863 ms
+    72.14.242.90 (72.14.242.90)  2.863 ms
+ 7  216.239.49.250 (216.239.49.250)  3.709 ms  3.450 ms  3.366 ms
+ 8  74.125.37.41 (74.125.37.41)  3.182 ms  3.193 ms  3.100 ms
+ 9  nuq04s29-in-f14.1e100.net (216.58.192.14)  3.172 ms  3.094 ms  3.232 ms
+ 1  192.168.176.1 (192.168.176.1)  1.109 ms  0.950 ms  0.886 ms
+ 2  noa-srtr-vl652.sunet (171.64.197.1)  1.505 ms  1.512 ms  1.585 ms
+ 3  * * *
+ 4  dca-rtr.stanford.edu (171.64.255.204)  1.777 ms  1.734 ms  1.800 ms
+ 5  dc-svl-agg4--stanford-10ge.cenic.net (137.164.50.157)  2.614 ms  2.486 ms  2.619 ms
+ 6  10-1-1-91.ear1.sanjose1.level3.net (4.15.122.45)  2.556 ms  2.769 ms  2.632 ms
+ 7  ae-3-19.edge2.sanjose3.level3.net (4.69.209.189)  2.849 ms  2.795 ms
+    ae-1-9.edge2.sanjose3.level3.net (4.69.209.181)  2.840 ms
+ 8  tinet-level3-xe.sanjose3.level3.net (4.68.62.214)  2.924 ms
+    xe-5-2-0.sjc10.ip4.gtt.net (77.67.69.97)  3.819 ms  14.398 ms
+ 9  et-2-3-0.lon10.ip4.gtt.net (89.149.187.190)  149.443 ms  149.798 ms  149.448 ms
+10  1u1-gw.ip4.gtt.net (46.33.92.106)  141.741 ms  143.153 ms  144.668 ms
+11  ae-6.bb-c.bap.rhr.de.oneandone.net (212.227.120.49)  154.775 ms  153.638 ms  153.684 ms
+12  ae-1.gw-dista-a.bap.rhr.de.oneandone.net (212.227.121.171)  152.956 ms  153.535 ms  152.944 ms
+13  vl-1991.gw-ps11.bap.rhr.de.oneandone.net (217.160.127.79)  153.031 ms  152.948 ms  152.915 ms
+14  kundenserver.de (82.165.210.229)  168.986 ms  162.125 ms  166.712 ms
+ 1  192.168.176.1 (192.168.176.1)  4.270 ms  5.934 ms  6.346 ms
+ 2  noa-srtr-vl652.sunet (171.64.197.1)  9.000 ms  1.947 ms  13.319 ms
+ 3  * * *
+ 4  dca-rtr.stanford.edu (171.64.255.204)  3.620 ms  1.853 ms  13.411 ms
+ 5  dc-svl-agg4--stanford-10ge.cenic.net (137.164.50.157)  26.719 ms  12.244 ms  12.607 ms
+ 6  72.14.242.90 (72.14.242.90)  6.706 ms
+    74.125.147.146 (74.125.147.146)  8.557 ms
+    72.14.242.90 (72.14.242.90)  15.983 ms
+ 7  72.14.232.136 (72.14.232.136)  7.533 ms
+    216.239.49.250 (216.239.49.250)  10.628 ms  8.961 ms
+ 8  74.125.37.41 (74.125.37.41)  3.658 ms  4.764 ms  3.341 ms
+ 9  nuq04s29-in-f14.1e100.net (216.58.192.14)  7.082 ms  7.240 ms  9.132 ms
+ 1  192.168.176.1 (192.168.176.1)  4.165 ms  6.526 ms  3.067 ms
+ 2  noa-srtr-vl652.sunet (171.64.197.1)  1.758 ms  5.293 ms  2.363 ms
+ 3  * * *
+ 4  dca-rtr.stanford.edu (171.64.255.204)  2.163 ms  1.702 ms  1.674 ms
+ 5  dc-svl-agg4--stanford-10ge.cenic.net (137.164.50.157)  2.951 ms  2.872 ms  2.563 ms
+ 6  10-1-1-91.ear1.sanjose1.level3.net (4.15.122.45)  2.514 ms  2.777 ms  2.383 ms
+ 7  ae-4-10.edge2.sanjose3.level3.net (4.69.209.193)  2.956 ms
+    ae-1-9.edge2.sanjose3.level3.net (4.69.209.181)  2.605 ms
+    ae-4-10.edge2.sanjose3.level3.net (4.69.209.193)  3.150 ms
+ 8  xe-5-2-0.sjc10.ip4.gtt.net (77.67.69.97)  2.949 ms  3.293 ms
+    tinet-level3-xe.sanjose3.level3.net (4.68.62.214)  15.494 ms
+ 9  et-2-3-0.lon10.ip4.gtt.net (89.149.187.190)  150.040 ms  150.260 ms  149.441 ms
+10  1u1-gw.ip4.gtt.net (46.33.92.106)  141.927 ms  143.247 ms  148.246 ms
+11  ae-6.bb-c.bap.rhr.de.oneandone.net (212.227.120.49)  155.136 ms  153.772 ms  153.732 ms
+12  ae-1.gw-dista-a.bap.rhr.de.oneandone.net (212.227.121.171)  153.054 ms  152.884 ms  153.019 ms
+13  vl-1991.gw-ps11.bap.rhr.de.oneandone.net (217.160.127.79)  152.751 ms  153.085 ms  155.064 ms
+14  kundenserver.de (82.165.210.229)  160.449 ms  160.192 ms  160.326 ms
+ 1  192.168.176.1 (192.168.176.1)  1.099 ms  1.182 ms  1.429 ms
+ 2  noa-srtr-vl652.sunet (171.64.197.1)  1.678 ms  1.504 ms  1.610 ms
+ 3  * * *
+ 4  dca-rtr.stanford.edu (171.64.255.204)  5.057 ms  4.919 ms  1.835 ms
+ 5  dc-svl-agg4--stanford-10ge.cenic.net (137.164.50.157)  3.201 ms  3.541 ms  3.137 ms
+ 6  72.14.242.90 (72.14.242.90)  3.647 ms
+    74.125.147.146 (74.125.147.146)  2.962 ms
+    72.14.205.134 (72.14.205.134)  2.990 ms
+ 7  72.14.232.136 (72.14.232.136)  3.280 ms  3.213 ms
+    216.239.49.250 (216.239.49.250)  3.663 ms
+ 8  74.125.37.41 (74.125.37.41)  3.233 ms  3.363 ms  3.164 ms
+ 9  nuq04s29-in-f14.1e100.net (216.58.192.14)  3.156 ms  3.221 ms  3.199 ms
+ 1  192.168.176.1 (192.168.176.1)  1.174 ms  0.927 ms  0.891 ms
+ 2  noa-srtr-vl652.sunet (171.64.197.1)  1.636 ms  1.737 ms  1.714 ms
+ 3  * * *
+ 4  dca-rtr.stanford.edu (171.64.255.204)  10.486 ms  11.114 ms  2.257 ms
+ 5  dc-svl-agg4--stanford-10ge.cenic.net (137.164.50.157)  4.295 ms  5.170 ms  2.493 ms
+ 6  10-1-1-91.ear1.sanjose1.level3.net (4.15.122.45)  3.069 ms  2.524 ms  2.501 ms
+ 7  ae-2-6.edge2.sanjose3.level3.net (4.69.209.185)  5.554 ms
+    ae-3-19.edge2.sanjose3.level3.net (4.69.209.189)  17.899 ms  7.650 ms
+ 8  tinet-level3-xe.sanjose3.level3.net (4.68.62.214)  2.864 ms
+    xe-5-2-0.sjc10.ip4.gtt.net (77.67.69.97)  2.791 ms  2.891 ms
+ 9  et-2-3-0.lon10.ip4.gtt.net (89.149.187.190)  157.027 ms  150.846 ms  158.554 ms
+10  1u1-gw.ip4.gtt.net (46.33.92.106)  156.289 ms  150.578 ms  148.281 ms
+11  ae-6.bb-c.bap.rhr.de.oneandone.net (212.227.120.49)  156.574 ms  158.661 ms  168.324 ms
+12  ae-1.gw-dista-a.bap.rhr.de.oneandone.net (212.227.121.171)  154.268 ms  153.180 ms  153.086 ms
+13  vl-1991.gw-ps11.bap.rhr.de.oneandone.net (217.160.127.79)  152.971 ms  153.300 ms  153.349 ms
+14  kundenserver.de (82.165.210.229)  160.920 ms  161.991 ms  164.985 ms
+ 1  192.168.176.1 (192.168.176.1)  1.235 ms  0.992 ms  0.986 ms
+ 2  noa-srtr-vl652.sunet (171.64.197.1)  3.339 ms  1.404 ms  1.408 ms
+ 3  * * *
+ 4  dca-rtr.stanford.edu (171.64.255.204)  15.914 ms  17.680 ms  43.396 ms
+ 5  dc-svl-agg4--stanford-10ge.cenic.net (137.164.50.157)  18.666 ms  12.335 ms  10.959 ms
+ 6  72.14.205.134 (72.14.205.134)  32.343 ms
+    74.125.147.146 (74.125.147.146)  13.927 ms  10.647 ms
+ 7  216.239.49.250 (216.239.49.250)  19.036 ms  18.126 ms
+    72.14.232.136 (72.14.232.136)  15.756 ms
+ 8  74.125.37.41 (74.125.37.41)  8.054 ms  6.838 ms  5.610 ms
+ 9  nuq04s29-in-f14.1e100.net (216.58.192.14)  15.052 ms  6.967 ms  8.784 ms
+ 1  192.168.176.1 (192.168.176.1)  2.765 ms  3.079 ms  4.787 ms
+ 2  noa-srtr-vl652.sunet (171.64.197.1)  33.708 ms  18.416 ms  104.100 ms
+ 3  * * *
+ 4  dca-rtr.stanford.edu (171.64.255.204)  5.284 ms  3.956 ms  4.627 ms
+ 5  dc-svl-agg4--stanford-10ge.cenic.net (137.164.50.157)  2.543 ms  2.491 ms  2.267 ms
+ 6  * 10-1-1-91.ear1.sanjose1.level3.net (4.15.122.45)  13.764 ms  28.930 ms
+ 7  ae-4-10.edge2.sanjose3.level3.net (4.69.209.193)  14.919 ms
+    ae-2-6.edge2.sanjose3.level3.net (4.69.209.185)  15.510 ms
+    ae-3-19.edge2.sanjose3.level3.net (4.69.209.189)  13.668 ms
+ 8  xe-5-2-0.sjc10.ip4.gtt.net (77.67.69.97)  12.094 ms  16.146 ms
+    tinet-level3-xe.sanjose3.level3.net (4.68.62.214)  9.806 ms
+ 9  et-2-3-0.lon10.ip4.gtt.net (89.149.187.190)  159.060 ms  154.441 ms  152.451 ms
+10  1u1-gw.ip4.gtt.net (46.33.92.106)  143.818 ms  151.421 ms  145.745 ms
+11  ae-6.bb-c.bap.rhr.de.oneandone.net (212.227.120.49)  154.742 ms  153.766 ms  159.073 ms
+12  ae-1.gw-dista-a.bap.rhr.de.oneandone.net (212.227.121.171)  153.691 ms  153.474 ms  154.066 ms
+13  vl-1991.gw-ps11.bap.rhr.de.oneandone.net (217.160.127.79)  157.174 ms  156.730 ms  155.191 ms
+14  kundenserver.de (82.165.210.229)  165.877 ms  174.939 ms  169.128 ms
+ 1  192.168.176.1 (192.168.176.1)  10.010 ms  10.907 ms  5.983 ms
+ 2  noa-srtr-vl652.sunet (171.64.197.1)  13.673 ms  16.162 ms  12.115 ms
+ 3  * * *
+ 4  dca-rtr.stanford.edu (171.64.255.204)  10.279 ms  72.587 ms  7.148 ms
+ 5  dc-svl-agg4--stanford-10ge.cenic.net (137.164.50.157)  5.549 ms  6.790 ms  5.477 ms
+ 6  74.125.147.146 (74.125.147.146)  5.180 ms
+    72.14.205.134 (72.14.205.134)  3.231 ms
+    72.14.242.90 (72.14.242.90)  2.872 ms
+ 7  72.14.232.136 (72.14.232.136)  4.822 ms
+    216.239.49.250 (216.239.49.250)  9.932 ms
+    72.14.232.136 (72.14.232.136)  12.674 ms
+ 8  74.125.37.41 (74.125.37.41)  6.447 ms  4.311 ms  8.061 ms
+ 9  nuq04s29-in-f14.1e100.net (216.58.192.14)  6.747 ms  5.714 ms  13.296 ms
+ 1  192.168.176.1 (192.168.176.1)  1.318 ms  2.144 ms  2.404 ms
+ 2  noa-srtr-vl652.sunet (171.64.197.1)  1.669 ms  3.382 ms  1.930 ms
+ 3  * * *
+ 4  dca-rtr.stanford.edu (171.64.255.204)  13.734 ms  23.379 ms  22.489 ms
+ 5  dc-svl-agg4--stanford-10ge.cenic.net (137.164.50.157)  11.077 ms  9.154 ms  7.145 ms
+ 6  10-1-1-91.ear1.sanjose1.level3.net (4.15.122.45)  9.733 ms  12.374 ms  10.651 ms
+ 7  ae-2-6.edge2.sanjose3.level3.net (4.69.209.185)  3.580 ms
+    ae-1-9.edge2.sanjose3.level3.net (4.69.209.181)  4.738 ms
+    ae-3-19.edge2.sanjose3.level3.net (4.69.209.189)  8.657 ms
+ 8  tinet-level3-xe.sanjose3.level3.net (4.68.62.214)  2.998 ms
+    xe-5-2-0.sjc10.ip4.gtt.net (77.67.69.97)  2.936 ms  3.258 ms
+ 9  et-2-3-0.lon10.ip4.gtt.net (89.149.187.190)  149.337 ms  154.097 ms  155.990 ms
+10  1u1-gw.ip4.gtt.net (46.33.92.106)  200.867 ms  154.290 ms  151.231 ms
+11  ae-6.bb-c.bap.rhr.de.oneandone.net (212.227.120.49)  173.424 ms  156.727 ms  157.165 ms
+12  ae-1.gw-dista-a.bap.rhr.de.oneandone.net (212.227.121.171)  156.274 ms  254.088 ms  160.527 ms
+13  vl-1991.gw-ps11.bap.rhr.de.oneandone.net (217.160.127.79)  157.700 ms  152.878 ms  158.074 ms
+14  kundenserver.de (82.165.210.229)  162.602 ms  162.115 ms  163.311 ms
+ 1  192.168.176.1 (192.168.176.1)  1.543 ms  2.353 ms  6.346 ms
+ 2  noa-srtr-vl652.sunet (171.64.197.1)  6.147 ms  11.228 ms  5.451 ms
+ 3  * * *
+ 4  dca-rtr.stanford.edu (171.64.255.204)  3.348 ms  8.063 ms  12.275 ms
+ 5  dc-svl-agg4--stanford-10ge.cenic.net (137.164.50.157)  8.075 ms  15.220 ms  11.216 ms
+ 6  72.14.205.134 (72.14.205.134)  11.452 ms
+    72.14.242.90 (72.14.242.90)  7.462 ms
+    72.14.205.134 (72.14.205.134)  13.187 ms
+ 7  216.239.49.250 (216.239.49.250)  8.389 ms  6.513 ms
+    72.14.232.136 (72.14.232.136)  7.557 ms
+ 8  74.125.37.41 (74.125.37.41)  3.594 ms  4.316 ms  3.658 ms
+ 9  nuq04s29-in-f14.1e100.net (216.58.192.14)  7.131 ms  6.033 ms  8.481 ms
+ 1  192.168.176.1 (192.168.176.1)  1.730 ms  1.021 ms  3.108 ms
+ 2  noa-srtr-vl652.sunet (171.64.197.1)  6.206 ms  6.912 ms  1.597 ms
+ 3  * * *
+ 4  dca-rtr.stanford.edu (171.64.255.204)  170.950 ms  1.830 ms  1.862 ms
+ 5  dc-svl-agg4--stanford-10ge.cenic.net (137.164.50.157)  2.685 ms  2.645 ms  2.706 ms
+ 6  10-1-1-91.ear1.sanjose1.level3.net (4.15.122.45)  2.866 ms  3.493 ms  2.820 ms
+ 7  ae-1-9.edge2.sanjose3.level3.net (4.69.209.181)  2.927 ms
+    ae-4-10.edge2.sanjose3.level3.net (4.69.209.193)  3.173 ms
+    ae-2-6.edge2.sanjose3.level3.net (4.69.209.185)  2.887 ms
+ 8  tinet-level3-xe.sanjose3.level3.net (4.68.62.214)  3.582 ms
+    xe-5-2-0.sjc10.ip4.gtt.net (77.67.69.97)  3.061 ms  3.027 ms
+ 9  et-2-3-0.lon10.ip4.gtt.net (89.149.187.190)  149.510 ms  149.404 ms  149.380 ms
+10  1u1-gw.ip4.gtt.net (46.33.92.106)  142.279 ms  142.012 ms  147.406 ms
+11  ae-6.bb-c.bap.rhr.de.oneandone.net (212.227.120.49)  -1223.690 ms  153.765 ms  153.994 ms
+12  ae-1.gw-dista-a.bap.rhr.de.oneandone.net (212.227.121.171)  153.107 ms  153.136 ms  153.131 ms
+13  vl-1991.gw-ps11.bap.rhr.de.oneandone.net (217.160.127.79)  153.191 ms  153.045 ms  153.319 ms
+14  kundenserver.de (82.165.210.229)  160.332 ms  160.363 ms  160.451 ms
+ 1  192.168.176.1 (192.168.176.1)  1.299 ms  0.976 ms  0.866 ms
+ 2  noa-srtr-vl652.sunet (171.64.197.1)  1.511 ms  1.258 ms  1.516 ms
+ 3  * * *
+ 4  dca-rtr.stanford.edu (171.64.255.204)  1.961 ms  1.828 ms  1.712 ms
+ 5  dc-svl-agg4--stanford-10ge.cenic.net (137.164.50.157)  2.631 ms  2.682 ms  3.062 ms
+ 6  74.125.147.146 (74.125.147.146)  2.592 ms
+    72.14.205.134 (72.14.205.134)  3.915 ms
+    74.125.147.146 (74.125.147.146)  2.900 ms
+ 7  216.239.49.250 (216.239.49.250)  3.288 ms  5.457 ms
+    72.14.232.136 (72.14.232.136)  3.465 ms
+ 8  74.125.37.41 (74.125.37.41)  3.425 ms  3.072 ms  3.722 ms
+ 9  nuq04s29-in-f14.1e100.net (216.58.192.14)  3.060 ms  3.117 ms  2.921 ms
+ 1  192.168.176.1 (192.168.176.1)  1.160 ms  0.954 ms  0.958 ms
+ 2  noa-srtr-vl652.sunet (171.64.197.1)  1.579 ms  1.610 ms  1.429 ms
+ 3  * * *
+ 4  dca-rtr.stanford.edu (171.64.255.204)  2.056 ms  1.669 ms  1.714 ms
+ 5  dc-svl-agg4--stanford-10ge.cenic.net (137.164.50.157)  2.897 ms  2.640 ms  2.995 ms
+ 6  10-1-1-91.ear1.sanjose1.level3.net (4.15.122.45)  2.682 ms  2.874 ms  2.694 ms
+ 7  ae-3-19.edge2.sanjose3.level3.net (4.69.209.189)  3.018 ms  2.995 ms
+    ae-2-6.edge2.sanjose3.level3.net (4.69.209.185)  3.106 ms
+ 8  xe-5-2-0.sjc10.ip4.gtt.net (77.67.69.97)  2.832 ms
+    tinet-level3-xe.sanjose3.level3.net (4.68.62.214)  3.007 ms  9.976 ms
+ 9  et-2-3-0.lon10.ip4.gtt.net (89.149.187.190)  149.355 ms  149.538 ms  149.755 ms
+10  1u1-gw.ip4.gtt.net (46.33.92.106)  141.866 ms  158.005 ms  141.865 ms
+11  ae-6.bb-c.bap.rhr.de.oneandone.net (212.227.120.49)  156.274 ms  153.767 ms  154.974 ms
+12  ae-1.gw-dista-a.bap.rhr.de.oneandone.net (212.227.121.171)  153.122 ms  152.988 ms  153.139 ms
+13  vl-1991.gw-ps11.bap.rhr.de.oneandone.net (217.160.127.79)  153.693 ms  152.951 ms  153.075 ms
+14  kundenserver.de (82.165.210.229)  160.444 ms  160.366 ms  160.497 ms
+ 1  192.168.176.1 (192.168.176.1)  1.204 ms  0.983 ms  1.038 ms
+ 2  noa-srtr-vl652.sunet (171.64.197.1)  1.576 ms  1.632 ms  1.632 ms
+ 3  * * *
+ 4  dca-rtr.stanford.edu (171.64.255.204)  155.182 ms  1.830 ms  2.027 ms
+ 5  dc-svl-agg4--stanford-10ge.cenic.net (137.164.50.157)  2.691 ms  2.721 ms  2.790 ms
+ 6  72.14.242.90 (72.14.242.90)  3.487 ms
+    72.14.205.134 (72.14.205.134)  2.786 ms
+    74.125.147.146 (74.125.147.146)  3.199 ms
+ 7  216.239.49.250 (216.239.49.250)  3.808 ms  3.566 ms  3.580 ms
+ 8  74.125.37.41 (74.125.37.41)  3.346 ms  3.772 ms  3.161 ms
+ 9  nuq04s29-in-f14.1e100.net (216.58.192.14)  4.965 ms  3.228 ms  3.277 ms
+ 1  192.168.176.1 (192.168.176.1)  1.165 ms  0.783 ms  0.964 ms
+ 2  noa-srtr-vl652.sunet (171.64.197.1)  1.560 ms  1.509 ms  1.593 ms
+ 3  * * *
+ 4  dca-rtr.stanford.edu (171.64.255.204)  4.566 ms  1.897 ms  1.799 ms
+ 5  dc-svl-agg4--stanford-10ge.cenic.net (137.164.50.157)  2.859 ms  3.327 ms  2.814 ms
+ 6  10-1-1-91.ear1.sanjose1.level3.net (4.15.122.45)  2.840 ms  2.934 ms  2.972 ms
+ 7  ae-1-9.edge2.sanjose3.level3.net (4.69.209.181)  3.259 ms  3.031 ms  3.018 ms
+ 8  tinet-level3-xe.sanjose3.level3.net (4.68.62.214)  3.158 ms  2.956 ms
+    xe-5-2-0.sjc10.ip4.gtt.net (77.67.69.97)  2.905 ms
+ 9  et-2-3-0.lon10.ip4.gtt.net (89.149.187.190)  149.466 ms  149.985 ms  149.677 ms
+10  1u1-gw.ip4.gtt.net (46.33.92.106)  141.996 ms  141.745 ms  148.909 ms
+11  ae-6.bb-c.bap.rhr.de.oneandone.net (212.227.120.49)  154.943 ms  153.924 ms  153.831 ms
+12  ae-1.gw-dista-a.bap.rhr.de.oneandone.net (212.227.121.171)  152.914 ms  153.085 ms  152.949 ms
+13  vl-1991.gw-ps11.bap.rhr.de.oneandone.net (217.160.127.79)  153.187 ms  153.424 ms  153.247 ms
+14  kundenserver.de (82.165.210.229)  161.833 ms  160.362 ms  160.222 ms
+ 1  192.168.176.1 (192.168.176.1)  1.114 ms  0.905 ms  0.884 ms
+ 2  noa-srtr-vl652.sunet (171.64.197.1)  1.452 ms  1.381 ms  1.602 ms
+ 3  * * *
+ 4  dca-rtr.stanford.edu (171.64.255.204)  4.798 ms  3.528 ms  1.805 ms
+ 5  dc-svl-agg4--stanford-10ge.cenic.net (137.164.50.157)  2.713 ms  2.416 ms  2.620 ms
+ 6  72.14.242.90 (72.14.242.90)  2.809 ms
+    74.125.147.146 (74.125.147.146)  2.862 ms
+    72.14.242.90 (72.14.242.90)  2.947 ms
+ 7  72.14.232.136 (72.14.232.136)  3.446 ms
+    216.239.49.250 (216.239.49.250)  3.716 ms
+    72.14.232.136 (72.14.232.136)  3.276 ms
+ 8  74.125.37.41 (74.125.37.41)  3.141 ms  3.225 ms  3.215 ms
+ 9  nuq04s29-in-f14.1e100.net (216.58.192.14)  2.989 ms  3.131 ms  3.190 ms
+ 1  192.168.176.1 (192.168.176.1)  1.301 ms  0.917 ms  0.930 ms
+ 2  noa-srtr-vl652.sunet (171.64.197.1)  1.384 ms  1.343 ms  1.470 ms
+ 3  * * *
+ 4  dca-rtr.stanford.edu (171.64.255.204)  4.947 ms  2.002 ms  1.809 ms
+ 5  dc-svl-agg4--stanford-10ge.cenic.net (137.164.50.157)  2.815 ms  2.496 ms  2.459 ms
+ 6  10-1-1-91.ear1.sanjose1.level3.net (4.15.122.45)  2.576 ms  2.550 ms  2.959 ms
+ 7  ae-2-6.edge2.sanjose3.level3.net (4.69.209.185)  3.177 ms
+    ae-3-19.edge2.sanjose3.level3.net (4.69.209.189)  2.939 ms
+    ae-1-9.edge2.sanjose3.level3.net (4.69.209.181)  2.506 ms
+ 8  tinet-level3-xe.sanjose3.level3.net (4.68.62.214)  2.997 ms
+    xe-5-2-0.sjc10.ip4.gtt.net (77.67.69.97)  3.042 ms  3.336 ms
+ 9  et-2-3-0.lon10.ip4.gtt.net (89.149.187.190)  150.121 ms  149.536 ms  149.696 ms
+10  1u1-gw.ip4.gtt.net (46.33.92.106)  148.537 ms  150.061 ms  149.665 ms
+11  ae-6.bb-c.bap.rhr.de.oneandone.net (212.227.120.49)  154.741 ms  154.107 ms  153.917 ms
+12  ae-1.gw-dista-a.bap.rhr.de.oneandone.net (212.227.121.171)  161.538 ms  153.303 ms  152.997 ms
+13  vl-1991.gw-ps11.bap.rhr.de.oneandone.net (217.160.127.79)  153.270 ms  152.932 ms  153.066 ms
+14  kundenserver.de (82.165.210.229)  160.423 ms  160.246 ms  160.507 ms
+ 1  192.168.176.1 (192.168.176.1)  1.381 ms  0.947 ms  0.915 ms
+ 2  noa-srtr-vl652.sunet (171.64.197.1)  1.485 ms  1.343 ms  1.551 ms
+ 3  * * *
+ 4  dca-rtr.stanford.edu (171.64.255.204)  4.673 ms  2.386 ms  1.945 ms
+ 5  dc-svl-agg4--stanford-10ge.cenic.net (137.164.50.157)  2.597 ms  2.705 ms  2.641 ms
+ 6  74.125.147.146 (74.125.147.146)  3.225 ms
+    72.14.205.134 (72.14.205.134)  2.964 ms  3.030 ms
+ 7  216.239.49.250 (216.239.49.250)  3.630 ms
+    72.14.232.136 (72.14.232.136)  3.453 ms
+    216.239.49.250 (216.239.49.250)  3.563 ms
+ 8  74.125.37.41 (74.125.37.41)  3.218 ms  3.196 ms  3.612 ms
+ 9  nuq04s29-in-f14.1e100.net (216.58.192.14)  2.892 ms  3.109 ms  3.085 ms
+ 1  192.168.176.1 (192.168.176.1)  1.599 ms  0.875 ms  0.913 ms
+ 2  noa-srtr-vl652.sunet (171.64.197.1)  1.871 ms  1.487 ms  1.506 ms
+ 3  * * *
+ 4  dca-rtr.stanford.edu (171.64.255.204)  1.923 ms  1.759 ms  1.679 ms
+ 5  dc-svl-agg4--stanford-10ge.cenic.net (137.164.50.157)  2.532 ms  2.788 ms  2.658 ms
+ 6  10-1-1-91.ear1.sanjose1.level3.net (4.15.122.45)  2.795 ms  2.730 ms  2.579 ms
+ 7  ae-2-6.edge2.sanjose3.level3.net (4.69.209.185)  2.885 ms
+    ae-4-10.edge2.sanjose3.level3.net (4.69.209.193)  2.929 ms
+    ae-3-19.edge2.sanjose3.level3.net (4.69.209.189)  3.043 ms
+ 8  xe-5-2-0.sjc10.ip4.gtt.net (77.67.69.97)  2.678 ms
+    tinet-level3-xe.sanjose3.level3.net (4.68.62.214)  2.731 ms  2.688 ms
+ 9  et-2-3-0.lon10.ip4.gtt.net (89.149.187.190)  149.510 ms  149.386 ms  149.403 ms
+10  1u1-gw.ip4.gtt.net (46.33.92.106)  145.576 ms  149.707 ms  150.201 ms
+11  ae-6.bb-c.bap.rhr.de.oneandone.net (212.227.120.49)  154.889 ms  153.811 ms  154.177 ms
+12  ae-1.gw-dista-a.bap.rhr.de.oneandone.net (212.227.121.171)  153.510 ms  153.120 ms  153.981 ms
+13  vl-1991.gw-ps11.bap.rhr.de.oneandone.net (217.160.127.79)  152.946 ms  152.982 ms  160.240 ms
+14  kundenserver.de (82.165.210.229)  160.684 ms  160.814 ms  160.403 ms
+ 1  192.168.176.1 (192.168.176.1)  1.124 ms  0.908 ms  0.909 ms
+ 2  noa-srtr-vl652.sunet (171.64.197.1)  1.615 ms  1.596 ms  1.607 ms
+ 3  * * *
+ 4  dca-rtr.stanford.edu (171.64.255.204)  1.809 ms  7.496 ms  7.696 ms
+ 5  dc-svl-agg4--stanford-10ge.cenic.net (137.164.50.157)  6.757 ms  4.418 ms  3.063 ms
+ 6  74.125.147.146 (74.125.147.146)  3.095 ms
+    72.14.242.90 (72.14.242.90)  9.972 ms
+    74.125.147.146 (74.125.147.146)  2.616 ms
+ 7  216.239.49.250 (216.239.49.250)  11.113 ms  11.488 ms  11.771 ms
+ 8  74.125.37.41 (74.125.37.41)  4.486 ms  3.349 ms  9.219 ms
+ 9  nuq04s29-in-f14.1e100.net (216.58.192.14)  5.356 ms  14.052 ms  7.545 ms
+ 1  192.168.176.1 (192.168.176.1)  8.336 ms  1.004 ms  0.934 ms
+ 2  noa-srtr-vl652.sunet (171.64.197.1)  7.628 ms  5.609 ms  1.963 ms
+ 3  * * *
+ 4  dca-rtr.stanford.edu (171.64.255.204)  4.759 ms  1.857 ms  1.969 ms
+ 5  dc-svl-agg4--stanford-10ge.cenic.net (137.164.50.157)  2.599 ms  2.874 ms  2.728 ms
+ 6  10-1-1-91.ear1.sanjose1.level3.net (4.15.122.45)  3.033 ms  6.184 ms  3.441 ms
+ 7  ae-3-19.edge2.sanjose3.level3.net (4.69.209.189)  2.915 ms
+    ae-4-10.edge2.sanjose3.level3.net (4.69.209.193)  3.071 ms
+    ae-3-19.edge2.sanjose3.level3.net (4.69.209.189)  3.654 ms
+ 8  tinet-level3-xe.sanjose3.level3.net (4.68.62.214)  2.979 ms  2.785 ms  3.007 ms
+ 9  et-2-3-0.lon10.ip4.gtt.net (89.149.187.190)  153.579 ms  154.237 ms  157.961 ms
+10  1u1-gw.ip4.gtt.net (46.33.92.106)  150.987 ms  154.917 ms  354.374 ms
+11  ae-6.bb-c.bap.rhr.de.oneandone.net (212.227.120.49)  173.546 ms  160.265 ms  157.523 ms
+12  ae-1.gw-dista-a.bap.rhr.de.oneandone.net (212.227.121.171)  154.701 ms  153.022 ms  153.119 ms
+13  vl-1991.gw-ps11.bap.rhr.de.oneandone.net (217.160.127.79)  155.383 ms  156.534 ms  158.173 ms
+14  kundenserver.de (82.165.210.229)  160.573 ms  160.705 ms  160.473 ms
+ 1  192.168.176.1 (192.168.176.1)  1.134 ms  1.004 ms  1.003 ms
+ 2  noa-srtr-vl652.sunet (171.64.197.1)  1.627 ms  1.507 ms  1.647 ms
+ 3  * * *
+ 4  dca-rtr.stanford.edu (171.64.255.204)  5.270 ms  4.092 ms  2.644 ms
+ 5  dc-svl-agg4--stanford-10ge.cenic.net (137.164.50.157)  3.986 ms  2.643 ms  2.785 ms
+ 6  72.14.205.134 (72.14.205.134)  3.360 ms
+    74.125.147.146 (74.125.147.146)  2.742 ms
+    72.14.205.134 (72.14.205.134)  8.948 ms
+ 7  72.14.232.136 (72.14.232.136)  3.341 ms
+    216.239.49.250 (216.239.49.250)  3.692 ms
+    72.14.232.136 (72.14.232.136)  3.451 ms
+ 8  74.125.37.41 (74.125.37.41)  3.418 ms  3.227 ms  3.121 ms
+ 9  nuq04s29-in-f14.1e100.net (216.58.192.14)  3.310 ms  3.580 ms  3.133 ms
+ 1  192.168.176.1 (192.168.176.1)  1.158 ms  0.937 ms  1.038 ms
+ 2  noa-srtr-vl652.sunet (171.64.197.1)  1.510 ms  1.600 ms  1.772 ms
+ 3  * * *
+ 4  dca-rtr.stanford.edu (171.64.255.204)  6.729 ms  1.954 ms  1.931 ms
+ 5  dc-svl-agg4--stanford-10ge.cenic.net (137.164.50.157)  2.633 ms  2.806 ms  2.696 ms
+ 6  10-1-1-91.ear1.sanjose1.level3.net (4.15.122.45)  10.709 ms  2.702 ms  5.201 ms
+ 7  ae-4-10.edge2.sanjose3.level3.net (4.69.209.193)  3.142 ms
+    ae-2-6.edge2.sanjose3.level3.net (4.69.209.185)  3.941 ms
+    ae-3-19.edge2.sanjose3.level3.net (4.69.209.189)  2.848 ms
+ 8  xe-5-2-0.sjc10.ip4.gtt.net (77.67.69.97)  2.870 ms
+    tinet-level3-xe.sanjose3.level3.net (4.68.62.214)  7.586 ms
+    xe-5-2-0.sjc10.ip4.gtt.net (77.67.69.97)  2.874 ms
+ 9  et-2-3-0.lon10.ip4.gtt.net (89.149.187.190)  149.680 ms  150.085 ms  149.612 ms
+10  1u1-gw.ip4.gtt.net (46.33.92.106)  141.889 ms  141.858 ms  144.012 ms
+11  ae-6.bb-c.bap.rhr.de.oneandone.net (212.227.120.49)  155.025 ms  154.935 ms  154.094 ms
+12  ae-1.gw-dista-a.bap.rhr.de.oneandone.net (212.227.121.171)  153.151 ms  153.247 ms  153.104 ms
+13  vl-1991.gw-ps11.bap.rhr.de.oneandone.net (217.160.127.79)  153.614 ms  152.921 ms  153.414 ms
+14  kundenserver.de (82.165.210.229)  160.468 ms  160.578 ms  160.425 ms
+ 1  192.168.176.1 (192.168.176.1)  3.571 ms  1.001 ms  0.870 ms
+ 2  noa-srtr-vl652.sunet (171.64.197.1)  1.642 ms  1.584 ms  1.699 ms
+ 3  * * *
+ 4  dca-rtr.stanford.edu (171.64.255.204)  4.674 ms  3.074 ms  11.292 ms
+ 5  dc-svl-agg4--stanford-10ge.cenic.net (137.164.50.157)  3.049 ms  2.753 ms  3.979 ms
+ 6  72.14.205.134 (72.14.205.134)  2.853 ms
+    72.14.242.90 (72.14.242.90)  2.970 ms  3.225 ms
+ 7  72.14.232.136 (72.14.232.136)  3.185 ms
+    216.239.49.250 (216.239.49.250)  4.530 ms
+    72.14.232.136 (72.14.232.136)  3.378 ms
+ 8  74.125.37.41 (74.125.37.41)  3.213 ms  3.543 ms  3.033 ms
+ 9  nuq04s29-in-f14.1e100.net (216.58.192.14)  3.231 ms  3.990 ms  3.363 ms
+ 1  192.168.176.1 (192.168.176.1)  3.708 ms  1.293 ms  0.896 ms
+ 2  noa-srtr-vl652.sunet (171.64.197.1)  1.571 ms  1.615 ms  1.655 ms
+ 3  * * *
+ 4  dca-rtr.stanford.edu (171.64.255.204)  4.572 ms  3.020 ms  1.798 ms
+ 5  dc-svl-agg4--stanford-10ge.cenic.net (137.164.50.157)  2.693 ms  2.755 ms  2.455 ms
+ 6  10-1-1-91.ear1.sanjose1.level3.net (4.15.122.45)  2.711 ms  2.539 ms  2.777 ms
+ 7  ae-3-19.edge2.sanjose3.level3.net (4.69.209.189)  4.910 ms
+    ae-4-10.edge2.sanjose3.level3.net (4.69.209.193)  3.080 ms
+    ae-2-6.edge2.sanjose3.level3.net (4.69.209.185)  3.202 ms
+ 8  xe-5-2-0.sjc10.ip4.gtt.net (77.67.69.97)  2.844 ms  3.162 ms
+    tinet-level3-xe.sanjose3.level3.net (4.68.62.214)  2.914 ms
+ 9  et-2-3-0.lon10.ip4.gtt.net (89.149.187.190)  156.561 ms  149.816 ms  150.168 ms
+10  1u1-gw.ip4.gtt.net (46.33.92.106)  142.057 ms  147.220 ms  150.146 ms
+11  ae-6.bb-c.bap.rhr.de.oneandone.net (212.227.120.49)  154.953 ms  154.471 ms  153.870 ms
+12  ae-1.gw-dista-a.bap.rhr.de.oneandone.net (212.227.121.171)  153.346 ms  153.640 ms  153.054 ms
+13  vl-1991.gw-ps11.bap.rhr.de.oneandone.net (217.160.127.79)  153.109 ms  153.314 ms  153.605 ms
+14  kundenserver.de (82.165.210.229)  160.609 ms  160.520 ms  160.533 ms
+ 1  192.168.176.1 (192.168.176.1)  1.128 ms  0.956 ms  0.883 ms
+ 2  noa-srtr-vl652.sunet (171.64.197.1)  1.470 ms  1.274 ms  1.434 ms
+ 3  * * *
+ 4  dca-rtr.stanford.edu (171.64.255.204)  5.542 ms  12.340 ms  1.925 ms
+ 5  dc-svl-agg4--stanford-10ge.cenic.net (137.164.50.157)  2.986 ms  2.900 ms  2.699 ms
+ 6  74.125.147.146 (74.125.147.146)  2.775 ms
+    72.14.242.90 (72.14.242.90)  3.008 ms  2.736 ms
+ 7  216.239.49.250 (216.239.49.250)  3.739 ms
+    72.14.232.136 (72.14.232.136)  3.913 ms
+    216.239.49.250 (216.239.49.250)  3.909 ms
+ 8  74.125.37.41 (74.125.37.41)  3.280 ms  3.199 ms  3.253 ms
+ 9  nuq04s29-in-f14.1e100.net (216.58.192.14)  3.048 ms  3.301 ms  3.336 ms
+ 1  192.168.176.1 (192.168.176.1)  1.159 ms  0.820 ms  0.863 ms
+ 2  noa-srtr-vl652.sunet (171.64.197.1)  1.536 ms  1.425 ms  1.496 ms
+ 3  * * *
+ 4  dca-rtr.stanford.edu (171.64.255.204)  4.738 ms  1.758 ms  1.933 ms
+ 5  dc-svl-agg4--stanford-10ge.cenic.net (137.164.50.157)  2.864 ms  3.821 ms  2.672 ms
+ 6  10-1-1-91.ear1.sanjose1.level3.net (4.15.122.45)  2.766 ms  2.515 ms  2.770 ms
+ 7  ae-3-19.edge2.sanjose3.level3.net (4.69.209.189)  3.007 ms  2.968 ms
+    ae-1-9.edge2.sanjose3.level3.net (4.69.209.181)  2.833 ms
+ 8  xe-5-2-0.sjc10.ip4.gtt.net (77.67.69.97)  2.841 ms
+    tinet-level3-xe.sanjose3.level3.net (4.68.62.214)  3.213 ms  2.963 ms
+ 9  et-2-3-0.lon10.ip4.gtt.net (89.149.187.190)  149.377 ms  149.446 ms  149.763 ms
+10  1u1-gw.ip4.gtt.net (46.33.92.106)  151.120 ms  149.506 ms  149.939 ms
+11  ae-6.bb-c.bap.rhr.de.oneandone.net (212.227.120.49)  155.023 ms  153.900 ms  153.784 ms
+12  ae-1.gw-dista-a.bap.rhr.de.oneandone.net (212.227.121.171)  153.245 ms  153.149 ms  153.173 ms
+13  vl-1991.gw-ps11.bap.rhr.de.oneandone.net (217.160.127.79)  155.371 ms  153.280 ms  153.579 ms
+14  kundenserver.de (82.165.210.229)  160.283 ms  160.454 ms  160.498 ms
+ 1  192.168.176.1 (192.168.176.1)  1.275 ms  0.967 ms  0.902 ms
+ 2  noa-srtr-vl652.sunet (171.64.197.1)  1.599 ms  1.615 ms  1.670 ms
+ 3  * * *
+ 4  dca-rtr.stanford.edu (171.64.255.204)  4.372 ms  1.920 ms  1.880 ms
+ 5  dc-svl-agg4--stanford-10ge.cenic.net (137.164.50.157)  2.651 ms  2.488 ms  3.976 ms
+ 6  72.14.242.90 (72.14.242.90)  3.066 ms
+    74.125.147.146 (74.125.147.146)  9.190 ms  3.349 ms
+ 7  216.239.49.250 (216.239.49.250)  4.045 ms  3.559 ms  3.502 ms
+ 8  74.125.37.41 (74.125.37.41)  3.226 ms  3.191 ms  3.284 ms
+ 9  nuq04s29-in-f14.1e100.net (216.58.192.14)  3.362 ms  3.680 ms  3.181 ms
+ 1  192.168.176.1 (192.168.176.1)  1.139 ms  0.966 ms  0.921 ms
+ 2  noa-srtr-vl652.sunet (171.64.197.1)  1.685 ms  1.623 ms  1.575 ms
+ 3  * * *
+ 4  dca-rtr.stanford.edu (171.64.255.204)  4.777 ms  2.190 ms  9.442 ms
+ 5  dc-svl-agg4--stanford-10ge.cenic.net (137.164.50.157)  2.665 ms  2.769 ms  2.827 ms
+ 6  10-1-1-91.ear1.sanjose1.level3.net (4.15.122.45)  2.785 ms  2.898 ms  2.485 ms
+ 7  ae-2-6.edge2.sanjose3.level3.net (4.69.209.185)  17.500 ms
+    ae-1-9.edge2.sanjose3.level3.net (4.69.209.181)  2.939 ms
+    ae-3-19.edge2.sanjose3.level3.net (4.69.209.189)  7.238 ms
+ 8  xe-5-2-0.sjc10.ip4.gtt.net (77.67.69.97)  2.945 ms
+    tinet-level3-xe.sanjose3.level3.net (4.68.62.214)  2.921 ms
+    xe-5-2-0.sjc10.ip4.gtt.net (77.67.69.97)  2.937 ms
+ 9  et-2-3-0.lon10.ip4.gtt.net (89.149.187.190)  149.430 ms  149.901 ms  149.387 ms
+10  1u1-gw.ip4.gtt.net (46.33.92.106)  141.952 ms  142.067 ms  144.492 ms
+11  ae-6.bb-c.bap.rhr.de.oneandone.net (212.227.120.49)  154.798 ms  154.020 ms  153.879 ms
+12  ae-1.gw-dista-a.bap.rhr.de.oneandone.net (212.227.121.171)  153.845 ms  153.313 ms  152.923 ms
+13  vl-1991.gw-ps11.bap.rhr.de.oneandone.net (217.160.127.79)  153.595 ms  154.049 ms  153.158 ms
+14  kundenserver.de (82.165.210.229)  160.467 ms  160.396 ms  160.507 ms
+ 1  192.168.176.1 (192.168.176.1)  1.196 ms  1.038 ms  0.963 ms
+ 2  noa-srtr-vl652.sunet (171.64.197.1)  1.389 ms  1.362 ms  1.511 ms
+ 3  * * *
+ 4  dca-rtr.stanford.edu (171.64.255.204)  4.634 ms  1.800 ms  1.858 ms
+ 5  dc-svl-agg4--stanford-10ge.cenic.net (137.164.50.157)  2.740 ms  2.616 ms  2.593 ms
+ 6  74.125.147.146 (74.125.147.146)  2.627 ms
+    72.14.242.90 (72.14.242.90)  2.907 ms
+    74.125.147.146 (74.125.147.146)  2.833 ms
+ 7  216.239.49.250 (216.239.49.250)  3.612 ms  3.677 ms
+    72.14.232.136 (72.14.232.136)  3.548 ms
+ 8  74.125.37.41 (74.125.37.41)  3.226 ms  3.094 ms  3.007 ms
+ 9  nuq04s29-in-f14.1e100.net (216.58.192.14)  2.992 ms  3.127 ms  3.058 ms
+ 1  192.168.176.1 (192.168.176.1)  1.470 ms  0.923 ms  0.882 ms
+ 2  noa-srtr-vl652.sunet (171.64.197.1)  1.569 ms  1.778 ms  1.615 ms
+ 3  * * *
+ 4  dca-rtr.stanford.edu (171.64.255.204)  1.920 ms  1.662 ms  1.683 ms
+ 5  dc-svl-agg4--stanford-10ge.cenic.net (137.164.50.157)  2.336 ms  2.411 ms  2.514 ms
+ 6  10-1-1-91.ear1.sanjose1.level3.net (4.15.122.45)  3.936 ms  14.550 ms  2.636 ms
+ 7  ae-2-6.edge2.sanjose3.level3.net (4.69.209.185)  3.117 ms
+    ae-3-19.edge2.sanjose3.level3.net (4.69.209.189)  3.033 ms
+    ae-4-10.edge2.sanjose3.level3.net (4.69.209.193)  2.966 ms
+ 8  xe-5-2-0.sjc10.ip4.gtt.net (77.67.69.97)  2.917 ms
+    tinet-level3-xe.sanjose3.level3.net (4.68.62.214)  2.703 ms
+    xe-5-2-0.sjc10.ip4.gtt.net (77.67.69.97)  2.956 ms
+ 9  et-2-3-0.lon10.ip4.gtt.net (89.149.187.190)  159.861 ms  150.242 ms  149.673 ms
+10  1u1-gw.ip4.gtt.net (46.33.92.106)  141.619 ms  141.754 ms  151.331 ms
+11  ae-6.bb-c.bap.rhr.de.oneandone.net (212.227.120.49)  153.789 ms  153.882 ms  154.025 ms
+12  ae-1.gw-dista-a.bap.rhr.de.oneandone.net (212.227.121.171)  152.873 ms  154.147 ms  153.624 ms
+13  vl-1991.gw-ps11.bap.rhr.de.oneandone.net (217.160.127.79)  157.703 ms  156.455 ms  153.327 ms
+14  kundenserver.de (82.165.210.229)  160.417 ms  160.509 ms  160.457 ms
+ 1  192.168.176.1 (192.168.176.1)  1.177 ms  1.031 ms  0.926 ms
+ 2  noa-srtr-vl652.sunet (171.64.197.1)  1.550 ms  1.473 ms  1.503 ms
+ 3  * * *
+ 4  dca-rtr.stanford.edu (171.64.255.204)  4.612 ms  3.127 ms  1.929 ms
+ 5  dc-svl-agg4--stanford-10ge.cenic.net (137.164.50.157)  2.916 ms  2.705 ms  2.766 ms
+ 6  74.125.147.146 (74.125.147.146)  35.062 ms
+    72.14.205.134 (72.14.205.134)  2.838 ms
+    74.125.147.146 (74.125.147.146)  2.793 ms
+ 7  216.239.49.250 (216.239.49.250)  3.925 ms  5.378 ms  3.740 ms
+ 8  74.125.37.41 (74.125.37.41)  3.361 ms  3.362 ms  3.099 ms
+ 9  nuq04s29-in-f14.1e100.net (216.58.192.14)  13.795 ms  3.225 ms  3.380 ms
+ 1  192.168.176.1 (192.168.176.1)  1.122 ms  0.709 ms  1.008 ms
+ 2  noa-srtr-vl652.sunet (171.64.197.1)  1.598 ms  1.592 ms  1.601 ms
+ 3  * * *
+ 4  dca-rtr.stanford.edu (171.64.255.204)  4.573 ms  1.981 ms  1.903 ms
+ 5  dc-svl-agg4--stanford-10ge.cenic.net (137.164.50.157)  2.847 ms  4.637 ms  3.971 ms
+ 6  10-1-1-91.ear1.sanjose1.level3.net (4.15.122.45)  3.330 ms  3.353 ms  2.725 ms
+ 7  ae-2-6.edge2.sanjose3.level3.net (4.69.209.185)  2.935 ms
+    ae-3-19.edge2.sanjose3.level3.net (4.69.209.189)  3.429 ms
+    ae-2-6.edge2.sanjose3.level3.net (4.69.209.185)  2.998 ms
+ 8  xe-5-2-0.sjc10.ip4.gtt.net (77.67.69.97)  3.086 ms
+    tinet-level3-xe.sanjose3.level3.net (4.68.62.214)  3.276 ms  3.142 ms
+ 9  et-2-3-0.lon10.ip4.gtt.net (89.149.187.190)  149.646 ms  149.703 ms  150.188 ms
+10  1u1-gw.ip4.gtt.net (46.33.92.106)  142.529 ms  141.686 ms  148.302 ms
+11  ae-6.bb-c.bap.rhr.de.oneandone.net (212.227.120.49)  156.658 ms  154.334 ms  153.947 ms
+12  ae-1.gw-dista-a.bap.rhr.de.oneandone.net (212.227.121.171)  153.510 ms  153.115 ms  153.344 ms
+13  vl-1991.gw-ps11.bap.rhr.de.oneandone.net (217.160.127.79)  153.176 ms  153.124 ms  154.598 ms
+14  kundenserver.de (82.165.210.229)  160.511 ms  160.467 ms  160.570 ms
+ 1  192.168.176.1 (192.168.176.1)  1.176 ms  1.006 ms  0.889 ms
+ 2  noa-srtr-vl652.sunet (171.64.197.1)  2.115 ms  1.720 ms  1.587 ms
+ 3  * * *
+ 4  dca-rtr.stanford.edu (171.64.255.204)  155.775 ms  1.870 ms  1.652 ms
+ 5  dc-svl-agg4--stanford-10ge.cenic.net (137.164.50.157)  2.563 ms  2.525 ms  2.767 ms
+ 6  72.14.242.90 (72.14.242.90)  2.802 ms
+    72.14.205.134 (72.14.205.134)  2.941 ms  3.160 ms
+ 7  72.14.232.136 (72.14.232.136)  3.243 ms
+    216.239.49.250 (216.239.49.250)  4.029 ms  3.730 ms
+ 8  74.125.37.41 (74.125.37.41)  3.239 ms  3.283 ms  3.002 ms
+ 9  nuq04s29-in-f14.1e100.net (216.58.192.14)  3.252 ms  3.383 ms  5.674 ms
+ 1  192.168.176.1 (192.168.176.1)  1.787 ms  0.996 ms  0.998 ms
+ 2  noa-srtr-vl652.sunet (171.64.197.1)  9.775 ms  3.875 ms  1.573 ms
+ 3  * * *
+ 4  dca-rtr.stanford.edu (171.64.255.204)  4.823 ms  1.897 ms  1.926 ms
+ 5  dc-svl-agg4--stanford-10ge.cenic.net (137.164.50.157)  2.672 ms  2.657 ms  2.627 ms
+ 6  10-1-1-91.ear1.sanjose1.level3.net (4.15.122.45)  2.747 ms  2.676 ms  2.645 ms
+ 7  ae-3-19.edge2.sanjose3.level3.net (4.69.209.189)  3.006 ms
+    ae-4-10.edge2.sanjose3.level3.net (4.69.209.193)  2.951 ms
+    ae-3-19.edge2.sanjose3.level3.net (4.69.209.189)  2.915 ms
+ 8  xe-5-2-0.sjc10.ip4.gtt.net (77.67.69.97)  2.790 ms  3.061 ms  3.810 ms
+ 9  et-2-3-0.lon10.ip4.gtt.net (89.149.187.190)  149.625 ms  149.512 ms  149.318 ms
+10  1u1-gw.ip4.gtt.net (46.33.92.106)  157.615 ms  142.335 ms  147.174 ms
+11  ae-6.bb-c.bap.rhr.de.oneandone.net (212.227.120.49)  154.979 ms  153.661 ms  153.752 ms
+12  ae-1.gw-dista-a.bap.rhr.de.oneandone.net (212.227.121.171)  155.149 ms  159.060 ms  160.935 ms
+13  vl-1991.gw-ps11.bap.rhr.de.oneandone.net (217.160.127.79)  155.424 ms  155.255 ms  153.117 ms
+14  kundenserver.de (82.165.210.229)  160.706 ms  160.410 ms  160.597 ms
+ 1  192.168.176.1 (192.168.176.1)  1.287 ms  0.939 ms  0.876 ms
+ 2  noa-srtr-vl652.sunet (171.64.197.1)  5.715 ms  1.527 ms  1.376 ms
+ 3  * * *
+ 4  dca-rtr.stanford.edu (171.64.255.204)  4.520 ms  1.932 ms  1.749 ms
+ 5  dc-svl-agg4--stanford-10ge.cenic.net (137.164.50.157)  2.621 ms  2.565 ms  2.708 ms
+ 6  74.125.147.146 (74.125.147.146)  2.622 ms
+    72.14.242.90 (72.14.242.90)  2.848 ms
+    74.125.147.146 (74.125.147.146)  2.748 ms
+ 7  216.239.49.250 (216.239.49.250)  3.597 ms  3.537 ms  3.520 ms
+ 8  74.125.37.41 (74.125.37.41)  3.110 ms  3.283 ms  3.144 ms
+ 9  nuq04s29-in-f14.1e100.net (216.58.192.14)  3.160 ms  3.329 ms  3.515 ms
+ 1  192.168.176.1 (192.168.176.1)  1.604 ms  0.961 ms  1.096 ms
+ 2  noa-srtr-vl652.sunet (171.64.197.1)  1.576 ms  1.666 ms  1.596 ms
+ 3  * * *
+ 4  dca-rtr.stanford.edu (171.64.255.204)  2.043 ms  1.768 ms  1.817 ms
+ 5  dc-svl-agg4--stanford-10ge.cenic.net (137.164.50.157)  2.645 ms  3.184 ms  2.556 ms
+ 6  * 10-1-1-91.ear1.sanjose1.level3.net (4.15.122.45)  192.723 ms  2.665 ms
+ 7  ae-4-10.edge2.sanjose3.level3.net (4.69.209.193)  3.155 ms
+    ae-1-9.edge2.sanjose3.level3.net (4.69.209.181)  3.091 ms
+    ae-3-19.edge2.sanjose3.level3.net (4.69.209.189)  3.139 ms
+ 8  xe-5-2-0.sjc10.ip4.gtt.net (77.67.69.97)  2.981 ms
+    tinet-level3-xe.sanjose3.level3.net (4.68.62.214)  3.247 ms
+    xe-5-2-0.sjc10.ip4.gtt.net (77.67.69.97)  2.994 ms
+ 9  et-2-3-0.lon10.ip4.gtt.net (89.149.187.190)  149.708 ms  149.660 ms  150.077 ms
+10  1u1-gw.ip4.gtt.net (46.33.92.106)  144.582 ms  149.486 ms  152.124 ms
+11  ae-6.bb-c.bap.rhr.de.oneandone.net (212.227.120.49)  153.793 ms  156.012 ms  153.883 ms
+12  ae-1.gw-dista-a.bap.rhr.de.oneandone.net (212.227.121.171)  155.098 ms  153.218 ms  153.801 ms
+13  vl-1991.gw-ps11.bap.rhr.de.oneandone.net (217.160.127.79)  157.944 ms  153.281 ms  152.854 ms
+14  kundenserver.de (82.165.210.229)  160.226 ms  160.561 ms  160.511 ms
+ 1  192.168.176.1 (192.168.176.1)  1.109 ms  0.940 ms  1.041 ms
+ 2  noa-srtr-vl652.sunet (171.64.197.1)  1.444 ms  2.127 ms  1.640 ms
+ 3  * * *
+ 4  dca-rtr.stanford.edu (171.64.255.204)  4.724 ms  2.135 ms  1.977 ms
+ 5  dc-svl-agg4--stanford-10ge.cenic.net (137.164.50.157)  2.573 ms  3.249 ms  2.619 ms
+ 6  72.14.242.90 (72.14.242.90)  2.867 ms
+    72.14.205.134 (72.14.205.134)  3.354 ms
+    72.14.242.90 (72.14.242.90)  2.909 ms
+ 7  216.239.49.250 (216.239.49.250)  3.529 ms  3.710 ms
+    72.14.232.136 (72.14.232.136)  3.622 ms
+ 8  74.125.37.41 (74.125.37.41)  3.170 ms  3.382 ms  3.099 ms
+ 9  nuq04s29-in-f14.1e100.net (216.58.192.14)  3.023 ms  3.457 ms  2.960 ms
+ 1  192.168.176.1 (192.168.176.1)  1.060 ms  1.026 ms  1.050 ms
+ 2  noa-srtr-vl652.sunet (171.64.197.1)  2.620 ms  1.546 ms  1.501 ms
+ 3  * * *
+ 4  dca-rtr.stanford.edu (171.64.255.204)  161.436 ms  2.024 ms  1.729 ms
+ 5  dc-svl-agg4--stanford-10ge.cenic.net (137.164.50.157)  2.609 ms  2.563 ms  2.560 ms
+ 6  10-1-1-91.ear1.sanjose1.level3.net (4.15.122.45)  2.725 ms  2.721 ms  2.476 ms
+ 7  ae-1-9.edge2.sanjose3.level3.net (4.69.209.181)  2.796 ms
+    ae-2-6.edge2.sanjose3.level3.net (4.69.209.185)  3.441 ms
+    ae-1-9.edge2.sanjose3.level3.net (4.69.209.181)  2.860 ms
+ 8  tinet-level3-xe.sanjose3.level3.net (4.68.62.214)  2.888 ms  2.838 ms
+    xe-5-2-0.sjc10.ip4.gtt.net (77.67.69.97)  3.193 ms
+ 9  et-2-3-0.lon10.ip4.gtt.net (89.149.187.190)  150.098 ms  149.326 ms  149.537 ms
+10  1u1-gw.ip4.gtt.net (46.33.92.106)  148.687 ms  149.946 ms  149.873 ms
+11  ae-6.bb-c.bap.rhr.de.oneandone.net (212.227.120.49)  157.297 ms  153.934 ms  153.712 ms
+12  ae-1.gw-dista-a.bap.rhr.de.oneandone.net (212.227.121.171)  153.108 ms  152.960 ms  152.970 ms
+13  vl-1991.gw-ps11.bap.rhr.de.oneandone.net (217.160.127.79)  152.664 ms  153.178 ms  153.690 ms
+14  kundenserver.de (82.165.210.229)  160.561 ms  160.385 ms  160.459 ms
+ 1  192.168.176.1 (192.168.176.1)  1.199 ms  1.021 ms  0.952 ms
+ 2  noa-srtr-vl652.sunet (171.64.197.1)  1.751 ms  1.567 ms  1.591 ms
+ 3  * * *
+ 4  dca-rtr.stanford.edu (171.64.255.204)  4.835 ms  1.777 ms  1.731 ms
+ 5  dc-svl-agg4--stanford-10ge.cenic.net (137.164.50.157)  2.558 ms  2.644 ms  2.548 ms
+ 6  74.125.147.146 (74.125.147.146)  2.759 ms
+    72.14.205.134 (72.14.205.134)  2.935 ms  2.888 ms
+ 7  216.239.49.250 (216.239.49.250)  3.496 ms  3.625 ms  3.593 ms
+ 8  74.125.37.41 (74.125.37.41)  3.283 ms  3.451 ms  3.209 ms
+ 9  nuq04s29-in-f14.1e100.net (216.58.192.14)  2.987 ms  3.065 ms  3.137 ms
+ 1  192.168.176.1 (192.168.176.1)  1.217 ms  0.916 ms  0.913 ms
+ 2  noa-srtr-vl652.sunet (171.64.197.1)  1.422 ms  1.390 ms  1.610 ms
+ 3  * * *
+ 4  dca-rtr.stanford.edu (171.64.255.204)  2.167 ms  2.032 ms  1.945 ms
+ 5  dc-svl-agg4--stanford-10ge.cenic.net (137.164.50.157)  2.827 ms  2.631 ms  2.817 ms
+ 6  10-1-1-91.ear1.sanjose1.level3.net (4.15.122.45)  2.653 ms  2.560 ms  5.727 ms
+ 7  ae-4-10.edge2.sanjose3.level3.net (4.69.209.193)  3.323 ms
     ae-2-6.edge2.sanjose3.level3.net (4.69.209.185)  3.067 ms
- 8  xe-5-2-0.sjc10.ip4.gtt.net (77.67.69.97)  2.748 ms  2.735 ms
-    tinet-level3-xe.sanjose3.level3.net (4.68.62.214)  2.637 ms
- 9  et-2-3-0.lon10.ip4.gtt.net (89.149.187.190)  151.517 ms  151.548 ms  152.485 ms
-10  1u1-gw.ip4.gtt.net (46.33.92.106)  151.555 ms  149.348 ms  149.846 ms
-11  ae-6.bb-c.bap.rhr.de.oneandone.net (212.227.120.49)  153.825 ms  160.925 ms  154.037 ms
-12  ae-1.gw-dista-a.bap.rhr.de.oneandone.net (212.227.121.171)  153.069 ms  153.024 ms  153.130 ms
-13  vl-1991.gw-ps11.bap.rhr.de.oneandone.net (217.160.127.79)  153.260 ms  153.346 ms  153.129 ms
-14  kundenserver.de (82.165.210.229)  160.460 ms  160.223 ms  161.081 ms
- 1  192.168.176.1 (192.168.176.1)  1.202 ms  1.019 ms  0.927 ms
- 2  noa-srtr-vl652.sunet (171.64.197.1)  2.302 ms  1.582 ms  1.436 ms
- 3  * * *
- 4  dca-rtr-vlan8.sunet (171.64.255.204)  22.017 ms  1.864 ms  1.908 ms
- 5  dc-svl-agg4--stanford-10ge.cenic.net (137.164.50.157)  2.617 ms  2.708 ms  2.596 ms
- 6  72.14.205.134 (72.14.205.134)  3.617 ms
-    74.125.147.146 (74.125.147.146)  2.919 ms
-    72.14.205.134 (72.14.205.134)  2.979 ms
- 7  72.14.232.136 (72.14.232.136)  3.258 ms
-    72.14.232.138 (72.14.232.138)  3.248 ms
-    216.239.49.250 (216.239.49.250)  3.660 ms
- 8  209.85.246.20 (209.85.246.20)  3.239 ms
-    64.233.174.91 (64.233.174.91)  3.407 ms  3.308 ms
- 9  64.233.174.206 (64.233.174.206)  10.353 ms  10.687 ms
-    64.233.174.204 (64.233.174.204)  10.481 ms
-10  209.85.248.124 (209.85.248.124)  10.567 ms
-    209.85.246.228 (209.85.246.228)  10.306 ms
-    64.233.174.191 (64.233.174.191)  12.080 ms
-11  209.85.253.185 (209.85.253.185)  10.712 ms  10.694 ms  10.849 ms
-12  lax17s02-in-f14.1e100.net (172.217.1.238)  10.355 ms  10.335 ms  10.169 ms
- 1  192.168.176.1 (192.168.176.1)  1.663 ms  1.028 ms  0.956 ms
- 2  noa-srtr-vl652.sunet (171.64.197.1)  1.573 ms  1.692 ms  1.551 ms
- 3  * * *
- 4  dca-rtr-vlan8.sunet (171.64.255.204)  109.032 ms  1.921 ms  1.818 ms
- 5  dc-svl-agg4--stanford-10ge.cenic.net (137.164.50.157)  2.697 ms  2.737 ms  2.680 ms
- 6  10-1-1-91.ear1.sanjose1.level3.net (4.15.122.45)  2.479 ms  2.518 ms  2.565 ms
- 7  ae-1-9.edge2.sanjose3.level3.net (4.69.209.181)  2.801 ms  3.043 ms
-    ae-3-19.edge2.sanjose3.level3.net (4.69.209.189)  2.616 ms
- 8  xe-5-2-0.sjc10.ip4.gtt.net (77.67.69.97)  4.249 ms  2.980 ms
-    tinet-level3-xe.sanjose3.level3.net (4.68.62.214)  2.837 ms
- 9  et-2-3-0.lon10.ip4.gtt.net (89.149.187.190)  152.580 ms  151.576 ms  151.341 ms
-10  1u1-gw.ip4.gtt.net (46.33.92.106)  141.784 ms  148.702 ms  149.719 ms
-11  ae-6.bb-c.bap.rhr.de.oneandone.net (212.227.120.49)  154.141 ms  160.811 ms  153.880 ms
-12  ae-1.gw-dista-a.bap.rhr.de.oneandone.net (212.227.121.171)  153.184 ms  153.566 ms  153.135 ms
-13  vl-1991.gw-ps11.bap.rhr.de.oneandone.net (217.160.127.79)  154.559 ms  162.408 ms  153.227 ms
-14  kundenserver.de (82.165.210.229)  160.541 ms  170.334 ms  160.410 ms
- 1  192.168.176.1 (192.168.176.1)  1.227 ms  0.945 ms  0.930 ms
- 2  noa-srtr-vl652.sunet (171.64.197.1)  1.533 ms  1.557 ms  1.431 ms
- 3  * * *
- 4  dca-rtr-vlan8.sunet (171.64.255.204)  5.186 ms  2.236 ms  22.501 ms
- 5  dc-svl-agg4--stanford-10ge.cenic.net (137.164.50.157)  3.950 ms  3.200 ms  2.553 ms
- 6  74.125.147.146 (74.125.147.146)  2.546 ms
-    72.14.205.134 (72.14.205.134)  11.023 ms
-    72.14.242.90 (72.14.242.90)  2.948 ms
- 7  72.14.232.136 (72.14.232.136)  3.369 ms
-    72.14.232.138 (72.14.232.138)  3.256 ms
-    209.85.240.114 (209.85.240.114)  4.495 ms
- 8  64.233.174.91 (64.233.174.91)  3.310 ms
-    209.85.246.38 (209.85.246.38)  3.627 ms
-    64.233.174.91 (64.233.174.91)  3.304 ms
- 9  64.233.174.206 (64.233.174.206)  11.304 ms  17.947 ms  10.743 ms
-10  209.85.248.124 (209.85.248.124)  11.531 ms  10.818 ms  11.201 ms
-11  209.85.253.185 (209.85.253.185)  10.761 ms  10.769 ms  10.745 ms
-12  lax17s02-in-f14.1e100.net (172.217.1.238)  10.252 ms  10.270 ms  10.600 ms
- 1  192.168.176.1 (192.168.176.1)  1.164 ms  1.014 ms  0.948 ms
- 2  noa-srtr-vl652.sunet (171.64.197.1)  3.100 ms  2.940 ms  1.610 ms
- 3  * * *
- 4  dca-rtr-vlan8.sunet (171.64.255.204)  5.998 ms  2.252 ms  1.777 ms
- 5  dc-svl-agg4--stanford-10ge.cenic.net (137.164.50.157)  2.762 ms  2.756 ms  4.154 ms
- 6  * 10-1-1-91.ear1.sanjose1.level3.net (4.15.122.45)  244.843 ms  2.550 ms
- 7  ae-1-9.edge2.sanjose3.level3.net (4.69.209.181)  2.988 ms  2.982 ms
-    ae-4-10.edge2.sanjose3.level3.net (4.69.209.193)  7.806 ms
- 8  tinet-level3-xe.sanjose3.level3.net (4.68.62.214)  3.069 ms
-    xe-5-2-0.sjc10.ip4.gtt.net (77.67.69.97)  2.985 ms
-    tinet-level3-xe.sanjose3.level3.net (4.68.62.214)  2.790 ms
- 9  et-2-3-0.lon10.ip4.gtt.net (89.149.187.190)  151.454 ms  151.392 ms  151.474 ms
-10  1u1-gw.ip4.gtt.net (46.33.92.106)  144.500 ms  145.743 ms  141.776 ms
-11  ae-6.bb-c.bap.rhr.de.oneandone.net (212.227.120.49)  154.907 ms  154.143 ms  154.058 ms
-12  ae-1.gw-dista-a.bap.rhr.de.oneandone.net (212.227.121.171)  153.206 ms  155.148 ms  152.910 ms
-13  vl-1991.gw-ps11.bap.rhr.de.oneandone.net (217.160.127.79)  153.348 ms  153.266 ms  160.428 ms
-14  kundenserver.de (82.165.210.229)  160.961 ms  160.338 ms  161.200 ms
- 1  192.168.176.1 (192.168.176.1)  1.271 ms  0.944 ms  0.964 ms
- 2  noa-srtr-vl652.sunet (171.64.197.1)  1.602 ms  1.609 ms  3.320 ms
- 3  * * *
- 4  dca-rtr-vlan8.sunet (171.64.255.204)  1.864 ms  2.693 ms  1.914 ms
- 5  dc-svl-agg4--stanford-10ge.cenic.net (137.164.50.157)  2.883 ms  2.279 ms  2.596 ms
- 6  74.125.147.146 (74.125.147.146)  2.729 ms
-    72.14.205.134 (72.14.205.134)  2.803 ms
-    74.125.147.146 (74.125.147.146)  2.738 ms
- 7  209.85.240.114 (209.85.240.114)  3.204 ms
-    216.239.49.250 (216.239.49.250)  5.542 ms
-    209.85.240.114 (209.85.240.114)  5.636 ms
- 8  209.85.246.38 (209.85.246.38)  3.704 ms
-    64.233.174.91 (64.233.174.91)  12.633 ms
-    209.85.246.20 (209.85.246.20)  3.716 ms
- 9  64.233.174.206 (64.233.174.206)  20.713 ms
-    64.233.174.204 (64.233.174.204)  10.401 ms
-    64.233.174.206 (64.233.174.206)  10.525 ms
-10  209.85.246.222 (209.85.246.222)  10.480 ms
-    209.85.246.228 (209.85.246.228)  10.496 ms
-    209.85.248.124 (209.85.248.124)  10.330 ms
-11  209.85.253.185 (209.85.253.185)  10.633 ms  10.594 ms  10.718 ms
-12  lax17s02-in-f14.1e100.net (172.217.1.238)  10.193 ms  10.016 ms  11.138 ms
- 1  192.168.176.1 (192.168.176.1)  1.197 ms  0.990 ms  1.024 ms
- 2  noa-srtr-vl652.sunet (171.64.197.1)  1.707 ms  1.478 ms  1.415 ms
- 3  * * *
- 4  dca-rtr-vlan8.sunet (171.64.255.204)  2.305 ms  1.851 ms  2.093 ms
- 5  dc-svl-agg4--stanford-10ge.cenic.net (137.164.50.157)  2.726 ms  2.554 ms  3.151 ms
- 6  10-1-1-91.ear1.sanjose1.level3.net (4.15.122.45)  2.726 ms  2.727 ms  2.714 ms
- 7  ae-4-10.edge2.sanjose3.level3.net (4.69.209.193)  18.755 ms  2.926 ms  3.140 ms
- 8  xe-5-2-0.sjc10.ip4.gtt.net (77.67.69.97)  2.784 ms  2.934 ms  2.995 ms
- 9  et-2-3-0.lon10.ip4.gtt.net (89.149.187.190)  151.392 ms  162.405 ms  152.934 ms
-10  1u1-gw.ip4.gtt.net (46.33.92.106)  149.207 ms  143.206 ms  150.044 ms
-11  ae-6.bb-c.bap.rhr.de.oneandone.net (212.227.120.49)  153.897 ms  160.753 ms  154.012 ms
-12  ae-1.gw-dista-a.bap.rhr.de.oneandone.net (212.227.121.171)  153.197 ms  153.158 ms  152.909 ms
-13  vl-1991.gw-ps11.bap.rhr.de.oneandone.net (217.160.127.79)  153.222 ms  152.887 ms  153.151 ms
-14  kundenserver.de (82.165.210.229)  170.408 ms  160.686 ms  160.222 ms
- 1  192.168.176.1 (192.168.176.1)  1.105 ms  0.951 ms  0.840 ms
- 2  noa-srtr-vl652.sunet (171.64.197.1)  1.651 ms  1.604 ms  1.523 ms
- 3  * * *
- 4  dca-rtr-vlan8.sunet (171.64.255.204)  253.824 ms  2.181 ms  2.100 ms
- 5  dc-svl-agg4--stanford-10ge.cenic.net (137.164.50.157)  2.727 ms  2.614 ms  2.636 ms
- 6  72.14.242.90 (72.14.242.90)  4.435 ms
-    72.14.205.134 (72.14.205.134)  3.131 ms  2.904 ms
- 7  72.14.232.136 (72.14.232.136)  3.272 ms
-    209.85.240.114 (209.85.240.114)  3.297 ms
-    216.239.49.250 (216.239.49.250)  3.793 ms
- 8  64.233.174.91 (64.233.174.91)  3.303 ms
-    209.85.246.38 (209.85.246.38)  3.722 ms  3.825 ms
- 9  64.233.174.204 (64.233.174.204)  14.285 ms  10.464 ms
-    64.233.174.206 (64.233.174.206)  10.617 ms
-10  64.233.174.191 (64.233.174.191)  10.452 ms
-    209.85.248.124 (209.85.248.124)  10.548 ms
-    64.233.174.191 (64.233.174.191)  10.612 ms
-11  209.85.253.185 (209.85.253.185)  31.993 ms  10.664 ms  10.692 ms
-12  lax17s02-in-f14.1e100.net (172.217.1.238)  10.414 ms  10.462 ms  10.109 ms
- 1  192.168.176.1 (192.168.176.1)  1.170 ms  0.988 ms  0.877 ms
- 2  noa-srtr-vl652.sunet (171.64.197.1)  1.493 ms  1.295 ms  1.426 ms
- 3  * * *
- 4  dca-rtr-vlan8.sunet (171.64.255.204)  4.627 ms  2.690 ms  1.878 ms
- 5  dc-svl-agg4--stanford-10ge.cenic.net (137.164.50.157)  2.564 ms  2.643 ms  2.462 ms
- 6  * * *
- 7  ae-1-9.edge2.sanjose3.level3.net (4.69.209.181)  5.787 ms
-    ae-3-19.edge2.sanjose3.level3.net (4.69.209.189)  3.945 ms  2.958 ms
- 8  xe-5-2-0.sjc10.ip4.gtt.net (77.67.69.97)  5.692 ms  18.835 ms  40.205 ms
- 9  et-2-3-0.lon10.ip4.gtt.net (89.149.187.190)  151.799 ms  151.511 ms  160.364 ms
-10  1u1-gw.ip4.gtt.net (46.33.92.106)  144.288 ms  145.333 ms  143.765 ms
-11  ae-6.bb-c.bap.rhr.de.oneandone.net (212.227.120.49)  161.088 ms  154.136 ms  154.045 ms
-12  ae-1.gw-dista-a.bap.rhr.de.oneandone.net (212.227.121.171)  152.987 ms  158.361 ms  153.035 ms
-13  vl-1991.gw-ps11.bap.rhr.de.oneandone.net (217.160.127.79)  153.283 ms  154.853 ms  153.124 ms
-14  kundenserver.de (82.165.210.229)  163.249 ms  164.990 ms  164.748 ms
- 1  192.168.176.1 (192.168.176.1)  2.308 ms  0.948 ms  1.194 ms
- 2  noa-srtr-vl652.sunet (171.64.197.1)  1.624 ms  1.699 ms  1.548 ms
- 3  * * *
- 4  dca-rtr-vlan8.sunet (171.64.255.204)  7.336 ms  1.723 ms  1.800 ms
- 5  dc-svl-agg4--stanford-10ge.cenic.net (137.164.50.157)  3.216 ms  3.166 ms  2.922 ms
- 6  72.14.242.90 (72.14.242.90)  2.881 ms
-    74.125.147.146 (74.125.147.146)  3.487 ms
-    72.14.205.134 (72.14.205.134)  2.944 ms
- 7  209.85.240.114 (209.85.240.114)  3.480 ms  4.924 ms  3.283 ms
- 8  64.233.174.91 (64.233.174.91)  3.548 ms
-    209.85.246.38 (209.85.246.38)  12.447 ms
-    64.233.174.91 (64.233.174.91)  4.782 ms
- 9  64.233.174.204 (64.233.174.204)  10.452 ms
-    64.233.174.206 (64.233.174.206)  20.207 ms  13.165 ms
-10  209.85.246.228 (209.85.246.228)  10.430 ms
-    209.85.246.222 (209.85.246.222)  10.630 ms
-    209.85.248.124 (209.85.248.124)  10.671 ms
-11  209.85.253.185 (209.85.253.185)  10.697 ms  10.801 ms  10.534 ms
-12  lax17s02-in-f14.1e100.net (172.217.1.238)  10.147 ms  10.128 ms  10.219 ms
- 1  192.168.176.1 (192.168.176.1)  3.774 ms  1.226 ms  0.956 ms
- 2  noa-srtr-vl652.sunet (171.64.197.1)  1.796 ms  3.443 ms  1.401 ms
- 3  * * *
- 4  dca-rtr-vlan8.sunet (171.64.255.204)  17.977 ms  1.955 ms  1.890 ms
- 5  dc-svl-agg4--stanford-10ge.cenic.net (137.164.50.157)  2.822 ms  2.893 ms  2.757 ms
- 6  10-1-1-91.ear1.sanjose1.level3.net (4.15.122.45)  2.513 ms  2.887 ms  2.667 ms
- 7  ae-4-10.edge2.sanjose3.level3.net (4.69.209.193)  3.058 ms  3.178 ms
-    ae-1-9.edge2.sanjose3.level3.net (4.69.209.181)  3.062 ms
- 8  xe-5-2-0.sjc10.ip4.gtt.net (77.67.69.97)  3.077 ms
-    tinet-level3-xe.sanjose3.level3.net (4.68.62.214)  3.786 ms
-    xe-5-2-0.sjc10.ip4.gtt.net (77.67.69.97)  2.938 ms
- 9  et-2-3-0.lon10.ip4.gtt.net (89.149.187.190)  151.583 ms  158.527 ms  152.391 ms
-10  1u1-gw.ip4.gtt.net (46.33.92.106)  141.932 ms  144.231 ms  149.971 ms
-11  ae-6.bb-c.bap.rhr.de.oneandone.net (212.227.120.49)  153.743 ms  162.471 ms  154.258 ms
-12  ae-1.gw-dista-a.bap.rhr.de.oneandone.net (212.227.121.171)  153.366 ms  183.406 ms  153.261 ms
-13  vl-1991.gw-ps11.bap.rhr.de.oneandone.net (217.160.127.79)  153.059 ms  157.361 ms  153.078 ms
-14  kundenserver.de (82.165.210.229)  160.298 ms  160.968 ms  160.819 ms
- 1  192.168.176.1 (192.168.176.1)  1.404 ms  0.953 ms  0.944 ms
- 2  noa-srtr-vl652.sunet (171.64.197.1)  1.490 ms  1.464 ms  1.880 ms
- 3  * * *
- 4  dca-rtr-vlan8.sunet (171.64.255.204)  4.624 ms  2.729 ms  1.936 ms
- 5  dc-svl-agg4--stanford-10ge.cenic.net (137.164.50.157)  2.473 ms  2.515 ms  2.536 ms
- 6  74.125.147.146 (74.125.147.146)  4.091 ms
-    72.14.242.90 (72.14.242.90)  4.134 ms
-    74.125.147.146 (74.125.147.146)  3.550 ms
- 7  209.85.240.114 (209.85.240.114)  3.298 ms  3.349 ms
-    216.239.49.250 (216.239.49.250)  3.510 ms
- 8  209.85.246.20 (209.85.246.20)  3.323 ms  3.620 ms
-    209.85.249.63 (209.85.249.63)  3.636 ms
- 9  64.233.174.204 (64.233.174.204)  10.319 ms
-    64.233.174.206 (64.233.174.206)  10.823 ms  10.559 ms
-10  64.233.174.191 (64.233.174.191)  10.394 ms
-    209.85.246.222 (209.85.246.222)  18.822 ms
-    209.85.248.124 (209.85.248.124)  10.748 ms
-11  209.85.253.185 (209.85.253.185)  10.732 ms  10.445 ms  12.717 ms
-12  lax17s02-in-f14.1e100.net (172.217.1.238)  10.250 ms  10.409 ms  10.558 ms
- 1  192.168.176.1 (192.168.176.1)  1.953 ms  1.016 ms  0.992 ms
- 2  noa-srtr-vl652.sunet (171.64.197.1)  1.644 ms  1.634 ms  1.536 ms
- 3  * * *
- 4  dca-rtr-vlan8.sunet (171.64.255.204)  5.821 ms  1.820 ms  1.848 ms
- 5  dc-svl-agg4--stanford-10ge.cenic.net (137.164.50.157)  2.536 ms  2.851 ms  2.589 ms
- 6  10-1-1-91.ear1.sanjose1.level3.net (4.15.122.45)  2.625 ms  3.009 ms  2.953 ms
- 7  ae-4-10.edge2.sanjose3.level3.net (4.69.209.193)  3.394 ms
-    ae-3-19.edge2.sanjose3.level3.net (4.69.209.189)  7.086 ms
-    ae-1-9.edge2.sanjose3.level3.net (4.69.209.181)  2.767 ms
- 8  tinet-level3-xe.sanjose3.level3.net (4.68.62.214)  2.966 ms  2.839 ms
-    xe-5-2-0.sjc10.ip4.gtt.net (77.67.69.97)  2.816 ms
- 9  et-2-3-0.lon10.ip4.gtt.net (89.149.187.190)  151.496 ms  151.412 ms  151.410 ms
-10  1u1-gw.ip4.gtt.net (46.33.92.106)  151.838 ms  149.533 ms  149.814 ms
-11  ae-6.bb-c.bap.rhr.de.oneandone.net (212.227.120.49)  153.767 ms  160.996 ms  154.132 ms
-12  ae-1.gw-dista-a.bap.rhr.de.oneandone.net (212.227.121.171)  152.906 ms  153.004 ms  152.874 ms
-13  vl-1991.gw-ps11.bap.rhr.de.oneandone.net (217.160.127.79)  153.051 ms  159.985 ms  153.093 ms
-14  kundenserver.de (82.165.210.229)  160.493 ms  160.776 ms  160.408 ms
- 1  192.168.176.1 (192.168.176.1)  1.209 ms  0.984 ms  0.987 ms
- 2  noa-srtr-vl652.sunet (171.64.197.1)  1.583 ms  1.558 ms  1.714 ms
- 3  * * *
- 4  dca-rtr-vlan8.sunet (171.64.255.204)  15.139 ms  3.931 ms  1.774 ms
- 5  dc-svl-agg4--stanford-10ge.cenic.net (137.164.50.157)  2.687 ms  3.612 ms  2.646 ms
- 6  72.14.242.90 (72.14.242.90)  3.054 ms
-    72.14.205.134 (72.14.205.134)  3.132 ms
-    72.14.242.90 (72.14.242.90)  3.253 ms
- 7  216.239.49.250 (216.239.49.250)  3.726 ms  3.621 ms
-    72.14.232.136 (72.14.232.136)  4.067 ms
- 8  64.233.174.91 (64.233.174.91)  3.532 ms
-    209.85.246.38 (209.85.246.38)  3.792 ms
-    64.233.174.91 (64.233.174.91)  3.190 ms
- 9  64.233.174.204 (64.233.174.204)  16.959 ms  10.492 ms
-    64.233.174.206 (64.233.174.206)  10.453 ms
-10  209.85.246.222 (209.85.246.222)  10.630 ms
-    64.233.174.191 (64.233.174.191)  10.723 ms
-    209.85.246.228 (209.85.246.228)  10.489 ms
-11  209.85.253.185 (209.85.253.185)  13.871 ms  12.431 ms  10.333 ms
-12  lax17s02-in-f14.1e100.net (172.217.1.238)  10.576 ms  11.353 ms  10.490 ms
- 1  192.168.176.1 (192.168.176.1)  1.199 ms  5.498 ms  0.903 ms
- 2  noa-srtr-vl652.sunet (171.64.197.1)  1.598 ms  1.495 ms  1.259 ms
- 3  * * *
- 4  dca-rtr-vlan8.sunet (171.64.255.204)  25.415 ms  2.077 ms  4.016 ms
- 5  dc-svl-agg4--stanford-10ge.cenic.net (137.164.50.157)  2.863 ms  2.797 ms  2.916 ms
- 6  10-1-1-91.ear1.sanjose1.level3.net (4.15.122.45)  2.726 ms  2.707 ms  3.090 ms
- 7  ae-1-9.edge2.sanjose3.level3.net (4.69.209.181)  3.023 ms
-    ae-2-6.edge2.sanjose3.level3.net (4.69.209.185)  2.898 ms
-    ae-1-9.edge2.sanjose3.level3.net (4.69.209.181)  3.018 ms
- 8  xe-5-2-0.sjc10.ip4.gtt.net (77.67.69.97)  3.177 ms
-    tinet-level3-xe.sanjose3.level3.net (4.68.62.214)  2.983 ms  3.137 ms
- 9  et-2-3-0.lon10.ip4.gtt.net (89.149.187.190)  151.615 ms  151.595 ms  152.257 ms
-10  1u1-gw.ip4.gtt.net (46.33.92.106)  141.956 ms  142.240 ms  146.488 ms
-11  ae-6.bb-c.bap.rhr.de.oneandone.net (212.227.120.49)  163.760 ms  159.525 ms  154.092 ms
-12  ae-1.gw-dista-a.bap.rhr.de.oneandone.net (212.227.121.171)  154.276 ms  153.324 ms  153.197 ms
-13  vl-1991.gw-ps11.bap.rhr.de.oneandone.net (217.160.127.79)  153.193 ms  161.794 ms  153.127 ms
-14  kundenserver.de (82.165.210.229)  161.284 ms  160.658 ms  160.558 ms
- 1  192.168.176.1 (192.168.176.1)  1.219 ms  0.999 ms  0.926 ms
- 2  noa-srtr-vl652.sunet (171.64.197.1)  1.650 ms  1.661 ms  1.705 ms
- 3  * * *
- 4  dca-rtr-vlan8.sunet (171.64.255.204)  2.213 ms  2.045 ms  3.173 ms
- 5  dc-svl-agg4--stanford-10ge.cenic.net (137.164.50.157)  18.465 ms  2.912 ms  2.811 ms
- 6  74.125.147.146 (74.125.147.146)  2.612 ms
-    72.14.205.134 (72.14.205.134)  4.254 ms  6.138 ms
- 7  209.85.240.114 (209.85.240.114)  3.904 ms  3.463 ms
-    72.14.232.138 (72.14.232.138)  3.141 ms
- 8  209.85.246.38 (209.85.246.38)  3.941 ms
-    209.85.246.20 (209.85.246.20)  3.480 ms  3.846 ms
- 9  64.233.174.206 (64.233.174.206)  11.293 ms
-    64.233.174.204 (64.233.174.204)  10.467 ms  10.962 ms
-10  209.85.246.228 (209.85.246.228)  10.661 ms
-    209.85.248.124 (209.85.248.124)  16.900 ms  10.495 ms
-11  209.85.253.185 (209.85.253.185)  10.756 ms  11.567 ms  10.786 ms
-12  lax17s02-in-f14.1e100.net (172.217.1.238)  11.298 ms  10.308 ms  10.279 ms
- 1  192.168.176.1 (192.168.176.1)  1.154 ms  0.933 ms  1.109 ms
- 2  noa-srtr-vl652.sunet (171.64.197.1)  2.086 ms  2.235 ms  6.678 ms
- 3  * * *
- 4  dca-rtr-vlan8.sunet (171.64.255.204)  5.002 ms  2.151 ms  2.027 ms
- 5  dc-svl-agg4--stanford-10ge.cenic.net (137.164.50.157)  2.813 ms  3.166 ms  2.646 ms
- 6  10-1-1-91.ear1.sanjose1.level3.net (4.15.122.45)  2.912 ms  3.091 ms  2.698 ms
- 7  ae-2-6.edge2.sanjose3.level3.net (4.69.209.185)  3.097 ms
-    ae-3-19.edge2.sanjose3.level3.net (4.69.209.189)  2.972 ms  3.195 ms
- 8  tinet-level3-xe.sanjose3.level3.net (4.68.62.214)  4.082 ms
-    xe-5-2-0.sjc10.ip4.gtt.net (77.67.69.97)  3.111 ms  3.368 ms
- 9  et-2-3-0.lon10.ip4.gtt.net (89.149.187.190)  151.661 ms  152.022 ms  152.002 ms
-10  1u1-gw.ip4.gtt.net (46.33.92.106)  152.552 ms  149.440 ms  153.113 ms
-11  ae-6.bb-c.bap.rhr.de.oneandone.net (212.227.120.49)  161.752 ms  154.139 ms  154.164 ms
-12  ae-1.gw-dista-a.bap.rhr.de.oneandone.net (212.227.121.171)  153.270 ms  153.314 ms  154.351 ms
-13  vl-1991.gw-ps11.bap.rhr.de.oneandone.net (217.160.127.79)  154.392 ms  153.844 ms  153.695 ms
-14  kundenserver.de (82.165.210.229)  160.658 ms  167.696 ms  162.976 ms
- 1  192.168.176.1 (192.168.176.1)  2.659 ms  3.851 ms  2.901 ms
- 2  noa-srtr-vl652.sunet (171.64.197.1)  10.268 ms  30.414 ms  9.824 ms
+    ae-4-10.edge2.sanjose3.level3.net (4.69.209.193)  8.441 ms
+ 8  xe-5-2-0.sjc10.ip4.gtt.net (77.67.69.97)  4.004 ms  2.934 ms  2.775 ms
+ 9  et-2-3-0.lon10.ip4.gtt.net (89.149.187.190)  149.614 ms  149.597 ms  149.480 ms
+10  1u1-gw.ip4.gtt.net (46.33.92.106)  141.837 ms  143.181 ms  149.943 ms
+11  ae-6.bb-c.bap.rhr.de.oneandone.net (212.227.120.49)  155.254 ms  153.764 ms  153.952 ms
+12  ae-1.gw-dista-a.bap.rhr.de.oneandone.net (212.227.121.171)  153.582 ms  153.363 ms  153.290 ms
+13  vl-1991.gw-ps11.bap.rhr.de.oneandone.net (217.160.127.79)  152.960 ms  153.099 ms  159.726 ms
+14  kundenserver.de (82.165.210.229)  162.775 ms  178.852 ms  160.828 ms
+ 1  192.168.176.1 (192.168.176.1)  1.240 ms  1.050 ms  1.015 ms
+ 2  noa-srtr-vl652.sunet (171.64.197.1)  1.665 ms  2.148 ms  1.523 ms
  3  * *
