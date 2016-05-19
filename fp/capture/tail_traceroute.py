@@ -46,7 +46,7 @@ while True:
   msg = osc_message_builder.OscMessageBuilder(address = "/data")
 
   str = str.decode("utf-8")
-  print (str)
+  #print (str)
   elements = str.split()
   #print (elements)
 

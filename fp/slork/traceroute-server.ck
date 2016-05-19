@@ -81,13 +81,12 @@ fun void traceroute_listen() {
     // grab the next message from the queue. 
     while( tr_oe.nextMsg() )
     { 
+      <<< "[!] TRACEROUTE DELAY RECEIVED: WIRING NEW DELAY LINE" >>>;
       tr_oe.getFloat() => float node_delay;
       xmit[z].startMsg( "/slork/traceroute/tune", "f");
       node_delay => xmit[z].addFloat;
 
       (z + 1) % targets => z; //rotate
-
-      <<< "tuning" >>>;
       1::second => now;
     }
   }
@@ -133,7 +132,6 @@ fun void tshark_listen() {
 }
 
 fun void trigger(int idx, float freq) {
-  <<< idx, freq >>>;
   xmit[idx].startMsg( "/slork/traceroute/trigger", "f");
   freq => xmit[idx].addFloat;
 }
