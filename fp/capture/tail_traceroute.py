@@ -46,7 +46,7 @@ while True:
   str = str.decode("utf-8")
   print (str)
   elements = str.split()
-  print (elements)
+  #print (elements)
 
   try: 
     node_ipv4 = elements[2].split('.');

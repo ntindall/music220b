@@ -1,0 +1,13 @@
+pushd capture
+
+python3 tail.py &
+python capture.py > capture.txt &
+python traceroute.py > output.txt &
+python3 tail_traceroute.py &
+
+popd
+pushd slork 
+
+chuck run-server.ck
+
+popd
