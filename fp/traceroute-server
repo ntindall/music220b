@@ -8,6 +8,6 @@ python3 tail_traceroute.py &
 popd
 pushd slork 
 
-chuck run-server.ck
+chuck run-server.ck:$1
 
 popd

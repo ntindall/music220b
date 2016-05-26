@@ -40,8 +40,9 @@ fun void netinit() {
   } else 
   {
     //NOTE: REMEMBER TO MODIFY TARGET VALUE OR WILL AOOBE
-    1 => targets;
+    2 => targets;
     xmit[0].setHost ( "localhost", port );
+    xmit[1].setHost ( "Rachel.local", port);
    // xmit[1].setHost ( "Nathan.local", port );
     /*
     xmit[2].setHost ( "tikkamasala.local", port );
